@@ -1,0 +1,51 @@
+# CableFormer V4 训练配置
+# V3 损失 + 放松 Smoothness(0.02) + 降低检测阈值(0.15)
+experiment:
+  name: cableformer_medium_v4
+  seed: 42
+  exp_dir: AgentsStorage/experiments
+
+model:
+  name: cableformer
+  base_ch: 48
+  in_channels: 2
+  out_channels: 1
+  kernel_size: 7
+  transformer_dim: 256
+  n_transformer_blocks: 3
+  n_heads: 8
+  use_cbam: true
+
+data:
+  manifest: DataSet/manifest.yaml
+  channels: [impulse, step]
+  augment: true
+  num_workers: 4
+  pin_memory: true
+
+train:
+  epochs: 120
+  batch_size: 64
+  lr: 3.0e-4
+  optimizer: adamw
+  weight_decay: 5.0e-5
+  scheduler: cosine_warm
+  warmup_epochs: 10
+  grad_clip: 1.0
+  amp: true
+  early_stop_patience: 15
+
+loss:
+  version: v3
+  focal_gamma: 2.0
+  alpha: 1.0
+  peak_weight: 0.3
+  smooth_weight: 0.02
+
+device: cuda
+
+eval:
+  peak_tolerance_m: 2.0
+  find_peaks_height: 0.15
+  find_peaks_distance: 4
+  find_peaks_prominence: 0.1

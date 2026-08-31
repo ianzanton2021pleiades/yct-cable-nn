@@ -1,0 +1,555 @@
+config_version: v1.6_lite_label_cfg_001
+generator_version: v1.6_lite_dg_label_001
+base_seed: 20260505
+
+output:
+  root_dir: ./dataset_label_only
+  copy_config_to_output: true
+
+dataset_split:
+  train: 40000
+  val: 5000
+  test: 4000
+  hard_negative_test: 1000
+  far_weak_defect_test: 70
+  healthy_long_test: 50
+
+sample_id:
+  prefix: sim
+  width: 6
+  filename_pattern: "{sample_id}_{split}.yaml"
+
+frequency:
+  f_min_hz: 9000
+  num_points: 6250
+  step_hz: 32000
+
+length:
+  decimal_places: 1
+  bins:
+    - min_m: 50.0
+      max_m: 300.0
+      weight: 0.20
+    - min_m: 300.0
+      max_m: 800.0
+      weight: 0.30
+    - min_m: 800.0
+      max_m: 1500.0
+      weight: 0.30
+    - min_m: 1500.0
+      max_m: 2400.0
+      weight: 0.20
+
+cable_specs:
+  candidates:
+    - cable_spec_id: YJV-0.6-1kV-10mm2
+      weight: 0.1
+      cable_spec:
+        core_area_mm2: 10
+        shield_inner_radius_mm: 2.484
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: XLPE
+        eps_r_0: 2.3000
+        tan_delta_0: 0.0002
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 0.3310
+        v0_m_per_s: 197677293.0
+
+    - cable_spec_id: YJV-1.8-3kV-25mm2
+      weight: 0.1
+      cable_spec:
+        core_area_mm2: 25
+        shield_inner_radius_mm: 4.821
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: XLPE
+        eps_r_0: 2.3000
+        tan_delta_0: 0.0002
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 0.5359
+        v0_m_per_s: 197677293.0
+
+    - cable_spec_id: YJV-3.6-6kV-35mm2
+      weight: 0.1
+      cable_spec:
+        core_area_mm2: 35
+        shield_inner_radius_mm: 6.838
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: XLPE
+        eps_r_0: 3.0918
+        tan_delta_0: 0.0121
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 0.7172
+        v0_m_per_s: 170495176.4
+
+    - cable_spec_id: YJV-6-6kV-50mm2
+      weight: 0.1
+      cable_spec:
+        core_area_mm2: 50
+        shield_inner_radius_mm: 8.389
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: XLPE
+        eps_r_0: 2.8962
+        tan_delta_0: 0.0092
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 0.7433
+        v0_m_per_s: 176161093.4
+
+    - cable_spec_id: YJV-8.7-10kV-70mm2
+      weight: 0.1
+      cable_spec:
+        core_area_mm2: 70
+        shield_inner_radius_mm: 10.220
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: XLPE
+        eps_r_0: 2.7592
+        tan_delta_0: 0.0071
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 0.7725
+        v0_m_per_s: 180479181.0
+
+    - cable_spec_id: YJV-8.7-15kV-95mm2
+      weight: 0.1
+      cable_spec:
+        core_area_mm2: 95
+        shield_inner_radius_mm: 10.999
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: XLPE
+        eps_r_0: 2.7519
+        tan_delta_0: 0.0070
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 0.6932
+        v0_m_per_s: 180720317.9
+
+    - cable_spec_id: YJV-12-20kV-150mm2
+      weight: 0.1
+      cable_spec:
+        core_area_mm2: 150
+        shield_inner_radius_mm: 13.410
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: XLPE
+        eps_r_0: 2.6703
+        tan_delta_0: 0.0058
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 0.6630
+        v0_m_per_s: 183460780.7
+
+    - cable_spec_id: YJV-18-20kV-240mm2
+      weight: 0.1
+      cable_spec:
+        core_area_mm2: 240
+        shield_inner_radius_mm: 17.740
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: XLPE
+        eps_r_0: 2.5596
+        tan_delta_0: 0.0041
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 0.7079
+        v0_m_per_s: 187385621.8
+
+    - cable_spec_id: RG58
+      weight: 0.12
+      cable_spec:
+        core_area_mm2: 0.4835
+        shield_inner_radius_mm: 1.475
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: PE
+        eps_r_0: 2.2500
+        tan_delta_0: 0.0003
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 1.3244
+        v0_m_per_s: 199861638.7
+
+    - cable_spec_id: SYV-75-5-1
+      weight: 0.08
+      cable_spec:
+        core_area_mm2: 0.4072
+        shield_inner_radius_mm: 2.300
+        core_material: Copper
+        shield_material: Copper
+        insulation_material: PE
+        eps_r_0: 2.2500
+        tan_delta_0: 0.0003
+        sigma_core_0: 5.8e+7
+        sigma_shield_0: 5.8e+7
+        g_0: 1.8545
+        v0_m_per_s: 199861638.7
+
+
+defect_count:
+  k_max: 5
+  probs:
+    "0": 0.30
+    "1": 0.35
+    "2": 0.20
+    "3": 0.10
+    "4": 0.04
+    "5": 0.01
+
+healthy_cases:
+  cases:
+    - case_id: ideal_light_noise
+      weight: 0.20
+    - case_id: global_epsilon_shift
+      weight: 0.25
+    - case_id: global_loss_shift
+      weight: 0.20
+    - case_id: near_residual
+      weight: 0.15
+    - case_id: end_boundary_shift
+      weight: 0.10
+    - case_id: weak_ripple_false_peak
+      weight: 0.10
+
+global_lite_params:
+  delta_alpha_G:
+    min: -0.10
+    max: 0.10
+  delta_epsilon_G:
+    min: -0.05
+    max: 0.05
+
+global_full_params:
+  delta_sigma_G:
+    min: -0.06
+    max: 0.06
+  delta_tandelta_G:
+    min: -0.05
+    max: 0.10
+  delta_g_G:
+    min: -0.02
+    max: 0.02
+
+defect_position:
+  near_exclusion_m: 5.0
+  main_far_limit_frac: 0.95
+  hard_far_limit_frac: 0.97
+  allow_hard_far_cases: false
+  bins:
+    - start_frac: 0.00
+      end_frac: 0.20
+      weight: 0.20
+    - start_frac: 0.20
+      end_frac: 0.50
+      weight: 0.30
+    - start_frac: 0.50
+      end_frac: 0.80
+      weight: 0.30
+    - start_frac: 0.80
+      end_frac: 0.95
+      weight: 0.20
+
+defect_length:
+  decimal_places: 1
+  dz_ref_m: 0.45
+  bins:
+    - mode: absolute
+      min_m: 0.2
+      max_m: 0.45
+      weight: 0.05
+    - mode: dz_multiple
+      min_k: 5
+      max_k: 15
+      weight: 0.40
+    - mode: dz_multiple
+      min_k: 15
+      max_k: 30
+      weight: 0.40
+    - mode: absolute
+      min_m: 20.0
+      max_m: 80.0
+      weight: 0.15
+
+defect_collision:
+  min_gap_m: 5.0
+  max_rejection_trials: 200
+
+defect_kinds:
+  candidates:
+    - kind: dielectric_constant
+      weight: 0.10
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.00
+          max: 0.04
+        delta_epsilon_eff:
+          min: -0.12
+          max: 0.12
+      full_params:
+        delta_sigma:
+          min: 0.00
+          max: 0.00
+        delta_tandelta:
+          min: 0.00
+          max: 0.03
+        delta_g:
+          min: 0.00
+          max: 0.00
+
+    - kind: dielectric_loss
+      weight: 0.16
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.04
+          max: 0.30
+        delta_epsilon_eff:
+          min: -0.06
+          max: 0.08
+      full_params:
+        delta_sigma:
+          min: 0.00
+          max: 0.00
+        delta_tandelta:
+          min: 0.04
+          max: 0.35
+        delta_g:
+          min: 0.00
+          max: 0.00
+
+    - kind: water_tree_moisture
+      weight: 0.16
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.06
+          max: 0.35
+        delta_epsilon_eff:
+          min: 0.02
+          max: 0.16
+      full_params:
+        delta_sigma:
+          min: 0.00
+          max: 0.00
+        delta_tandelta:
+          min: 0.06
+          max: 0.40
+        delta_g:
+          min: 0.00
+          max: 0.03
+
+    - kind: electrical_tree_void_pd
+      weight: 0.12
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.06
+          max: 0.40
+        delta_epsilon_eff:
+          min: -0.20
+          max: -0.04
+      full_params:
+        delta_sigma:
+          min: 0.00
+          max: 0.00
+        delta_tandelta:
+          min: 0.08
+          max: 0.45
+        delta_g:
+          min: -0.05
+          max: 0.08
+
+    - kind: conductor_loss
+      weight: 0.10
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.04
+          max: 0.25
+        delta_epsilon_eff:
+          min: -0.03
+          max: 0.03
+      full_params:
+        delta_sigma:
+          min: -0.30
+          max: -0.03
+        delta_tandelta:
+          min: 0.00
+          max: 0.08
+        delta_g:
+          min: 0.00
+          max: 0.00
+
+    - kind: shield_corrosion
+      weight: 0.08
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.05
+          max: 0.28
+        delta_epsilon_eff:
+          min: -0.02
+          max: 0.04
+      full_params:
+        delta_sigma:
+          min: -0.35
+          max: -0.05
+        delta_tandelta:
+          min: 0.00
+          max: 0.06
+        delta_g:
+          min: 0.00
+          max: 0.05
+
+    - kind: geometry
+      weight: 0.10
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.02
+          max: 0.20
+        delta_epsilon_eff:
+          min: -0.08
+          max: 0.08
+      full_params:
+        delta_sigma:
+          min: -0.05
+          max: 0.05
+        delta_tandelta:
+          min: 0.00
+          max: 0.10
+        delta_g:
+          min: -0.20
+          max: 0.20
+
+    - kind: semicon_screen_defect
+      weight: 0.08
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.04
+          max: 0.30
+        delta_epsilon_eff:
+          min: -0.10
+          max: 0.12
+      full_params:
+        delta_sigma:
+          min: -0.10
+          max: 0.05
+        delta_tandelta:
+          min: 0.05
+          max: 0.30
+        delta_g:
+          min: -0.12
+          max: 0.12
+
+    - kind: joint_or_splice_impedance
+      weight: 0.06
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.05
+          max: 0.35
+        delta_epsilon_eff:
+          min: -0.08
+          max: 0.10
+      full_params:
+        delta_sigma:
+          min: -0.40
+          max: -0.05
+        delta_tandelta:
+          min: 0.03
+          max: 0.25
+        delta_g:
+          min: -0.15
+          max: 0.15
+
+    - kind: mixed_aging
+      weight: 0.04
+      severity:
+        min: 0.05
+        max: 1.00
+      lite_params:
+        delta_alpha_eff:
+          min: 0.08
+          max: 0.45
+        delta_epsilon_eff:
+          min: -0.12
+          max: 0.18
+      full_params:
+        delta_sigma:
+          min: -0.25
+          max: 0.05
+        delta_tandelta:
+          min: 0.08
+          max: 0.45
+        delta_g:
+          min: -0.10
+          max: 0.15
+
+near_end_cases:
+  candidates:
+    - near_case_id: near_001
+      weight: 1.0
+      R_N_cal: 0.0
+      L_N_cal: 0.0
+      C_N_cal: 0.0
+      delta_R_N:
+        min: -0.02
+        max: 0.02
+      delta_L_N:
+        min: -0.02
+        max: 0.02
+      delta_C_N:
+        min: -0.02
+        max: 0.02
+      end_case_id: open_001
+      C_end_cal: 0.0
+      delta_C_end:
+        min: -0.02
+        max: 0.02
+
+noise_cases:
+  candidates:
+    - noise_case_id: no_interference
+      weight: 0.75
+      snr_db: 80
+    - noise_case_id: weak_interference
+      weight: 0.20
+      snr_db: 55
+    - noise_case_id: moderate_interference
+      weight: 0.05
+      snr_db: 45
+
+validation:
+  require_defects_field: true
+  require_no_overlap: true
+  require_x_end_consistency: true
+  require_x_center_consistency: true
+  require_defect_inside_cable: true

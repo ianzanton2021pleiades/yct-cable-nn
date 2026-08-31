@@ -1,0 +1,68 @@
+sample_id: sim_000001
+generator_version: v1.6_lite_dg_label_001
+config_version: v1.6_lite_label_cfg_001
+split: train
+random_seed: 123456
+
+freq_meta:
+  f_min_hz: 9000
+  f_max_hz: 199977000
+  num_points: 6250
+  step_hz: 32000
+  bandwidth_hz: 199968000
+
+cable_spec:
+  core_area_mm2: 50
+  shield_inner_radius_mm: 4.5
+  core_material: copper
+  shield_material: copper
+  insulation_material: xlpe
+  eps_r_0: 2.3
+  tan_delta_0: 0.001
+  sigma_core_0: 58000000.0
+  sigma_shield_0: 58000000.0
+  g_0: 0.0
+  v0_m_per_s: 195000000.0
+
+length_m: 1200.0
+
+global_lite_params:
+  delta_alpha_G: 0.04
+  delta_epsilon_G: -0.02
+
+global_full_params:
+  delta_sigma_G: 0.00
+  delta_tandelta_G: 0.04
+  delta_g_G: 0.00
+
+defects:
+  - defect_id: 1
+    x_start_m: 350.0
+    length_m: 8.0
+    x_end_m: 358.0
+    x_center_m: 354.0
+    lite_params:
+      delta_alpha_eff: 0.18
+      delta_epsilon_eff: -0.06
+    full_params:
+      delta_sigma: 0.00
+      delta_tandelta: 0.18
+      delta_g: 0.00
+    kind: dielectric_loss
+    severity: 0.25
+
+near_end:
+  near_case_id: near_001
+  R_N_cal: 0.0
+  L_N_cal: 0.0
+  C_N_cal: 0.0
+  delta_R_N: 0.01
+  delta_L_N: -0.01
+  delta_C_N: 0.00
+  end_case_id: open_001
+  C_end_cal: 0.0
+  delta_C_end: 0.01
+
+noise:
+  snr_db: 40
+  noise_case_id: snr_40db

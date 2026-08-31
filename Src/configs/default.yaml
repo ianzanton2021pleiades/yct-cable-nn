@@ -1,0 +1,44 @@
+# 默认训练配置
+experiment:
+  name: unet1d_medium_baseline
+  seed: 42
+  exp_dir: AgentsStorage/experiments
+
+model:
+  name: unet1d
+  base_ch: 32
+  in_channels: 2
+  out_channels: 1
+  kernel_size: 7
+
+data:
+  manifest: DataSet/manifest.yaml
+  channels: [impulse, step]
+  augment: true
+  num_workers: 4
+  pin_memory: true
+
+train:
+  epochs: 60
+  batch_size: 32
+  lr: 1.0e-3
+  optimizer: adamw
+  weight_decay: 1.0e-4
+  scheduler: cosine_warm
+  warmup_epochs: 3
+  grad_clip: 1.0
+  amp: true
+  early_stop_patience: 10
+
+loss:
+  focal_gamma: 2.0
+  alpha: 1.0
+  peak_weight: 0.3
+
+device: cuda
+
+eval:
+  peak_tolerance_m: 2.0
+  find_peaks_height: 0.2
+  find_peaks_distance: 4
+  find_peaks_prominence: 0.1
