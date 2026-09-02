@@ -1,0 +1,822 @@
+{
+  "rule": "5项核心特征中至少4项的合成中位数落入对应实测q05-q95",
+  "candidate": "dg_v3_rlgc_native",
+  "parameter_profile": "provisional_rlgc_v1",
+  "results": [
+    {
+      "profile": "rg58",
+      "requested_sample_count": 24,
+      "sample_count": 24,
+      "parameter_profile": "provisional_rlgc_v1",
+      "attempt_count": 24,
+      "generation_failures": [],
+      "generation_failure_fraction": 0.0,
+      "feature_rows": [
+        {
+          "feature": "magnitude_q05",
+          "synthetic_median": 0.023510163081329555,
+          "real_q05": 0.011437998727222926,
+          "real_q50": 0.0258272766762366,
+          "real_q95": 0.15682748944076486,
+          "passed": true
+        },
+        {
+          "feature": "magnitude_q50",
+          "synthetic_median": 0.06868993622262745,
+          "real_q05": 0.0258272766762366,
+          "real_q50": 0.15682748944076486,
+          "real_q95": 0.5387575493330263,
+          "passed": true
+        },
+        {
+          "feature": "magnitude_q95",
+          "synthetic_median": 0.2557736934229604,
+          "real_q05": 0.15682748944076486,
+          "real_q50": 0.5387575493330263,
+          "real_q95": 0.5594079345415259,
+          "passed": true
+        },
+        {
+          "feature": "magnitude_log_slope_per_GHz",
+          "synthetic_median": -1.0102597919421286,
+          "real_q05": 0.10045472930020542,
+          "real_q50": 0.5303203560713702,
+          "real_q95": 0.659178160602488,
+          "passed": false
+        },
+        {
+          "feature": "unwrapped_phase_slope_rad_per_GHz",
+          "synthetic_median": -649.4073059979505,
+          "real_q05": -6.752440875373357,
+          "real_q50": -2.038119296016555,
+          "real_q95": 7.419358766690485,
+          "passed": false
+        }
+      ],
+      "passed_count": 3,
+      "required_count": 4,
+      "gate_pass": false,
+      "samples": [
+        {
+          "magnitude_q05": 0.023388081461893518,
+          "magnitude_q50": 0.0540992152986156,
+          "magnitude_q95": 0.07433603791651576,
+          "magnitude_log_slope_per_GHz": 1.013774947355421,
+          "unwrapped_phase_slope_rad_per_GHz": -23.171308826515286,
+          "residual_rms": 0.08322962129096508,
+          "residual_lag1": 0.9566103725278563
+        },
+        {
+          "magnitude_q05": 0.02095920049500717,
+          "magnitude_q50": 0.05602784734886312,
+          "magnitude_q95": 0.30991012360293313,
+          "magnitude_log_slope_per_GHz": -1.4386159867238109,
+          "unwrapped_phase_slope_rad_per_GHz": -1077.2586838558907,
+          "residual_rms": 0.18998578610090594,
+          "residual_lag1": 0.40484255765529203
+        },
+        {
+          "magnitude_q05": 0.026293753595734794,
+          "magnitude_q50": 0.058849315980522066,
+          "magnitude_q95": 0.08394150236696013,
+          "magnitude_log_slope_per_GHz": 1.0037933261958312,
+          "unwrapped_phase_slope_rad_per_GHz": 9.17632751282662,
+          "residual_rms": 0.08277150809129946,
+          "residual_lag1": 0.876719274929356
+        },
+        {
+          "magnitude_q05": 0.023507904639312148,
+          "magnitude_q50": 0.05075206797534705,
+          "magnitude_q95": 0.3107206967596471,
+          "magnitude_log_slope_per_GHz": -1.3544009672721786,
+          "unwrapped_phase_slope_rad_per_GHz": -553.8949303940973,
+          "residual_rms": 0.18291251029908687,
+          "residual_lag1": -0.06547592582569636
+        },
+        {
+          "magnitude_q05": 0.029193687032600005,
+          "magnitude_q50": 0.088450322120008,
+          "magnitude_q95": 0.13801515513354268,
+          "magnitude_log_slope_per_GHz": 1.3137868527401235,
+          "unwrapped_phase_slope_rad_per_GHz": 8.385855612385159,
+          "residual_rms": 0.08539781945242636,
+          "residual_lag1": 0.8011008180592549
+        },
+        {
+          "magnitude_q05": 0.018167843166746727,
+          "magnitude_q50": 0.0724864102951398,
+          "magnitude_q95": 0.42505885808212773,
+          "magnitude_log_slope_per_GHz": -2.883665857782723,
+          "unwrapped_phase_slope_rad_per_GHz": -2418.457261851484,
+          "residual_rms": 0.2310118080381737,
+          "residual_lag1": 0.41535499521661917
+        },
+        {
+          "magnitude_q05": 0.023441127347078178,
+          "magnitude_q50": 0.05485095774502004,
+          "magnitude_q95": 0.09858027968286782,
+          "magnitude_log_slope_per_GHz": 0.4842698774429507,
+          "unwrapped_phase_slope_rad_per_GHz": 44.478292817947604,
+          "residual_rms": 0.10866936492475285,
+          "residual_lag1": 0.8811880129366694
+        },
+        {
+          "magnitude_q05": 0.004059903316167835,
+          "magnitude_q50": 0.013888124100450013,
+          "magnitude_q95": 0.10590678072050004,
+          "magnitude_log_slope_per_GHz": -1.2397549459108534,
+          "unwrapped_phase_slope_rad_per_GHz": -113.5159419460233,
+          "residual_rms": 0.1031914442320917,
+          "residual_lag1": 0.9878533577945093
+        },
+        {
+          "magnitude_q05": 0.14903767181323194,
+          "magnitude_q50": 0.3332230885135897,
+          "magnitude_q95": 0.7401294796888626,
+          "magnitude_log_slope_per_GHz": -1.5767427256182753,
+          "unwrapped_phase_slope_rad_per_GHz": -744.9196816018036,
+          "residual_rms": 0.5649188344131264,
+          "residual_lag1": 0.9648191650045541
+        },
+        {
+          "magnitude_q05": 0.007611015543211491,
+          "magnitude_q50": 0.013088230556510691,
+          "magnitude_q95": 0.06858797600364562,
+          "magnitude_log_slope_per_GHz": -0.7807646379734036,
+          "unwrapped_phase_slope_rad_per_GHz": 109.03108662752243,
+          "residual_rms": 0.0954693849875346,
+          "residual_lag1": 0.4951391123461215
+        },
+        {
+          "magnitude_q05": 0.023512421523346965,
+          "magnitude_q50": 0.054169248253674404,
+          "magnitude_q95": 0.27188712063716913,
+          "magnitude_log_slope_per_GHz": -1.2686055215804732,
+          "unwrapped_phase_slope_rad_per_GHz": -827.712653283651,
+          "residual_rms": 0.16287182024065588,
+          "residual_lag1": 0.44999305232603415
+        },
+        {
+          "magnitude_q05": 0.020732241688512086,
+          "magnitude_q50": 0.0762771407674285,
+          "magnitude_q95": 0.4175787506753687,
+          "magnitude_log_slope_per_GHz": -2.286364692936243,
+          "unwrapped_phase_slope_rad_per_GHz": -1752.5664285510713,
+          "residual_rms": 0.24863961090210263,
+          "residual_lag1": 0.4743393382865804
+        },
+        {
+          "magnitude_q05": 0.029453995208466647,
+          "magnitude_q50": 0.13377843389534838,
+          "magnitude_q95": 0.3459202930418461,
+          "magnitude_log_slope_per_GHz": -0.47462897305442153,
+          "unwrapped_phase_slope_rad_per_GHz": -882.670880800546,
+          "residual_rms": 0.22137623765517675,
+          "residual_lag1": 0.5782060751893355
+        },
+        {
+          "magnitude_q05": 0.03155833472501497,
+          "magnitude_q50": 0.08808339960252085,
+          "magnitude_q95": 0.14518434097607874,
+          "magnitude_log_slope_per_GHz": 0.14082154649207065,
+          "unwrapped_phase_slope_rad_per_GHz": -305.6417862080626,
+          "residual_rms": 0.11671356747734675,
+          "residual_lag1": 0.6702821249059767
+        },
+        {
+          "magnitude_q05": 0.039562425644215776,
+          "magnitude_q50": 0.16396760084111686,
+          "magnitude_q95": 0.6074463751884492,
+          "magnitude_log_slope_per_GHz": -2.3171661555835956,
+          "unwrapped_phase_slope_rad_per_GHz": -1991.222904399284,
+          "residual_rms": 0.39174829664260624,
+          "residual_lag1": 0.679623315906551
+        },
+        {
+          "magnitude_q05": 0.026382129274495417,
+          "magnitude_q50": 0.07109200049943748,
+          "magnitude_q95": 0.11038767000203314,
+          "magnitude_log_slope_per_GHz": 0.407224003029962,
+          "unwrapped_phase_slope_rad_per_GHz": -25.340168870946528,
+          "residual_rms": 0.10193300916162892,
+          "residual_lag1": 0.3413920716714441
+        },
+        {
+          "magnitude_q05": 0.0166919589833702,
+          "magnitude_q50": 0.06628787194581744,
+          "magnitude_q95": 0.1136845644984027,
+          "magnitude_log_slope_per_GHz": 1.5571959976775234,
+          "unwrapped_phase_slope_rad_per_GHz": -25.72399904478211,
+          "residual_rms": 0.07619644551972006,
+          "residual_lag1": 0.9719921763475772
+        },
+        {
+          "magnitude_q05": 0.04662435823134789,
+          "magnitude_q50": 0.12212003235527653,
+          "magnitude_q95": 0.37982759332119054,
+          "magnitude_log_slope_per_GHz": -0.5737205751304645,
+          "unwrapped_phase_slope_rad_per_GHz": -755.9054412727676,
+          "residual_rms": 0.2159032058197566,
+          "residual_lag1": 0.48923063651886
+        },
+        {
+          "magnitude_q05": 0.15736824991254902,
+          "magnitude_q50": 0.33558512694879505,
+          "magnitude_q95": 0.7600405660037104,
+          "magnitude_log_slope_per_GHz": -1.5922397253399232,
+          "unwrapped_phase_slope_rad_per_GHz": -1179.381176703811,
+          "residual_rms": 0.592617253817655,
+          "residual_lag1": 0.9181005432193143
+        },
+        {
+          "magnitude_q05": 0.020392645066998803,
+          "magnitude_q50": 0.03930996154522724,
+          "magnitude_q95": 0.14582263313132796,
+          "magnitude_log_slope_per_GHz": -0.10800509702417001,
+          "unwrapped_phase_slope_rad_per_GHz": 193.19237927653313,
+          "residual_rms": 0.12307411118352644,
+          "residual_lag1": 0.6202806393005691
+        },
+        {
+          "magnitude_q05": 0.014825989132560556,
+          "magnitude_q50": 0.04558785762086688,
+          "magnitude_q95": 0.08050494735265333,
+          "magnitude_log_slope_per_GHz": 0.5591128424070009,
+          "unwrapped_phase_slope_rad_per_GHz": -6.915829160893718,
+          "residual_rms": 0.07922642350388605,
+          "residual_lag1": 0.9897392606755536
+        },
+        {
+          "magnitude_q05": 0.01152814945183585,
+          "magnitude_q50": 0.0562716134381292,
+          "magnitude_q95": 0.23966026620875164,
+          "magnitude_log_slope_per_GHz": -2.4449296188309537,
+          "unwrapped_phase_slope_rad_per_GHz": -1742.6442603729854,
+          "residual_rms": 0.14495800553595833,
+          "residual_lag1": 0.6997457608623235
+        },
+        {
+          "magnitude_q05": 0.06826088786698356,
+          "magnitude_q50": 0.23241094827843378,
+          "magnitude_q95": 0.5728107379698396,
+          "magnitude_log_slope_per_GHz": -1.6164769078253916,
+          "unwrapped_phase_slope_rad_per_GHz": -1152.0244316678622,
+          "residual_rms": 0.3385528222472985,
+          "residual_lag1": 0.8386686798218957
+        },
+        {
+          "magnitude_q05": 0.07192617373784792,
+          "magnitude_q50": 0.20734607647887945,
+          "magnitude_q95": 0.5858890880864126,
+          "magnitude_log_slope_per_GHz": -1.2724236542712155,
+          "unwrapped_phase_slope_rad_per_GHz": -1354.6776322676692,
+          "residual_rms": 0.32380390879374865,
+          "residual_lag1": 0.545757893484942
+        }
+      ]
+    },
+    {
+      "profile": "field",
+      "requested_sample_count": 24,
+      "sample_count": 20,
+      "parameter_profile": "provisional_rlgc_v1",
+      "attempt_count": 96,
+      "generation_failures": [
+        {
+          "seed": 20270903,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270905,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270906,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270907,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270908,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270909,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270910,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270911,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270914,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270915,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270916,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270917,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270918,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270921,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270922,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270923,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270924,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270925,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270926,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270928,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270929,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270930,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270931,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270933,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270937,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270939,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270940,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270941,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270942,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270944,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270945,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270946,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270947,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270948,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270949,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270950,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270952,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270954,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270955,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270956,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270957,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270958,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270959,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270960,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270961,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270962,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270963,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270964,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270965,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270966,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270967,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270968,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270970,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270971,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270972,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270973,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270974,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270976,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270977,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270978,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270979,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270980,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270981,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270982,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270984,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270986,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270987,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270988,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270989,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270991,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270992,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270993,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270994,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270995,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270996,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        },
+        {
+          "seed": 20270997,
+          "error": "dielectric loss exceeds the requested 100 MHz attenuation"
+        }
+      ],
+      "generation_failure_fraction": 0.7916666666666666,
+      "feature_rows": [
+        {
+          "feature": "magnitude_q05",
+          "synthetic_median": 0.059915016452688624,
+          "real_q05": 0.02502055454984335,
+          "real_q50": 0.07041970798125533,
+          "real_q95": 0.3971049992008825,
+          "passed": true
+        },
+        {
+          "feature": "magnitude_q50",
+          "synthetic_median": 0.10268213326531486,
+          "real_q05": 0.07041970798125533,
+          "real_q50": 0.3971049992008825,
+          "real_q95": 0.7561507036721367,
+          "passed": true
+        },
+        {
+          "feature": "magnitude_q95",
+          "synthetic_median": 0.2164398399241509,
+          "real_q05": 0.3971049992008825,
+          "real_q50": 0.7561507036721367,
+          "real_q95": 0.83048374614733,
+          "passed": false
+        },
+        {
+          "feature": "magnitude_log_slope_per_GHz",
+          "synthetic_median": -0.019092857484593904,
+          "real_q05": -5.286904203770495,
+          "real_q50": -1.284813744911815,
+          "real_q95": -0.3004146233065633,
+          "passed": false
+        },
+        {
+          "feature": "unwrapped_phase_slope_rad_per_GHz",
+          "synthetic_median": -31.293096627944067,
+          "real_q05": -1217.5498922200368,
+          "real_q50": -294.2867730696945,
+          "real_q95": -146.47089230341132,
+          "passed": false
+        }
+      ],
+      "passed_count": 2,
+      "required_count": 4,
+      "gate_pass": false,
+      "samples": [
+        {
+          "magnitude_q05": 0.12045025150358897,
+          "magnitude_q50": 0.1298030833184599,
+          "magnitude_q95": 0.1525909122789912,
+          "magnitude_log_slope_per_GHz": -0.26167039282965565,
+          "unwrapped_phase_slope_rad_per_GHz": -36.96502775459021,
+          "residual_rms": 0.07040954145975832,
+          "residual_lag1": 0.7386741617150693
+        },
+        {
+          "magnitude_q05": 0.032998826718788274,
+          "magnitude_q50": 0.07875740758540234,
+          "magnitude_q95": 0.2992229215908435,
+          "magnitude_log_slope_per_GHz": -0.3804977632951426,
+          "unwrapped_phase_slope_rad_per_GHz": -149.53005879733055,
+          "residual_rms": 0.17524374137452292,
+          "residual_lag1": 0.1226185202690874
+        },
+        {
+          "magnitude_q05": 0.08480704969260536,
+          "magnitude_q50": 0.10918822085745168,
+          "magnitude_q95": 0.2234187142798841,
+          "magnitude_log_slope_per_GHz": -0.4014131056414342,
+          "unwrapped_phase_slope_rad_per_GHz": -9.172538258013896,
+          "residual_rms": 0.1356025729887955,
+          "residual_lag1": 0.420193319655007
+        },
+        {
+          "magnitude_q05": 0.08850274195227234,
+          "magnitude_q50": 0.09617604567317803,
+          "magnitude_q95": 0.11934625887616872,
+          "magnitude_log_slope_per_GHz": -0.27851394170579374,
+          "unwrapped_phase_slope_rad_per_GHz": -24.785530547612876,
+          "residual_rms": 0.0929809758067764,
+          "residual_lag1": 0.4562567198832236
+        },
+        {
+          "magnitude_q05": 0.055573881464620695,
+          "magnitude_q50": 0.11852681831798051,
+          "magnitude_q95": 0.1822156902528863,
+          "magnitude_log_slope_per_GHz": 0.9405034047302896,
+          "unwrapped_phase_slope_rad_per_GHz": -13.76665238904142,
+          "residual_rms": 0.1032424996909376,
+          "residual_lag1": 0.10902241693354268
+        },
+        {
+          "magnitude_q05": 0.008609036699702068,
+          "magnitude_q50": 0.024017414490691225,
+          "magnitude_q95": 0.0918012676377644,
+          "magnitude_log_slope_per_GHz": 0.03590096305486351,
+          "unwrapped_phase_slope_rad_per_GHz": -97.3877372594034,
+          "residual_rms": 0.10187117384671904,
+          "residual_lag1": 0.8540392615637145
+        },
+        {
+          "magnitude_q05": 0.03338012346293215,
+          "magnitude_q50": 0.0933115052570209,
+          "magnitude_q95": 0.1573912305429074,
+          "magnitude_log_slope_per_GHz": 1.1233955118504062,
+          "unwrapped_phase_slope_rad_per_GHz": -52.49110021091851,
+          "residual_rms": 0.11171638501556139,
+          "residual_lag1": 0.8103307427872122
+        },
+        {
+          "magnitude_q05": 0.012828889020133653,
+          "magnitude_q50": 0.04960571162088828,
+          "magnitude_q95": 0.20946096556841765,
+          "magnitude_log_slope_per_GHz": -1.41481949267143,
+          "unwrapped_phase_slope_rad_per_GHz": -60.01089523681062,
+          "residual_rms": 0.13598634187970912,
+          "residual_lag1": -0.050560324918476014
+        },
+        {
+          "magnitude_q05": 0.10413255576582249,
+          "magnitude_q50": 0.15553933402010633,
+          "magnitude_q95": 0.37494432004010014,
+          "magnitude_log_slope_per_GHz": -0.5303463426037718,
+          "unwrapped_phase_slope_rad_per_GHz": -15.604311746224855,
+          "residual_rms": 0.18107736612656558,
+          "residual_lag1": -0.089230720108329
+        },
+        {
+          "magnitude_q05": 0.02584108742348194,
+          "magnitude_q50": 0.0787588110366952,
+          "magnitude_q95": 0.10340655657592512,
+          "magnitude_log_slope_per_GHz": 1.238960358422875,
+          "unwrapped_phase_slope_rad_per_GHz": -33.6483379979367,
+          "residual_rms": 0.07063225561343678,
+          "residual_lag1": 0.6888058882721845
+        },
+        {
+          "magnitude_q05": 0.06425615144075655,
+          "magnitude_q50": 0.08364578942584584,
+          "magnitude_q95": 0.08906015302531387,
+          "magnitude_log_slope_per_GHz": -0.42289368503122143,
+          "unwrapped_phase_slope_rad_per_GHz": -8.956518391136095,
+          "residual_rms": 0.06842819387180113,
+          "residual_lag1": 0.8210231212602256
+        },
+        {
+          "magnitude_q05": 0.07216231006618894,
+          "magnitude_q50": 0.12253602472357578,
+          "magnitude_q95": 0.27739173807684464,
+          "magnitude_log_slope_per_GHz": -0.6527762955020523,
+          "unwrapped_phase_slope_rad_per_GHz": -32.6288322686213,
+          "residual_rms": 0.14426846147621825,
+          "residual_lag1": 0.6090246939488574
+        },
+        {
+          "magnitude_q05": 0.158286684160743,
+          "magnitude_q50": 0.16937262350868604,
+          "magnitude_q95": 0.24771019264946786,
+          "magnitude_log_slope_per_GHz": -0.32998311629770294,
+          "unwrapped_phase_slope_rad_per_GHz": -29.957360987266828,
+          "residual_rms": 0.11202806012968272,
+          "residual_lag1": 0.8094686170826406
+        },
+        {
+          "magnitude_q05": 0.13164525102147634,
+          "magnitude_q50": 0.17111981470416687,
+          "magnitude_q95": 0.2695595785258369,
+          "magnitude_log_slope_per_GHz": 0.07380998523537517,
+          "unwrapped_phase_slope_rad_per_GHz": -12.206913435749719,
+          "residual_rms": 0.05787048701961609,
+          "residual_lag1": 0.2755441747241446
+        },
+        {
+          "magnitude_q05": 0.05408528462404193,
+          "magnitude_q50": 0.0675276621886584,
+          "magnitude_q95": 0.08721665424987698,
+          "magnitude_log_slope_per_GHz": -0.07408667802405132,
+          "unwrapped_phase_slope_rad_per_GHz": -10.091125302286496,
+          "residual_rms": 0.0876164158029789,
+          "residual_lag1": 0.8769225320836881
+        },
+        {
+          "magnitude_q05": 0.15955323440157196,
+          "magnitude_q50": 0.19293410378057593,
+          "magnitude_q95": 0.24958947178844337,
+          "magnitude_log_slope_per_GHz": 0.42922784286480364,
+          "unwrapped_phase_slope_rad_per_GHz": -25.80139509305608,
+          "residual_rms": 0.05286423710497481,
+          "residual_lag1": 0.49135975093054113
+        },
+        {
+          "magnitude_q05": 0.040623023928749315,
+          "magnitude_q50": 0.07479806987957671,
+          "magnitude_q95": 0.09988032377782442,
+          "magnitude_log_slope_per_GHz": 0.7043297430817521,
+          "unwrapped_phase_slope_rad_per_GHz": -15.399273651357408,
+          "residual_rms": 0.08978587248640184,
+          "residual_lag1": 0.8273967684072236
+        },
+        {
+          "magnitude_q05": 0.04516103533252206,
+          "magnitude_q50": 0.13854402143147704,
+          "magnitude_q95": 0.22696199374961182,
+          "magnitude_log_slope_per_GHz": 0.22201698435952874,
+          "unwrapped_phase_slope_rad_per_GHz": -802.2775773633763,
+          "residual_rms": 0.15820140482437747,
+          "residual_lag1": 0.2624439410327913
+        },
+        {
+          "magnitude_q05": 0.08465779009723608,
+          "magnitude_q50": 0.14010751689973033,
+          "magnitude_q95": 0.23097136602372517,
+          "magnitude_log_slope_per_GHz": 0.4166496454653391,
+          "unwrapped_phase_slope_rad_per_GHz": -37.91633658671295,
+          "residual_rms": 0.13636721907316354,
+          "residual_lag1": 0.051685770479985675
+        },
+        {
+          "magnitude_q05": 0.028254944658637503,
+          "magnitude_q50": 0.07255953288833907,
+          "magnitude_q95": 0.22970160005733423,
+          "magnitude_log_slope_per_GHz": 0.2060100402124771,
+          "unwrapped_phase_slope_rad_per_GHz": -37.749430008633865,
+          "residual_rms": 0.14115886151862156,
+          "residual_lag1": -0.1815816844767923
+        }
+      ]
+    }
+  ],
+  "overall_gate_pass": false,
+  "cst_candidates": "not_evaluable_as_native_training_generators: no RG58/Field random profile or measurement distribution"
+}

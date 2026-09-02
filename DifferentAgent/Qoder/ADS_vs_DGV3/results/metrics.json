@@ -1,0 +1,237 @@
+[
+  {
+    "title": "案例A：74 m 均匀完好线",
+    "length_m": 74.0,
+    "freq_points": 10000,
+    "s11": {
+      "max_abs_diff": 0.4714916087933311,
+      "rms_abs_diff": 0.11213469382197583,
+      "max_real_diff_fullband": 0.467778069702239,
+      "amp_diff_at_100mhz_db": -0.2168012648880584,
+      "phase_diff_at_100mhz_deg": 138.88959965180925,
+      "common_band": {
+        "start_hz": 100000.0,
+        "stop_hz": 345400000.0,
+        "max_amp_diff_db": 22.45314384038624,
+        "rms_amp_diff_db": 10.116549997144675,
+        "max_phase_diff_deg": 179.93736603908084,
+        "rms_phase_diff_deg": 134.7878818302938,
+        "phase_30deg_hz": 4800000.0,
+        "max_real_diff": 0.467778069702239,
+        "rms_abs_diff": 0.19070213096365413
+      }
+    },
+    "ifft": {
+      "max_impulse_abs_diff": 74275109.66609499,
+      "max_step_abs_diff": 0.5074207034859989,
+      "ads_end_step_gamma": 0.6676959891436693,
+      "dg_end_step_gamma": 0.8894412162226001,
+      "ads_end_impedance_ohm": 214.99585432529122,
+      "dg_end_impedance_ohm": 817.5491859978545,
+      "events": [
+        {
+          "event": "末端",
+          "true_pos_m": 74.0,
+          "ads_peak_pos_m": 74.32558536595674,
+          "ads_peak_amp": 51084139.6912132,
+          "dg_peak_pos_m": 74.02406169307253,
+          "dg_peak_amp": 74073471.86694166,
+          "pos_diff_m": -0.30152367288421544,
+          "amp_ratio_dg_over_ads": 1.4500287626392732
+        }
+      ]
+    }
+  },
+  {
+    "title": "案例B：74 m = 40 m完好 + 4 m老化 + 30 m完好（ADS默认拓扑）",
+    "length_m": 74.0,
+    "freq_points": 10000,
+    "s11": {
+      "max_abs_diff": 0.4739142309445069,
+      "rms_abs_diff": 0.1117925734675501,
+      "max_real_diff_fullband": 0.4691944829481959,
+      "amp_diff_at_100mhz_db": -0.13829899453605776,
+      "phase_diff_at_100mhz_deg": 137.3736569466659,
+      "common_band": {
+        "start_hz": 100000.0,
+        "stop_hz": 356600000.0,
+        "max_amp_diff_db": 23.72803175591543,
+        "rms_amp_diff_db": 10.085764758863746,
+        "max_phase_diff_deg": 179.95810925937366,
+        "rms_phase_diff_deg": 134.6094579916867,
+        "phase_30deg_hz": 4800000.0,
+        "max_real_diff": 0.4691944829481959,
+        "rms_abs_diff": 0.19020334019498988
+      }
+    },
+    "ifft": {
+      "max_impulse_abs_diff": 73832705.3270503,
+      "max_step_abs_diff": 0.5074507316074911,
+      "ads_end_step_gamma": 0.65560625296282,
+      "dg_end_step_gamma": 0.8859082828928465,
+      "ads_end_impedance_ohm": 206.2126043332125,
+      "dg_end_impedance_ohm": 786.2700613171023,
+      "events": [
+        {
+          "event": "老化段前端",
+          "true_pos_m": 40.0,
+          "ads_peak_pos_m": 40.102648493599375,
+          "ads_peak_amp": 1857620.5757965457,
+          "dg_peak_pos_m": 40.00214060263797,
+          "dg_peak_amp": 1595824.6056412067,
+          "pos_diff_m": -0.10050789096140278,
+          "amp_ratio_dg_over_ads": 0.8590691912189435
+        },
+        {
+          "event": "老化段后端",
+          "true_pos_m": 44.0,
+          "ads_peak_pos_m": 44.27372596849755,
+          "ads_peak_amp": -1340695.8425335037,
+          "dg_peak_pos_m": 44.173218077536156,
+          "dg_peak_amp": -1314147.8109785323,
+          "pos_diff_m": -0.10050789096139567,
+          "amp_ratio_dg_over_ads": 0.9801983188783492
+        },
+        {
+          "event": "末端",
+          "true_pos_m": 74.0,
+          "ads_peak_pos_m": 74.47634720239883,
+          "ads_peak_amp": 50597486.29107996,
+          "dg_peak_pos_m": 74.17482352951463,
+          "dg_peak_amp": 73702945.98582815,
+          "pos_diff_m": -0.30152367288420123,
+          "amp_ratio_dg_over_ads": 1.4566523238294062
+        }
+      ]
+    }
+  },
+  {
+    "title": "案例C：500 m 均匀完好线",
+    "length_m": 500.0,
+    "freq_points": 10000,
+    "s11": {
+      "max_abs_diff": 0.6001017938082165,
+      "rms_abs_diff": 0.030396940219209648,
+      "max_real_diff_fullband": 0.5182079596148753,
+      "amp_diff_at_100mhz_db": -90.65306906503372,
+      "phase_diff_at_100mhz_deg": -112.66303305479386,
+      "common_band": {
+        "start_hz": 100000.0,
+        "stop_hz": 34300000.0,
+        "max_amp_diff_db": 21.6382830885633,
+        "rms_amp_diff_db": 10.700956435867948,
+        "max_phase_diff_deg": 179.92815397722086,
+        "rms_phase_diff_deg": 116.98292702096953,
+        "phase_30deg_hz": 100000.0,
+        "max_real_diff": 0.5182079596148753,
+        "rms_abs_diff": 0.16380041807610302
+      }
+    },
+    "ifft": {
+      "max_impulse_abs_diff": 5404834.044774375,
+      "max_step_abs_diff": 0.7560713957754,
+      "ads_end_step_gamma": -0.09507433822873335,
+      "dg_end_step_gamma": 0.5797152184717677,
+      "ads_end_impedance_ohm": 38.32055076004142,
+      "dg_end_impedance_ohm": 187.53991156100332,
+      "events": [
+        {
+          "event": "末端",
+          "true_pos_m": 500.0,
+          "ads_peak_pos_m": 501.0318364425887,
+          "ads_peak_amp": -42453.5329105594,
+          "dg_peak_pos_m": 499.976503587494,
+          "dg_peak_amp": 5362480.553573158,
+          "pos_diff_m": -1.0553328550947185,
+          "amp_ratio_dg_over_ads": -126.31411771714662
+        }
+      ]
+    }
+  },
+  {
+    "title": "案例D：1500 m 均匀完好线",
+    "length_m": 1500.0,
+    "freq_points": 20000,
+    "s11": {
+      "max_abs_diff": 0.7063625503394105,
+      "rms_abs_diff": 0.012534540064811393,
+      "max_real_diff_fullband": 0.6194501736397917,
+      "amp_diff_at_100mhz_db": -202.6954623279779,
+      "phase_diff_at_100mhz_deg": -41.20021745824682,
+      "common_band": {
+        "start_hz": 50000.0,
+        "stop_hz": 7350000.0,
+        "max_amp_diff_db": 22.207760468200313,
+        "rms_amp_diff_db": 11.643386827335265,
+        "max_phase_diff_deg": 178.94973212078128,
+        "rms_phase_diff_deg": 106.59428445754249,
+        "phase_30deg_hz": 50000.0,
+        "max_real_diff": 0.6194501736397917,
+        "rms_abs_diff": 0.14358345791399124
+      }
+    },
+    "ifft": {
+      "max_impulse_abs_diff": 2886096.9876763937,
+      "max_step_abs_diff": 0.4832210769171633,
+      "ads_end_step_gamma": 0.16157863968610017,
+      "dg_end_step_gamma": 0.4340019003622839,
+      "ads_end_impedance_ohm": 59.55803483309995,
+      "dg_end_impedance_ohm": 125.78199685595315,
+      "events": [
+        {
+          "event": "末端",
+          "true_pos_m": 1500.0,
+          "ads_peak_pos_m": 1502.932064968896,
+          "ads_peak_amp": -17659.77953944812,
+          "dg_peak_pos_m": 1500.017263264616,
+          "dg_peak_amp": 911174.6296629612,
+          "pos_diff_m": -2.914801704279853,
+          "amp_ratio_dg_over_ads": -51.59603649794124
+        }
+      ]
+    }
+  },
+  {
+    "title": "案例E：2400 m 均匀完好线",
+    "length_m": 2400.0,
+    "freq_points": 33333,
+    "s11": {
+      "max_abs_diff": 0.7590990386394428,
+      "rms_abs_diff": 0.008654376107105117,
+      "max_real_diff_fullband": 0.5475430332150717,
+      "amp_diff_at_100mhz_db": -202.6953514486674,
+      "phase_diff_at_100mhz_deg": -41.20045070700744,
+      "common_band": {
+        "start_hz": 30000.0,
+        "stop_hz": 3540000.0,
+        "max_amp_diff_db": 25.15337486160017,
+        "rms_amp_diff_db": 13.132510496244896,
+        "max_phase_diff_deg": 179.59915096223932,
+        "rms_phase_diff_deg": 105.49320663559755,
+        "phase_30deg_hz": 30000.0,
+        "max_real_diff": 0.5475430332150717,
+        "rms_abs_diff": 0.1390095125802531
+      }
+    },
+    "ifft": {
+      "max_impulse_abs_diff": 2876805.41249675,
+      "max_step_abs_diff": 0.3873183767372822,
+      "ads_end_step_gamma": 0.2332039238862907,
+      "dg_end_step_gamma": 0.3925994488113097,
+      "ads_end_impedance_ohm": 66.73129670270723,
+      "dg_end_impedance_ohm": 113.94063263920388,
+      "events": [
+        {
+          "event": "末端",
+          "true_pos_m": 2400.0,
+          "ads_peak_pos_m": 2402.9502765703132,
+          "ads_peak_amp": -8813.800056200671,
+          "dg_peak_pos_m": 2399.9851603633942,
+          "dg_peak_amp": 401935.9763938957,
+          "pos_diff_m": -2.9651162069189922,
+          "amp_ratio_dg_over_ads": -45.60302864042466
+        }
+      ]
+    }
+  }
+]

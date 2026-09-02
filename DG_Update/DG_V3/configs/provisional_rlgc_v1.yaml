@@ -1,0 +1,127 @@
+schema_version: dg-v3
+generator_version: 3.0.0
+parameter_profile: provisional_rlgc_v1
+
+bands:
+  1ghz: {start_hz: 9000.0, stop_hz: 1000000000.0, points: 50000}
+  200mhz: {start_hz: 9000.0, stop_hz: 200000000.0, points: 6250}
+
+parameters:
+  profiles:
+    mixed_rg58_ratio: 0.20
+    field_open_probability: 0.85
+    rg58:
+      length_m: {min: 10.0, max: 200.0}
+      base_z0_ohm: {min: 49.2, max: 50.8}
+      epsr: {min: 2.18, max: 2.32}
+      alpha_db_per_m_at_100mhz: {min: 0.045, max: 0.135}
+      tan_delta_at_100mhz: {min: 0.00015, max: 0.0012}
+      material:
+        model: coax_rlgc
+        conductor_conductivity_s_per_m: 5.89107e7
+        dielectric_conductivity_s_per_m: 1.0e-12
+      joint_count: {min: 0, max: 5}
+      defect_count: {min: 0, max: 2}
+      open_load_ohm: {min: 650.0, max: 6500.0}
+    field:
+      length_m: {min: 100.0, max: 2500.0}
+      base_z0_ohm: {min: 42.0, max: 75.0}
+      epsr: {min: 2.10, max: 3.20}
+      alpha_db_per_m_at_100mhz: {min: 0.003, max: 0.026}
+      tan_delta_at_100mhz: {min: 0.00025, max: 0.0035}
+      material:
+        model: effective_rlgc
+        shunt_conductance_s_per_m: 0.0
+      joint_count: {min: 0, max: 5}
+      defect_count: {min: 0, max: 5}
+      open_load_ohm: {min: 450.0, max: 9000.0}
+      short_load_ohm: {min: 0.05, max: 2.0}
+
+  defects:
+    short:
+      length_m: {min: 0.20, max: 3.0}
+      z0_factor: {min: 0.55, max: 1.45}
+      epsr_delta: {min: -0.05, max: 0.12}
+      alpha_factor: {min: 1.0, max: 2.0}
+    aging:
+      length_fraction: {min: 0.05, max: 0.16}
+      length_m: {min: 20.0, max: 320.0}
+      z0_factor: {min: 0.92, max: 1.08}
+      epsr_delta: {min: 0.05, max: 0.25}
+      alpha_factor: {min: 1.4, max: 3.0}
+      debye:
+        delta_epsr_scale: 0.22
+        delta_epsr_min: 0.015
+        delta_epsr_max: 0.12
+        corner_hz: 35000000.0
+        exponent: 0.90
+        spacing_m: 18.0
+        tan_multiplier_base: 1.5
+        tan_alpha_ratio_scale: 0.55
+        tan_delta_min: 0.0006
+        tan_delta_max: 0.005
+        attack_fraction: 0.18
+        release_start: 0.58
+        residual_loss: 0.0
+    moisture_local:
+      length_fraction: {min: 0.03, max: 0.10}
+      length_m: {min: 15.0, max: 220.0}
+      z0_factor: {min: 0.88, max: 0.98}
+      epsr_delta: {min: 0.20, max: 0.80}
+      alpha_factor: {min: 2.0, max: 6.0}
+      debye:
+        delta_epsr_scale: 0.48
+        delta_epsr_min: 0.07
+        delta_epsr_max: 0.38
+        corner_hz: 13000000.0
+        exponent: 0.90
+        spacing_m: 8.0
+        tan_multiplier_base: 2.8
+        tan_alpha_ratio_scale: 1.05
+        tan_delta_min: 0.003
+        tan_delta_max: 0.024
+        attack_fraction: 0.12
+        release_start: 0.62
+        residual_loss: 0.30
+    moisture_distributed:
+      length_fraction: {min: 0.18, max: 0.55}
+      length_m: {min: 120.0, max: 900.0}
+      z0_factor: {min: 0.94, max: 0.995}
+      epsr_delta: {min: 0.20, max: 0.80}
+      alpha_factor: {min: 2.0, max: 6.0}
+      debye:
+        delta_epsr_scale: 0.42
+        delta_epsr_min: 0.06
+        delta_epsr_max: 0.34
+        corner_hz: 9000000.0
+        exponent: 0.90
+        spacing_m: 14.0
+        tan_multiplier_base: 2.7
+        tan_alpha_ratio_scale: 0.95
+        tan_delta_min: 0.0022
+        tan_delta_max: 0.020
+        attack_fraction: 0.10
+        release_start: 0.52
+        residual_loss: 0.38
+
+  joints:
+    variants:
+      light: {weight: 0.45, series_ohm: {min: 0.05, max: 0.60}, shunt_pf: {min: 0.05, max: 0.70}}
+      medium: {weight: 0.35, series_ohm: {min: 0.10, max: 1.80}, shunt_pf: {min: 0.10, max: 1.40}}
+      strong: {weight: 0.20, series_ohm: {min: 0.30, max: 3.50}, shunt_pf: {min: 0.20, max: 2.50}}
+
+  fixture:
+    series_ohm: {min: 0.15, max: 1.50}
+    shunt_pf: {min: 0.05, max: 1.50}
+    delay_ns: {min: 0.3, max: 3.0}
+    loss_db_at_100mhz: {min: 0.02, max: 0.35}
+    vna_directivity: {min: 0.0005, max: 0.006}
+    vna_source_match: {min: 0.002, max: 0.025}
+    vna_tracking_error: {min: 0.96, max: 1.04}
+    vna_tracking_phase_rad: {min: -0.08, max: 0.08}
+
+  noise:
+    rg58_sigma: {min: 0.00010, max: 0.0012}
+    field_sigma: {min: 0.0008, max: 0.0060}
+    correlation: {min: 0.90, max: 0.995}
+    low_frequency_factor: {min: 1.05, max: 1.80}

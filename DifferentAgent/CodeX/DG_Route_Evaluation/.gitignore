@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+output/s11/
+output/responses/
+

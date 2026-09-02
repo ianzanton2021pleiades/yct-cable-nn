@@ -1,0 +1,39 @@
+schema_version: dg-route-evaluation-1
+frequency_grid:
+  start_hz: 9000.0
+  stop_hz: 200000000.0
+  points: 10000
+fdr:
+  algorithm2_time_points: 10000
+  algorithm2_chunk_size: 256
+  distance_max_m: 60.0
+measurement:
+  seed: 20260902
+  delay_ns: 1.35
+  loss_db_at_100mhz: 0.12
+  directivity: 0.0022
+  source_match: 0.009
+  tracking: 0.985
+  tracking_phase_rad: 0.026
+  noise_sigma: 0.0014
+  noise_correlation: 0.965
+candidates:
+  - dg_v3_rlgc
+  - cst_v0_ladder_0p4m
+  - cst_v1_ladder_0p1m
+  - cst_v1_continuous
+cases:
+  - baseline
+  - overall_C20pF
+  - overall_G20k
+  - segmented_loss
+  - local_C32pF_15m
+  - local_G2k_15m
+  - local_C4pF_15m
+  - local_R10ohm_15m
+  - local_R50ohm_15m
+gates:
+  passivity_tolerance: 1.0e-9
+  terminal_position_tolerance_m: 1.0
+  terminal_amplitude_near_ratio: [0.75, 1.25]
+  effect_floor_relative: 1.0e-4

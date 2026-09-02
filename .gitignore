@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+DataSet/**
+AgentsStorage/**
+
+*.pt
+*.pth
+*.ckpt
+DG_Update/DG_V3/validation_output/

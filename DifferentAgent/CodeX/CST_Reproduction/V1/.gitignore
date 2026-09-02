@@ -1,0 +1,6 @@
+assets/
+s11_output/
+output/
+__pycache__/
+*.pyc
+smoke_*/
