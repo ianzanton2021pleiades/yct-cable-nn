@@ -1,4 +1,4 @@
-schema_version: dg-route-evaluation-1
+schema_version: v27-route-report-cases-1
 frequency_grid:
   start_hz: 9000.0
   stop_hz: 200000000.0
@@ -17,10 +17,24 @@ measurement:
   tracking_phase_rad: 0.026
   noise_sigma: 0.0014
   noise_correlation: 0.965
-candidates:
-  - dg_v3_rlgc
-  - cst_v1_ladder_0p1m
-  - cst_v1_continuous
+# 两条 V2.7 路线的基准介质参数（报告工况在该基准上按比例修改）
+routes:
+  v27_rg58:
+    label: "V2.7 RG58 路线"
+    color: "#1f77b4"
+    z0_ohm: 50.0
+    epsr: 2.23
+    alpha_db_per_m_100mhz: 0.14
+    tan_delta_100mhz: 2.5e-4
+    sigma_dielectric: 1.0e-12
+  v27_field:
+    label: "V2.7 Field 路线"
+    color: "#d62728"
+    z0_ohm: 50.0
+    epsr: 2.3
+    alpha_db_per_m_100mhz: 0.20
+    tan_delta_100mhz: 8.0e-4
+    sigma_dielectric: 1.0e-12
 cases:
   - baseline
   - overall_C20pF
@@ -31,8 +45,3 @@ cases:
   - local_C4pF_15m
   - local_R10ohm_15m
   - local_R50ohm_15m
-gates:
-  passivity_tolerance: 1.0e-9
-  terminal_position_tolerance_m: 1.0
-  terminal_amplitude_near_ratio: [0.75, 1.25]
-  effect_floor_relative: 1.0e-4

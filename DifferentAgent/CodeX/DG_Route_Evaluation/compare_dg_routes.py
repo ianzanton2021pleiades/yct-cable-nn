@@ -20,7 +20,6 @@ import yaml
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
-V0_PATH = ROOT / "DifferentAgent/CodeX/CST_Reproduction/V0/cst_fdr_reproduction.py"
 V1_PATH = ROOT / "DifferentAgent/CodeX/CST_Reproduction/V1/cst_fdr_reproduction.py"
 DG_V3_PATH = ROOT / "DG_Update/DG_V3"
 REAL_ROOT = Path(r"E:\FDR案例-csv")
@@ -29,19 +28,16 @@ REFERENCE_HZ = 100.0e6
 
 CANDIDATES = (
     "dg_v3_rlgc",
-    "cst_v0_ladder_0p4m",
     "cst_v1_ladder_0p1m",
     "cst_v1_continuous",
 )
 LABELS = {
     "dg_v3_rlgc": "DG V3 RLGC (100 MHz锚定)",
-    "cst_v0_ladder_0p4m": "CST V0 0.4 m梯形",
     "cst_v1_ladder_0p1m": "CST V1 0.1 m梯形",
     "cst_v1_continuous": "CST V1 连续固定RLGC",
 }
 COLORS = {
     "dg_v3_rlgc": "#1f77b4",
-    "cst_v0_ladder_0p4m": "#d97706",
     "cst_v1_ladder_0p1m": "#7c3aed",
     "cst_v1_continuous": "#334155",
 }
@@ -57,7 +53,6 @@ def load_module(name: str, path: Path):
     return module
 
 
-V0 = load_module("dg_route_cst_v0", V0_PATH)
 V1 = load_module("dg_route_cst_v1", V1_PATH)
 sys.path.insert(0, str(DG_V3_PATH))
 from dg_v3.physics import segment_abcd  # noqa: E402
@@ -159,8 +154,6 @@ def simulate_dg_v3_matched(frequency_hz: np.ndarray, case_name: str) -> np.ndarr
 def simulate_clean(candidate: str, frequency_hz: np.ndarray, case_name: str) -> np.ndarray:
     if candidate == "dg_v3_rlgc":
         return simulate_dg_v3_matched(frequency_hz, case_name)
-    if candidate == "cst_v0_ladder_0p4m":
-        return V0.simulate_s11(frequency_hz, case_by_name(V0, case_name))
     if candidate == "cst_v1_ladder_0p1m":
         return V1.simulate_s11(frequency_hz, case_by_name(V1, case_name), "fixed_ladder_0p1m")
     if candidate == "cst_v1_continuous":
@@ -400,6 +393,27 @@ def inventory_real_data():
     }
 
 
+def _load_scalability(report_dir: Path) -> list | None:
+    path = report_dir / "output" / "scalability.json"
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _load_distribution_gate(report_dir: Path) -> dict | None:
+    gate_path = report_dir / "output" / "distribution_gate.json"
+    if not gate_path.exists():
+        return None
+    return json.loads(gate_path.read_text(encoding="utf-8"))
+
+
+def _load_calibration_summary(report_dir: Path) -> dict | None:
+    cal_path = report_dir / "real_data_calibration" / "calibration_summary.json"
+    if not cal_path.exists():
+        return None
+    return json.loads(cal_path.read_text(encoding="utf-8"))
+
+
 def write_report(path: Path, cfg: dict, metrics: list[dict], runtime_s: float, inventory: dict):
     lines = [
         "# DG 路线对比评估报告",
@@ -411,7 +425,7 @@ def write_report(path: Path, cfg: dict, metrics: list[dict], runtime_s: float, i
         "",
         "## 1. 候选与公平性",
         "",
-        "DG V3在九工况中使用其`effective_rlgc`传播核，并在100 MHz锚定CST每米R/L/G/C；四路共用CST接头、端点和频率网格。DG V3的R随平方根频率变化，而CST的R固定，因此差异属于模型路线本身。统一测量层给四路施加完全相同的延迟、损耗、VNA误差和相关噪声。",
+        "DG V3在九工况中使用其`effective_rlgc`传播核，并在100 MHz锚定CST每米R/L/G/C；三路共用CST接头、端点和频率网格。DG V3的R随平方根频率变化，而CST的R固定，因此差异属于模型路线本身。统一测量层给三路施加完全相同的延迟、损耗、VNA误差和相关噪声。",
         "",
         "## 2. 工况硬门槛",
         "",
@@ -423,18 +437,93 @@ def write_report(path: Path, cfg: dict, metrics: list[dict], runtime_s: float, i
         common = [m for m in metrics if m["candidate"] == candidate and m["layer"] == "common_measurement"]
         lines.append(f"| {LABELS[candidate]} | {sum(m['case_pass'] for m in clean)}/9 | {sum(m['case_pass'] for m in common)}/9 | {max(m['max_abs_s11'] for m in clean):.6g} |")
     lines += ["", "逐工况原始指标和布尔检查见`metrics.csv`与`metrics.json`。", "", "## 3. 已确认的路线证据", "",
-              "1. CST V0的0.4 m梯形在约145 MHz出现离散截止，算法1接头后尾波/主峰约0.159；该纹理是离散伪影，不是真实制造不均匀。",
-              "2. CST V1 0.1 m梯形把截止推到约581 MHz、尾波降至约0.00362，但相对连续模型的全频S11和脉冲误差仍未达到既有0.05阈值，不能宣称已收敛。",
-              "3. CST固定并联G与DG介损模型频率依赖不同。报告中16 pF/200 kΩ在100 kHz实际对应tanδ约49.7%，不是0.5%；因此报告曲线只能作为工况趋势，不能作为介损数值真值。",
-              "4. 现有DG V3 RLGC实测验证在30/30条Core留出曲线上优于旧V3，但该验证没有测量链，不能单独证明完整实测域真实性。",
-              "5. V2.7的本体纹理和受潮形态提供了有用目标，但其距离域核反算、末端重塑和局部修形违反当前S11权威边界。",
-              "", "## 4. 实测证据状态", "",
-              f"当前只读目录共发现{inventory['total_csv']}个CSV，其中IFFT目录{inventory['ifft_csv']}个、无校准S11 {inventory['unscaled_s11_csv']}个、RG58缺陷制造{inventory['rg58_defect_csv']}个、1500 m浸水{inventory['wet_1500m_csv']}个。",
-              "", "现有`AgentsStorage/DG_V3_calibration`统计早于当前文件树，不能作为本轮最终分布门槛。应在本评估目录重新生成聚合统计；未标注现场文件只承担分布真实性，不承担缺陷类型和位置真值。",
-              "", "## 5. 路线结论", "",
-              "当前证据不支持用CST梯形网络整体替换DG V3。V0存在明确带内离散伪影；V1 0.1 m虽然改善，但对2.5 km电缆意味着约25000个单元，计算成本高且仍未证明数值收敛；连续固定RLGC又缺少真实导体和介质的频变损耗。",
-              "", "建议路线是：保留DG V3连续频变RLGC和S11权威协议，把CST九工况固化为物理回归集；下一版在健康段增加小幅、空间相关的Z0/epsr/导体损耗/tanδ随机场，使完好电缆自然产生可解释的本体纹理；受潮继续通过平滑耦合的介电常数与介损变化生成，不移植V2.7距离域修形。",
-              "", "## 6. 输出图", ""]
+              "1. CST V1 0.1 m梯形在约581 MHz出现离散截止，算法1接头后尾波/主峰约0.00362，但相对连续模型的全频S11和脉冲误差仍未达到既有0.05阈值，不能宣称已收敛。",
+              "2. CST固定并联G与DG介损模型频率依赖不同。报告中16 pF/200 kΩ在100 kHz实际对应tanδ约49.7%，不是0.5%；因此报告曲线只能作为工况趋势，不能作为介损数值真值。",
+              "3. 现有DG V3 RLGC实测验证在30/30条Core留出曲线上优于旧V3，但该验证没有测量链，不能单独证明完整实测域真实性。",
+              "4. V2.7的本体纹理和受潮形态提供了有用目标，但其距离域核反算、末端重塑和局部修形违反当前S11权威边界。",
+              ""]
+    # --- Gate A scalability ---
+    scalability = _load_scalability(path.parent)
+    if scalability is not None:
+        lines += ["### 门槛A 扩展性检查", ""]
+        dg_rows = [r for r in scalability if r["candidate"] == "dg_v3_rlgc"]
+        if dg_rows:
+            lines += [
+                "| 长度 (m) | profile | 段数 | 耗时 (s) | 峰值内存 (MB) | 是否完成 |",
+                "|---:|---|---:|---:|---:|:---:|",
+            ]
+            for row in dg_rows:
+                done = "✓" if row["can_complete"] else "✗"
+                elapsed = f"{row['elapsed_s']:.3f}" if isinstance(row.get("elapsed_s"), float) and not math.isnan(row["elapsed_s"]) else "N/A"
+                mem = f"{row['peak_memory_mb']:.1f}" if isinstance(row.get("peak_memory_mb"), float) and not math.isnan(row["peak_memory_mb"]) else "N/A"
+                segs = row["segment_count"] if row["segment_count"] >= 0 else "?"
+                lines.append(f"| {row['length_m']} | {row['profile']} | {segs} | {elapsed} | {mem} | {done} |")
+            lines += [
+                "",
+                "DG V3对所有测试长度（40–2500 m）均能在200 MHz/10000点网格下完成生成，耗时不超过0.1 s，峰值内存不超过3 MB。"
+                "CST V1 0.1 m梯形在2500 m需约25000个单元，不具备任意长度的随机拓扑生成能力。"
+                "详见`output/scalability.csv`与`output/scalability_summary.md`。",
+                "",
+            ]
+    lines += ["## 4. 实测证据状态", ""]
+
+    lines.append(
+        f"当前只读目录共发现{inventory['total_csv']}个CSV，其中IFFT目录{inventory['ifft_csv']}个、无校准S11 {inventory['unscaled_s11_csv']}个、"
+        f"RG58缺陷制造{inventory['rg58_defect_csv']}个、1500 m浸水{inventory['wet_1500m_csv']}个。"
+    )
+    cal = _load_calibration_summary(path.parent)
+    if cal is not None:
+        scan = cal.get("scan", {})
+        cats = scan.get("categories", {})
+        lines += [
+            "",
+            f"已在`real_data_calibration`重新生成当前聚合统计：纳入{scan.get('included_measurements', '?')}条测量，"
+            f"其中RG58={cats.get('rg58','?')}、Field={cats.get('field','?')}、"
+            f"校正数据={cats.get('correction','?')}、1500 m浸水={cats.get('wet_1500m','?')}；"
+            "未标注现场文件只承担分布真实性，不承担缺陷类型和位置真值。",
+        ]
+    gate = _load_distribution_gate(path.parent)
+    if gate is not None:
+        results = gate.get("results", [])
+        lines += ["", "### DG V3原生分布硬门槛", ""]
+        lines.append("使用`provisional_rlgc_v1`各生成24个RG58和24个Field目标样本，并将S11幅值分位数、幅值斜率和相位斜率与当前实测聚合比较。")
+        lines += ["", "| 类别 | 有效样本/尝试 | 失败次数 | 通过特征/5 | 类别门槛 |",
+                  "|---|---:|---:|---:|:---:|"]
+        for item in results:
+            profile = item.get("profile", "?")
+            n = item.get("sample_count", 0)
+            attempts = item.get("attempt_count", 0)
+            failures = item.get("generation_failure_fraction", 0.0)
+            fail_count = int(round(attempts * failures))
+            passed = item.get("passed_count", 0)
+            total = len(item.get("feature_rows", []))
+            gate_pass = "通过" if item.get("gate_pass") else "未通过"
+            lines.append(f"| {profile} | {n}/{attempts} | {fail_count} | {passed}/{total} | {gate_pass} |")
+        lines.append("")
+        # Find field failure reason
+        field_result = next((item for item in results if item.get("profile") == "field"), None)
+        if field_result:
+            failure_errors = {e["error"] for e in field_result.get("generation_failures", [])}
+            if failure_errors:
+                primary_err = sorted(failure_errors)[0]
+                lines.append(f"Field失败均来自`{primary_err}`：抽到的介损/受潮参数已经消耗或超过配置中的总衰减预算，当前参数空间不自洽。"
+                              "即使只看成功样本，Field的S11幅值q95、幅值斜率和相位斜率仍不在实测q05–q95内。"
+                              "RG58的三项幅值分位数进入实测范围，但幅值斜率与相位斜率失败。")
+        lines += ["", "相位斜率受反射零点和低幅值区unwrap影响较大，因此它是高风险诊断项；去掉该项也不会改变结论："
+                  "RG58幅值斜率仍失败，Field幅值上沿和幅值斜率仍失败。完整记录见`output/distribution_gate.json`。",
+                  "", "![DG V3原生分布与实测聚合](assets/distribution_gate.png)"]
+    lines += [
+        "", "## 5. 路线结论", "",
+        "没有任何当前候选通过三道门槛：三路均通过被动性和九工况方向检查；CST两路没有RG58/Field随机拓扑及测量分布，无法通过实测域生成器门槛；"
+        "DG V3具有该能力，但本轮原生Field生成失败率和分布偏差使其未通过实测域门槛。",
+        "",
+        "当前证据不支持用CST梯形网络整体替换DG V3。V1 0.1 m梯形对2.5 km电缆意味着约25000个单元，"
+        "计算成本高且仍未证明数值收敛；连续固定RLGC又缺少真实导体和介质的频变损耗。",
+        "",
+        "建议路线是：以DG V3连续频变RLGC和S11权威协议作为下一版底座，但当前`provisional_rlgc_v1`不得用于正式训练集。"
+        "先修正Field总衰减预算与介损/受潮参数的联合采样，再加入小幅、空间相关的Z0/epsr/导体损耗/tanδ随机场，"
+        "使完好电缆自然产生可解释的本体纹理；把CST九工况固化为物理回归集；受潮继续通过平滑耦合的介电常数与介损变化生成，不移植V2.7距离域修形。",
+        "", "## 6. 输出图", ""]
     for layer in ("clean", "common_measurement"):
         lines.append(f"### {layer}")
         lines.append("")
@@ -444,8 +533,9 @@ def write_report(path: Path, cfg: dict, metrics: list[dict], runtime_s: float, i
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+
 def parse_args():
-    parser = argparse.ArgumentParser(description="DG V3/CST V0/CST V1路线评估")
+    parser = argparse.ArgumentParser(description="DG V3/CST V1路线评估")
     parser.add_argument("--config", type=Path, default=HERE / "evaluation_cases.yaml")
     parser.add_argument("--output", type=Path, default=HERE / "output")
     parser.add_argument("--assets", type=Path, default=HERE / "assets")

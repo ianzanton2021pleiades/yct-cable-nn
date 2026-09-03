@@ -28,7 +28,7 @@
 
 11.需要长时间执行的操作（例如数据集生成、模型训练、模型验证）我建议你写好脚本后（你先检验一下脚本是否能正常运行）然后输出给我，由我来执行脚本进行长时间操作，我会返回给你测试结果信息，其中我希望训练的时候在命令行界面能有比较明确的进度信息（也就是有那个进度条），模型训练的时候会保存其训练过程的信息。
 
-12.对于Agent，可以在本项目的DifferentAgent目录下创建一个属于自己的文件夹，文件夹名字为Agent名字，用来存放本Agent的专有内容，Agent名称根据实际来，因为可能是CodeX、ZCode、OpenCode、Qoder、Workbuddy之类的。
+12.对于Agent，可以在本项目的DifferentAgent目录下创建一个属于自己的文件夹，文件夹名字为Agent名字，用来存放本Agent的专有内容，Agent名称根据实际来，因为可能是CodeX、ZCode、OpenCode、Qoder、Workbuddy之类的。在 DifferentAgent/<Agent>/<实验目录>中，凡是由现有脚本可再生成的试验输出，必须在该实验目录新建 .gitignore并至少忽略 output/、assets/、s11_output/、__pycache__/和 *.pyc（有冒烟运行时按需加入 smoke_/）；脚本、配置与报告应保留。
 
 13.对于没有必要纳入Git的文件（主要是生成的数据集），就不要纳入Git更新列表内了
 
