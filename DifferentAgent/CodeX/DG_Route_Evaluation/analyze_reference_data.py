@@ -152,12 +152,176 @@ def read_temperature_archive(zpath: Path) -> dict[int, tuple[str, np.ndarray, np
     return result
 
 
+def read_no_joint_archive(zpath: Path) -> dict[int, dict[str, tuple[str, np.ndarray, np.ndarray]]]:
+    """Read the 10/30/40 m RG58 three-load archive without extracting it."""
+    result: dict[int, dict[str, tuple[str, np.ndarray, np.ndarray]]] = {}
+    pattern = re.compile(r"RG58\s+(\d+)m-(50ohmend|open|short)", re.IGNORECASE)
+    with zipfile.ZipFile(zpath) as archive:
+        for name in archive.namelist():
+            if not name.lower().endswith(".csv"):
+                continue
+            match = pattern.search(Path(name).stem)
+            if match is None:
+                raise RuntimeError(f"cannot parse no-joint member {safe_name(name)}")
+            length_m = int(match.group(1))
+            terminal = match.group(2).lower()
+            terminal = "50ohm" if terminal == "50ohmend" else terminal
+            result.setdefault(length_m, {})[terminal] = (name, *read_s11_csv(archive.read(name)))
+    return result
+
+
 def quantiles(values: np.ndarray) -> dict[str, float]:
     values = np.asarray(values, float)
     values = values[np.isfinite(values)]
     if values.size == 0:
         return {"q05": math.nan, "q50": math.nan, "q95": math.nan}
     return {"q05": float(np.quantile(values, 0.05)), "q50": float(np.quantile(values, 0.50)), "q95": float(np.quantile(values, 0.95))}
+
+
+def linear_fit(x: np.ndarray, y: np.ndarray) -> dict[str, float]:
+    x = np.asarray(x, float)
+    y = np.asarray(y, float)
+    keep = np.isfinite(x) & np.isfinite(y)
+    x = x[keep]
+    y = y[keep]
+    if x.size < 2:
+        return {"points": int(x.size), "slope": math.nan, "intercept": math.nan, "rmse": math.nan, "r2": math.nan}
+    coefficient = np.polyfit(x, y, 1)
+    predicted = np.polyval(coefficient, x)
+    residual = y - predicted
+    total = np.sum((y - np.mean(y)) ** 2)
+    return {
+        "points": int(x.size),
+        "slope": float(coefficient[0]),
+        "intercept": float(coefficient[1]),
+        "rmse": float(np.sqrt(np.mean(residual ** 2))),
+        "r2": float(1.0 - np.sum(residual ** 2) / total) if total > 0.0 else math.nan,
+    }
+
+
+def fit_loss_models(frequency_hz: np.ndarray, resistance: np.ndarray) -> dict[str, object]:
+    """Compare finite-Rdc, sqrt(f), and linear-f models on COMSOL R."""
+    frequency_hz = np.asarray(frequency_hz, float)
+    resistance = np.asarray(resistance, float)
+    keep = (frequency_hz >= 1.0e5) & (frequency_hz <= 2.0e8) & np.isfinite(resistance)
+    x = frequency_hz[keep] / 1.0e8
+    y = resistance[keep]
+    models = {
+        "Rdc_plus_sqrt_f": np.column_stack((np.ones_like(x), np.sqrt(x))),
+        "Rdc_plus_linear_f": np.column_stack((np.ones_like(x), x)),
+        "sqrt_f_through_origin": np.sqrt(x)[:, None],
+    }
+    result = {}
+    for name, design in models.items():
+        coefficients, _, _, _ = np.linalg.lstsq(design, y, rcond=None)
+        prediction = design @ coefficients
+        residual = y - prediction
+        total = np.sum((y - np.mean(y)) ** 2)
+        result[name] = {
+            "coefficients": [float(value) for value in coefficients],
+            "rmse_ohm_per_m": float(np.sqrt(np.mean(residual ** 2))),
+            "r2": float(1.0 - np.sum(residual ** 2) / total) if total > 0.0 else math.nan,
+        }
+    return {"fit_range_hz": [1.0e5, 2.0e8], "models": result}
+
+
+def comsol_high_frequency_anchor(tables: dict[str, pd.DataFrame]) -> dict[str, object]:
+    table = tables["0-200M-RLGC-COMSOL"]
+    frequency = table["frequency_hz"].to_numpy(float)
+    resistance = table["R_ohm_per_m"].to_numpy(float)
+    inductance = table["L_h_per_m"].to_numpy(float)
+    finite = np.isfinite(resistance)
+    frequency = frequency[finite]
+    resistance = resistance[finite]
+    inductance = inductance[finite]
+    reference_hz = 100.0e6
+    r_ref = float(np.interp(reference_hz, frequency, resistance))
+    l_ref = float(np.interp(reference_hz, frequency[np.isfinite(inductance)], inductance[np.isfinite(inductance)]))
+    l_external = l_ref - r_ref / (2.0 * math.pi * reference_hz)
+    rows = []
+    for target in (9.0e3, 1.0e5, 1.0e6, 1.0e7, 1.0e8, 2.0e8):
+        lookup_table = tables["0-10M-RLGC-COMSOL"] if target <= 1.0e7 else table
+        lookup_frequency = lookup_table["frequency_hz"].to_numpy(float)
+        lookup_resistance = lookup_table["R_ohm_per_m"].to_numpy(float)
+        lookup_inductance = lookup_table["L_h_per_m"].to_numpy(float)
+        r_comsol = float(np.interp(target, lookup_frequency, lookup_resistance))
+        l_comsol = float(np.interp(target, lookup_frequency[np.isfinite(lookup_inductance)], lookup_inductance[np.isfinite(lookup_inductance)]))
+        r_sqrt = r_ref * math.sqrt(target / reference_hz)
+        l_sqrt = l_external + r_sqrt / (2.0 * math.pi * target)
+        rows.append({
+            "frequency_hz": target,
+            "comsol_R_ohm_per_m": r_comsol,
+            "anchored_sqrt_R_ohm_per_m": r_sqrt,
+            "R_relative_error": (r_sqrt - r_comsol) / r_comsol,
+            "comsol_L_nh_per_m": l_comsol * 1.0e9,
+            "anchored_sqrt_L_nh_per_m": l_sqrt * 1.0e9,
+            "L_relative_error": (l_sqrt - l_comsol) / l_comsol,
+        })
+    return {
+        "anchor_frequency_hz": reference_hz,
+        "Rdc_at_zero_hz_ohm_per_m": float(resistance[0]),
+        "R_at_100mhz_ohm_per_m": r_ref,
+        "L_at_100mhz_h_per_m": l_ref,
+        "L_external_after_anchor_h_per_m": l_external,
+        "fit": fit_loss_models(frequency, resistance),
+        "rows": rows,
+    }
+
+
+def terminal_contrast_summary(
+    traces_by_length: dict[int, dict[str, tuple[str, np.ndarray, np.ndarray]]],
+) -> dict[str, object]:
+    """Estimate one-way loss from open-short contrast over 10/30/40 m."""
+    lengths = np.asarray(sorted(traces_by_length), float)
+    reference_frequency = traces_by_length[int(lengths[0])]["open"][1][1:]
+    contrast_by_length = []
+    for length in lengths.astype(int):
+        data = traces_by_length[length]
+        frequency = data["open"][1][1:]
+        if not np.allclose(frequency, reference_frequency, rtol=0.0, atol=1.0):
+            raise RuntimeError("no-joint frequency grids are not aligned")
+        contrast = np.abs(data["open"][2][1:] - data["short"][2][1:]) / 2.0
+        contrast_by_length.append(contrast)
+    contrast_by_length = np.asarray(contrast_by_length)
+    loss_db = 20.0 * np.log10(np.maximum(contrast_by_length, 1.0e-12))
+    alpha_one_way = []
+    fit_r2 = []
+    for column in range(loss_db.shape[1]):
+        fit = linear_fit(lengths, loss_db[:, column])
+        alpha_one_way.append(-fit["slope"] / 2.0)
+        fit_r2.append(fit["r2"])
+    alpha_one_way = np.asarray(alpha_one_way)
+    fit_r2 = np.asarray(fit_r2)
+    bands = {}
+    for name, mask in band_masks(reference_frequency):
+        if not np.any(mask):
+            continue
+        values = alpha_one_way[mask]
+        bands[name] = {
+            "alpha_one_way_db_per_m": quantiles(values),
+            "positive_alpha_fraction": float(np.mean(values >= 0.0)),
+            "length_fit_r2": quantiles(fit_r2[mask]),
+            "contrast_db_q50_by_length": {str(int(length)): float(np.quantile(loss_db[index, mask], 0.50)) for index, length in enumerate(lengths)},
+        }
+    frequency_dependence = {}
+    for label, low, high in (("100k_200M", 1.0e5, 2.0e8), ("1M_100M", 1.0e6, 1.0e8), ("10M_500M", 1.0e7, 5.0e8)):
+        mask = (reference_frequency >= low) & (reference_frequency <= high) & np.isfinite(alpha_one_way)
+        x = reference_frequency[mask] / 1.0e8
+        y = alpha_one_way[mask]
+        sqrt_fit = linear_fit(np.sqrt(x), y)
+        linear_fit_result = linear_fit(x, y)
+        frequency_dependence[label] = {
+            "fit_range_hz": [low, high],
+            "alpha_vs_sqrt_f": sqrt_fit,
+            "alpha_vs_f": linear_fit_result,
+        }
+    return {
+        "lengths_m": [int(value) for value in lengths],
+        "frequency_points_after_first": int(reference_frequency.size),
+        "interpretation": "For a near-50-ohm uniform line, open-short contrast decays with round-trip propagation; the derived alpha is an effective one-way loss estimate, not a de-embedded conductor-only loss.",
+        "bands": bands,
+        "frequency_dependence": frequency_dependence,
+    }
 
 
 def band_masks(frequency_hz: np.ndarray):
@@ -304,6 +468,20 @@ def peak_in_window(distance: np.ndarray, values: np.ndarray, low: float, high: f
     return {"position_m": float(distance[index]), "value": float(values[index]), "abs_value": float(abs(values[index]))}
 
 
+def extrema_in_window(distance: np.ndarray, values: np.ndarray, low: float, high: float) -> dict[str, dict[str, float]]:
+    mask = (distance >= low) & (distance <= high) & np.isfinite(values)
+    if not np.any(mask):
+        empty = {"position_m": math.nan, "value": math.nan, "abs_value": math.nan}
+        return {"positive": empty, "negative": empty}
+    indices = np.flatnonzero(mask)
+    positive_index = indices[int(np.argmax(values[indices]))]
+    negative_index = indices[int(np.argmin(values[indices]))]
+    return {
+        "positive": {"position_m": float(distance[positive_index]), "value": float(values[positive_index]), "abs_value": float(abs(values[positive_index]))},
+        "negative": {"position_m": float(distance[negative_index]), "value": float(values[negative_index]), "abs_value": float(abs(values[negative_index]))},
+    }
+
+
 def fdr_summary_for_length(a1: dict, a2: dict, length_m: float) -> dict[str, object]:
     a1_impulse = np.asarray(a1["impulse_real_ref"])
     a2_impulse = np.asarray(a2["impulse_smoothed"])
@@ -332,6 +510,47 @@ def fdr_summary(a1: dict, a2: dict) -> dict[str, object]:
     return fdr_summary_for_length(a1, a2, NOMINAL_TOTAL_LENGTH_M)
 
 
+def temperature_delta_summary(
+    temperature_data: dict[int, tuple[str, np.ndarray, np.ndarray]],
+    temperature_fdr: dict[int, tuple[dict, dict]],
+    reference_temperature: int,
+) -> dict[str, object]:
+    reference_frequency = temperature_data[reference_temperature][1]
+    reference_s11 = temperature_data[reference_temperature][2]
+    reference_a1, reference_a2 = temperature_fdr[reference_temperature]
+    result: dict[str, object] = {"reference_temperature_C": reference_temperature, "temperatures": {}}
+    for temperature in sorted(temperature_data):
+        frequency, s11 = temperature_data[temperature][1], temperature_data[temperature][2]
+        s11_real = np.interp(reference_frequency, frequency, s11.real)
+        s11_imag = np.interp(reference_frequency, frequency, s11.imag)
+        delta_s11 = s11_real + 1j * s11_imag - reference_s11
+        s11_bands = {}
+        for name, mask in band_masks(reference_frequency):
+            if np.any(mask):
+                s11_bands[name] = {"rms": float(np.sqrt(np.mean(np.abs(delta_s11[mask]) ** 2))), "q50": float(np.quantile(np.abs(delta_s11[mask]), 0.50)), "q95": float(np.quantile(np.abs(delta_s11[mask]), 0.95))}
+
+        a1, a2 = temperature_fdr[temperature]
+        ref_d1 = np.asarray(reference_a1["distance_m"])
+        impulse1 = np.interp(ref_d1, np.asarray(a1["distance_m"]), np.asarray(a1["impulse_real_raw"]))
+        delta_impulse1 = (impulse1 - np.asarray(reference_a1["impulse_real_raw"])) / max(float(reference_a1["step_scale"]), 1.0e-30)
+        ref_d2 = np.asarray(reference_a2["distance_impulse_m"])
+        impulse2 = np.interp(ref_d2, np.asarray(a2["distance_impulse_m"]), np.asarray(a2["impulse_raw"]))
+        delta_impulse2 = impulse2 - np.asarray(reference_a2["impulse_raw"])
+        local1 = extrema_in_window(ref_d1, delta_impulse1, 38.0, 48.0)
+        local2 = extrema_in_window(ref_d2, delta_impulse2, 38.0, 48.0)
+        local_mask1 = (ref_d1 >= 38.0) & (ref_d1 <= 48.0)
+        far_mask1 = (ref_d1 >= 55.0) & (ref_d1 <= 85.0)
+        result["temperatures"][str(temperature)] = {
+            "temperature_delta_C": int(temperature - reference_temperature),
+            "s11": s11_bands,
+            "algorithm1_local_delta_impulse_normalized": local1,
+            "algorithm1_local_rms_normalized": float(np.sqrt(np.mean(delta_impulse1[local_mask1] ** 2))),
+            "algorithm1_far_rms_normalized": float(np.sqrt(np.mean(delta_impulse1[far_mask1] ** 2))),
+            "algorithm2_local_delta_impulse_raw": local2,
+        }
+    return result
+
+
 def configure_plot() -> None:
     plt.rcParams.update({
         "font.family": "sans-serif",
@@ -344,7 +563,7 @@ def configure_plot() -> None:
     })
 
 
-def save_s11_plot(path: Path, traces: dict[str, tuple[np.ndarray, np.ndarray]]) -> None:
+def save_s11_plot(path: Path, traces: dict[str, tuple[np.ndarray, np.ndarray]], x_max_mhz: float | None = None) -> None:
     configure_plot()
     fig, axes = plt.subplots(2, 2, figsize=(13.5, 8.5), dpi=200)
     for label, (frequency_hz, s11) in traces.items():
@@ -359,7 +578,8 @@ def save_s11_plot(path: Path, traces: dict[str, tuple[np.ndarray, np.ndarray]]) 
         axis.set_title(title)
         axis.set_xlabel("Frequency (MHz)")
         axis.set_ylabel(ylabel)
-        axis.set_xlim(0.0, min(1_000.0, max(float(f[-1] / 1.0e6) for f, _ in traces.values())))
+        maximum = max(float(f[-1] / 1.0e6) for f, _ in traces.values())
+        axis.set_xlim(0.0, min(maximum, 1_000.0 if x_max_mhz is None else x_max_mhz))
         axis.grid(True, lw=0.4, color="#cbd5e1")
         axis.tick_params(direction="in", top=True, right=True)
     axes[0, 0].legend(fontsize=8)
@@ -423,9 +643,9 @@ def comsol_table_summary(tables: dict[str, pd.DataFrame]) -> dict[str, object]:
         for target in sample_frequencies:
             index = int(np.nanargmin(np.abs(frequency - target)))
             row = {"requested_hz": target, "frequency_hz": float(frequency[index])}
-            for column, scale in (("R_ohm_per_m", 1.0), ("L_h_per_m", 1.0e9), ("G_s_per_m", 1.0e12), ("C_f_per_m", 1.0e12)):
+            for column, output_name, scale in (("R_ohm_per_m", "R_ohm_per_m", 1.0), ("L_h_per_m", "L_nh_per_m", 1.0e9), ("G_s_per_m", "G_pS_per_m", 1.0e12), ("C_f_per_m", "C_pf_per_m", 1.0e12)):
                 value = table[column].iloc[index]
-                row[column] = float(value * scale) if np.isfinite(value) else math.nan
+                row[output_name] = float(value * scale) if np.isfinite(value) else math.nan
             zc = table.iloc[index]["Zc_ohm"]
             gamma = table.iloc[index]["gamma_per_m"]
             row["Zc_real_ohm"] = float(zc.real) if np.isfinite(zc.real) else math.nan
@@ -440,6 +660,21 @@ def comsol_table_summary(tables: dict[str, pd.DataFrame]) -> dict[str, object]:
             "rows": rows,
         }
     return output
+
+
+def effective_rlgc_rows(frequency_hz: np.ndarray, recovered: dict[str, np.ndarray]) -> list[dict[str, object]]:
+    rows = []
+    for index, value in enumerate(frequency_hz):
+        rows.append({
+            "Frequency_Hz": float(value),
+            "R_ohm_per_m": float(recovered["R_ohm_per_m"][index]),
+            "L_nH_per_m": float(recovered["L_h_per_m"][index] * 1.0e9),
+            "G_uS_per_m": float(recovered["G_s_per_m"][index] * 1.0e6),
+            "C_pF_per_m": float(recovered["C_f_per_m"][index] * 1.0e12),
+            "Zc_abs_ohm": float(abs(recovered["Zc_ohm"][index])),
+            "A_D_relative_difference": float(recovered["relative_A_D_difference"][index]),
+        })
+    return rows
 
 
 def write_csv(path: Path, rows: list[dict[str, object]]) -> None:
@@ -465,10 +700,12 @@ def main() -> None:
 
     comsol_zip = REFERENCE_ROOT / "COMSOL RG58 RLGC仿真结果.zip"
     terminal_zip = REFERENCE_ROOT / "RG58 40m-1m-30m不同末端.zip"
+    no_joint_zip = REFERENCE_ROOT / "RG58 无中间接头-不同末端.zip"
     temperature_zip = REFERENCE_ROOT / "RG58-RG316.zip"
     direct_csv = REFERENCE_ROOT / "Core-LineA+CUT1+LineB(20degree)-1.csv"
 
     comsol_tables = read_comsol_archive(comsol_zip)
+    no_joint_data = read_no_joint_archive(no_joint_zip)
     terminal_traces: dict[str, tuple[np.ndarray, np.ndarray]] = {}
     terminal_members: dict[str, str] = {}
     with zipfile.ZipFile(terminal_zip) as archive:
@@ -499,19 +736,30 @@ def main() -> None:
         terminal_traces["50ohm"][1][1:],
     )
     effective_summary = effective_rlgc_summary(recovered_frequency, recovered)
-    effective_rows = []
-    frequency = recovered_frequency
-    for index, value in enumerate(frequency):
-        effective_rows.append({
-            "Frequency_Hz": float(value),
-            "R_ohm_per_m": float(recovered["R_ohm_per_m"][index]),
-            "L_nH_per_m": float(recovered["L_h_per_m"][index] * 1.0e9),
-            "G_uS_per_m": float(recovered["G_s_per_m"][index] * 1.0e6),
-            "C_pF_per_m": float(recovered["C_f_per_m"][index] * 1.0e12),
-            "Zc_abs_ohm": float(abs(recovered["Zc_ohm"][index])),
-            "A_D_relative_difference": float(recovered["relative_A_D_difference"][index]),
-        })
-    write_csv(output / "three_load_effective_rlgc.csv", effective_rows)
+    write_csv(output / "three_load_effective_rlgc.csv", effective_rlgc_rows(recovered_frequency, recovered))
+
+    no_joint_summaries: dict[str, object] = {}
+    no_joint_fdr_summary: dict[str, object] = {}
+    no_joint_effective_summary: dict[str, object] = {}
+    no_joint_plot_s11: dict[str, tuple[np.ndarray, np.ndarray]] = {}
+    no_joint_plot_fdr: dict[str, tuple[dict, dict]] = {}
+    for length_m, data in sorted(no_joint_data.items()):
+        no_joint_summaries[str(length_m)] = {}
+        no_joint_fdr_summary[str(length_m)] = {}
+        for terminal, (member, frequency_t, s11_t) in sorted(data.items()):
+            no_joint_summaries[str(length_m)][terminal] = s11_summary(frequency_t, s11_t)
+            a1, a2 = run_fdr(frequency_t, s11_t, args.time_points)
+            no_joint_fdr_summary[str(length_m)][terminal] = fdr_summary_for_length(a1, a2, float(length_m))
+            np.savez_compressed(output / f"rg58_no_joint_{length_m}m_{terminal}_fdr.npz", frequency_hz=frequency_t, s11=s11_t, algorithm1_distance_m=a1["distance_m"], algorithm1_impulse_raw=a1["impulse_real_raw"], algorithm1_impulse=a1["impulse_real_ref"], algorithm1_step_raw=a1["step_raw"], algorithm1_step=a1["step_ref"], algorithm2_distance_m=a2["distance_m"], algorithm2_impulse_distance_m=a2["distance_impulse_m"], algorithm2_impulse_raw=a2["impulse_raw"], algorithm2_impulse=a2["impulse_smoothed"], algorithm2_step_raw=a2["step_raw"], algorithm2_step=a2["step_smoothed"])
+            if terminal in {"open", "short"}:
+                no_joint_plot_s11[f"{length_m}m-{terminal}"] = (frequency_t, s11_t)
+                no_joint_plot_fdr[f"{length_m}m-{terminal}"] = (a1, a2)
+        recovered_frequency_m = data["open"][1][1:]
+        recovered_m = recover_three_load_abcd(recovered_frequency_m, data["open"][2][1:], data["short"][2][1:], data["50ohm"][2][1:], total_length_m=float(length_m))
+        no_joint_effective_summary[str(length_m)] = effective_rlgc_summary(recovered_frequency_m, recovered_m, total_length_m=float(length_m))
+        write_csv(output / f"rg58_no_joint_{length_m}m_effective_rlgc.csv", effective_rlgc_rows(recovered_frequency_m, recovered_m))
+
+    no_joint_contrast = terminal_contrast_summary(no_joint_data)
 
     temperature_summaries = {}
     temperature_fdr_summary = {}
@@ -521,20 +769,25 @@ def main() -> None:
         temperature_summaries[str(temperature)] = s11_summary(frequency_t, s11_t)
         a1, a2 = run_fdr(frequency_t, s11_t, args.time_points)
         temperature_fdr[temperature] = (a1, a2)
-        temperature_fdr_summary[str(temperature)] = fdr_summary(a1, a2)
+        temperature_fdr_summary[str(temperature)] = fdr_summary_for_length(a1, a2, 85.0)
         np.savez_compressed(output / f"rg316_{temperature}C_fdr.npz", frequency_hz=frequency_t, s11=s11_t, algorithm1_distance_m=a1["distance_m"], algorithm1_impulse_raw=a1["impulse_real_raw"], algorithm1_impulse=a1["impulse_real_ref"], algorithm1_step_raw=a1["step_raw"], algorithm1_step=a1["step_ref"], algorithm2_distance_m=a2["distance_m"], algorithm2_impulse_distance_m=a2["distance_impulse_m"], algorithm2_impulse_raw=a2["impulse_raw"], algorithm2_impulse=a2["impulse_smoothed"], algorithm2_step_raw=a2["step_raw"], algorithm2_step=a2["step_smoothed"])
 
     direct_a1, direct_a2 = run_fdr(direct_frequency, direct_s11, args.time_points)
-    direct_summary = {"s11": s11_summary(direct_frequency, direct_s11), "fdr": fdr_summary(direct_a1, direct_a2)}
+    direct_summary = {"s11": s11_summary(direct_frequency, direct_s11), "fdr": fdr_summary_for_length(direct_a1, direct_a2, 84.0)}
+    temperature_delta = temperature_delta_summary(temperature_data, temperature_fdr, reference_temperature)
 
     save_s11_plot(assets / "rg58_three_terminations_s11.png", terminal_traces)
     save_fdr_plot(assets / "rg58_three_terminations_fdr.png", terminal_fdr)
+    save_s11_plot(assets / "rg58_no_joint_terminations_s11.png", no_joint_plot_s11, x_max_mhz=2_000.0)
+    save_fdr_plot(assets / "rg58_no_joint_terminations_fdr.png", no_joint_plot_fdr)
     save_comsol_plot(assets / "comsol_rg58_rlgc.png", comsol_tables)
 
     payload = {
         "protocol": {
             "source_root": str(REFERENCE_ROOT),
             "terminal_members": terminal_members,
+            "no_joint_archive": no_joint_zip.name,
+            "no_joint_members": {str(length): {terminal: member[0] for terminal, member in data.items()} for length, data in no_joint_data.items()},
             "temperature_members": {str(key): value[0] for key, value in temperature_data.items()},
             "nominal_topology": "instrument -> SMA-BNC -> 40 m RG58 -> BNC -> 1 m RG58 -> BNC -> 30 m RG58 -> termination",
             "nominal_total_length_m": NOMINAL_TOTAL_LENGTH_M,
@@ -543,16 +796,22 @@ def main() -> None:
             "comsol_column_mapping": "frequency, R, L, G, C, Zc, gamma from the exported transmission-line-parameter table",
         },
         "comsol": comsol_table_summary(comsol_tables),
+        "comsol_high_frequency_anchor": comsol_high_frequency_anchor(comsol_tables),
         "terminal_s11": terminal_summaries,
         "terminal_fdr": terminal_fdr_summary,
         "three_load_effective_rlgc": effective_summary,
+        "no_joint_s11": no_joint_summaries,
+        "no_joint_fdr": no_joint_fdr_summary,
+        "no_joint_effective_rlgc": no_joint_effective_summary,
+        "no_joint_open_short_contrast": no_joint_contrast,
         "temperature_s11": temperature_summaries,
         "temperature_fdr": temperature_fdr_summary,
+        "temperature_delta": temperature_delta,
         "direct_rg58_reference": direct_summary,
         "notes": [
             "The 9 kHz point is retained in inventory but algorithm1/2 skip the first point under the current V1 protocol.",
-            "Three-load RLGC is an effective diagnostic of the complete reciprocal two-port under a nominal 71 m homogeneous-line assumption; it is not a direct de-embedded RG58 material measurement because the topology has BNC joints and a 1 m section.",
-            "Raw measured S11 is not forcibly clipped to unit magnitude; values above one are reported as a measurement/fixture quality issue.",
+            "Three-load RLGC is an effective diagnostic of the complete reciprocal two-port under the stated homogeneous-line assumption; the 71 m group includes BNC joints and a 1 m section, while the 10/30/40 m group is the no-intermediate-joint comparison.",
+            "Raw measured S11 is not forcibly clipped to unit magnitude. The known first saved point is excluded from inverse calculations; other out-of-unit points remain reported rather than silently altered.",
         ],
     }
     (output / "reference_reanalysis.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -562,6 +821,7 @@ def main() -> None:
         "terminal_points": {key: value["points"] for key, value in terminal_summaries.items()},
         "temperature_points": {key: value["points"] for key, value in temperature_summaries.items()},
         "comsol_tables": list(comsol_tables),
+        "no_joint_lengths_m": sorted(no_joint_data),
         "direct_points": direct_summary["s11"]["points"],
     }, ensure_ascii=False))
 
