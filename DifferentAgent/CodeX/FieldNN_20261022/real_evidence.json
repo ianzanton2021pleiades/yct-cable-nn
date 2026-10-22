@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "policy": "仅为已有TXT支持的现场事件候选；不是gold标签，不自动写入real_manifest.jsonl，也不据此计算准确率。",
+  "candidates": [
+    {
+      "candidate_id": "candidate_2026_05_25_f17_middle_joint_225m",
+      "candidate_status": "strong_outcome_linked_candidate_not_gold",
+      "candidate_event": "约225m中间接头与振荡波击穿及拆解后绝缘恢复相关",
+      "reported_distance_m": 225,
+      "reported_distance_basis": "现场记录的单个中间接头位置；原文没有明确量距起点或方向。",
+      "related_fdr_files": [
+        "2026-5-25 10.48.04.fdr"
+      ],
+      "source_relative_path": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜/其他信息.txt",
+      "source_lines": [
+        {
+          "line": 2,
+          "text": "接头位置FDR的标注：222m、240m、255m、285m、355m、421m"
+        },
+        {
+          "line": 5,
+          "text": "振荡波的过程中就击穿了，两相对地了"
+        },
+        {
+          "line": 6,
+          "text": "现场测到的总长是603m，只测到一个中间接头225"
+        },
+        {
+          "line": 10,
+          "text": "225中间头解开以后，绝缘电阻成功恢复，应该就是225的接头问题"
+        },
+        {
+          "line": 14,
+          "text": "测试前做了绝缘电阻测试，所有测试结束之后又测了一次绝缘电阻，225中间头解开以后又进行了耐压测试（2组数据，绝缘电阻恢复了，具体数值就不标了，得到了验证）"
+        }
+      ],
+      "measurement_basis_issues": [
+        "TXT没有明确225m量距起点和方向。",
+        "同一记录给出的FDR接头候选位置包含222m和多个邻近位置；现场225m位置与FDR标注尚未完成逐曲线对应。",
+        "该TXT中的现场总长603m与FDR全长口径不同；不能把一条候选位置直接复制成所有相别、所有sweep的精确区间。"
+      ],
+      "manifest_action": "关联源文件可用于后续事件/区间建模的候选依据；当前清单所有相关sweep仍保持label_status=unknown。"
+    }
+  ]
+}
