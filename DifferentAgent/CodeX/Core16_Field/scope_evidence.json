@@ -1,0 +1,1404 @@
+{
+  "source_root": "E:\\20261010截至的全部fdr文件",
+  "selection_rule": "包含91个TXT佐证；排除完整路径中含RG58或核级的目录；不读取或解包FDR文件。",
+  "note": "本轮人工判读的长度范围与来源元数据；原文和波形在只读外部资料/忽略的output，不将它当完整故障标签。",
+  "directory_assessments": [
+    {
+      "relative_directory": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR接头位置标注：396，667，1004，1367，1383m",
+        "电缆标签参数未知，是之前污水厂的那条 29米的中间头解开后做的(对应于2026-9-8 15.43.56深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜目录下的测试信息)",
+        "FDR全长2430m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-14 11.14.34.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2    旧764m+新586m",
+        "工程师认为前后对比一样，应该没问题。发现铭牌上标出了是新旧电缆混合的，所以反射特征有些奇怪是正常的",
+        "FDR全长：1268m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-31 10.42.00.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全长标注：1593m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-24 11.51.24.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-29 16.57.57深圳旭日变电站10kV旭杨线F19平安大道一智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-29 16.57.57深圳旭日变电站10kV旭杨线F19平安大道一智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-8.7/15kV-3x300mm2   旧2698米+新127米=2825米",
+        "工程师认为这条电缆缺陷有点多，然后标注了420m、813m、1255m、1761m、2083m、2500m",
+        "FDR全长：3640m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-29 16.57.57.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   1742米",
+        "FDR全长标注：1890m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-11 14.24.09.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2025-7-7 11.55.08邦润线(浸水)",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2025-7-7 11.55.08邦润线(浸水)\\readme.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数缺失",
+        "FDR全长：640m"
+      ],
+      "related_fdr_filenames": [
+        "邦润线2025-7-7 11.55.08.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-22 11.48.09深圳信嘉# 1智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-22 11.48.09深圳信嘉# 1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR接头位置人工标注：33-106-295-394-600",
+        "电缆标签参数：FYZA-YJV22-3x300mm2  新1603米+旧2253米=3856米",
+        "这条电缆495m，1117m，1555m有缺陷特征",
+        "FDR全长3806m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-22 11.48.09.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    724米",
+        "FDR全长：2225m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-3 12.20.16.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-30 9.23.15深圳龙岗区某地",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-30 9.23.15深圳龙岗区某地\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数图片过期了，看不到",
+        "FDR全长标注：3771m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-30 9.23.15.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-28 11.54.01深圳深圳樟树布变电站10kV环湖线F13某智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-28 11.54.01深圳深圳樟树布变电站10kV环湖线F13某智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数图片过期了，看不清楚，很可能是和“2026-5-29 10.07.24深圳樟树布变电站10kV环湖线F13南岭后山智能柜”目录下同一条电缆",
+        "现场人员反映这条3000米，已探明5个头，3个今天直接熔接做掉，2个位置受限看试验数据是否需要重做冷缩，其他的情况还要看宽频和震荡波数据",
+        "FDR全长：3168m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-28 11.54.01.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2025-8-20 11.44.04山东驻马店华润电力",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2025-8-20 11.44.04山东驻马店华润电力\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "这个电缆是完整的，工程师出具了报告“华润电力盘古风电场电缆宽频阻抗谱测试报告.pdf”，FDR总长度2246m",
+        "这是“2025-8-20 11.44.04驻马店华润.fdr”这条电缆，从1758m分接箱开始往末端测量的部分"
+      ],
+      "related_fdr_filenames": [
+        "2025-8-20 11.44.04驻马店华润.fdr",
+        "2025-8-20 15.18.36驻马店1767米.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR电缆末端标注：330m",
+        "电缆标签参数：ZRC-YJV22-3x300mm2    301米"
+      ],
+      "related_fdr_filenames": [
+        "2026-8-22 12.01.01.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-5 11.08.09深圳大芬变电站10kV宝冠线F26站内开关",
+      "length_bucket": "unknown_or_conflicting",
+      "bucket_basis": "标签2250m与TXT所记FDR全长2505m跨越阈值。",
+      "source_relative_paths": [
+        "2026-6-5 11.08.09深圳大芬变电站10kV宝冠线F26站内开关\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   2250米",
+        "FDR全长：2505m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-5 11.08.09.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全长2438m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-28 10.17.15.fdr",
+        "2026-9-28 9.35.41.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   851米",
+        "FDR全长：955m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-11 13.12.49.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-2 15.47.42深圳",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-2 15.47.42深圳\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "接头位置FDR人工标注：408m，516m，835m，1245m，1598m，1861m，2285m，2550m，3139m，3509m，3744m",
+        "电缆末端FDR标注：4110m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-2 15.47.42.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-25 18.08.15深圳龙岗区某地",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-25 18.08.15深圳龙岗区某地\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数图片过期了，看不到",
+        "FDR全长标注：616m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-25 18.08.15.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    1724米",
+        "FDR全长：1687m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-28 12.51.40.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-11 17.04.41深圳龙岗某地",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-11 17.04.41深圳龙岗某地\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数图过期了看不到",
+        "FDR全长标注：2118m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-11 17.04.41.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR下接头位置人工标注：213-338-644-945",
+        "电缆标签参数：YJV22-3x300mm2    1058米",
+        "FDR全长1078m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-16 10.45.47.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "接头位置FDR标注：414m，722m，1224m",
+        "电缆标签参数：ZRC-YJV22-3x300mm2    1460米",
+        "FDR全长：1300m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-13 11.37.12.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    2482米",
+        "电缆末端FDR标注：2488米"
+      ],
+      "related_fdr_filenames": [
+        "2026-8-28 15.26.01.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-20 10.46.01深圳某地两段电缆\\第二段（变电站门口到中间头）",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-20 10.46.01深圳某地两段电缆\\第二段（变电站门口到中间头）\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全长人工标注：960m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-20 11.16.44.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：YJV22-3x300mm2   旧710米+新53米",
+        "FDR全长标注：770m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-21 11.54.20.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-8 15.43.56深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-8 15.43.56深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2    新66m+旧4205m",
+        "FDR全长4714m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-8 15.43.56.fdr",
+        "2026-9-8 16.20.00.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    1514.2米",
+        "FDR全长：1217m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-2 11.31.03.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-23 16.13.18深圳110k振兴变电站10kv振风一线F61冲之大道风门坳工业园#1智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-23 16.13.18深圳110k振兴变电站10kv振风一线F61冲之大道风门坳工业园#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-8.7/15kV-3x300mm2   4192米",
+        "FDR全长：3115m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-23 16.13.18.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    2757米",
+        "电缆末端FDR标注：2885m"
+      ],
+      "related_fdr_filenames": [
+        "2026-8-26 11.39.46.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2   旧689米+新35米",
+        "然后工程师认为这条电缆目前123m接头轻微老化，343-721m附近的区域存在轻微局部放电区域",
+        "FDR全长标注：2211m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-5 9.31.16.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-12 18.31.45深圳海源恒业#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-12 18.31.45深圳海源恒业#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   1145米",
+        "FDR全长：1114m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-12 18.31.45.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-29 17.12.58深圳岗头变电站10KV东村线F16坂田大厦西智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-29 17.12.58深圳岗头变电站10KV东村线F16坂田大厦西智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    4139米",
+        "FDR标注末端位置：4006m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-29 17.12.58.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数的图片过期了，看不出来",
+        "FDR全长标注：1295m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-10 14.25.16.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    594米",
+        "FDR全长604m",
+        "FDR标注的接头：33-106-295-394-600"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-21 16.35.27.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-8.7/15KV-3x300mm2   2214米",
+        "FDR全长：2024m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-15 16.19.30.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：YJV22-3x300mm2    440米",
+        "工程师认为现在这根和中午12点半做的一根（2026-6-23 12.47.14.fdr）特征几乎一样，全长有点差异，现场人员说就是那条，只是增加了一截新电缆",
+        "FDR全长：487m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-23 20.33.31.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-11 16.29.35深圳龙岗某地",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-11 16.29.35深圳龙岗某地\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数图过期了看不到",
+        "FDR全长标注：2030m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-11 16.29.35.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜",
+      "length_bucket": "unknown_or_conflicting",
+      "bucket_basis": "电缆标签2779.69m与TXT所记FDR全长2306m跨越2500m阈值；保留冲突。",
+      "source_relative_paths": [
+        "2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    2779.69米",
+        "FDR全长：2306m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-20 11.31.57.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-11 15.09.21深圳大芬站外#8三遥柜602开关",
+      "length_bucket": "unknown_or_conflicting",
+      "bucket_basis": "标签新旧段合计约2956m与TXT所记FDR全长2070m跨越阈值；不强行择一。",
+      "source_relative_paths": [
+        "2026-6-11 15.09.21深圳大芬站外#8三遥柜602开关\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2  新23米+旧2933米",
+        "根据FDR，工程师认为大芬站外#8三遥柜602开关这条线116m位置有个潜在缺陷",
+        "FDR全长：2070m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-11 15.09.21.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-8-18 15.46.10深圳110kV樟树布站10kV樟芬线F45（图片缺失内容不清）",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-8-18 15.46.10深圳110kV樟树布站10kV樟芬线F45（图片缺失内容不清）\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数不清楚",
+        "FDR电缆末端标注：3443m"
+      ],
+      "related_fdr_filenames": [
+        "2026-8-18 15.46.10.fdr",
+        "2026-8-18 15.46.10(1).fdr",
+        "2026-8-18 17.02.15.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-8新疆风电场箱变影响研究",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-8新疆风电场箱变影响研究\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "接头位置FDR标注：180m，450m，890m，1392m，1642m，1850m，2400m，2925m，3419m，3870m，4443m，4864m",
+        "末端位置fdr标注（1号分支箱）：5244m",
+        "电缆标签参数位未知",
+        "接头FDR位置没人工标注",
+        "末端位置fdr标注：9852m",
+        "接头位置FDR标注：83m，418m，838m，1099m，1297m，1782m，2210m，2721m，3186m，3541m",
+        "末端位置fdr标注（1号分支箱）：3857m",
+        "电缆标签参数位未知",
+        "接头FDR位置没人工标注",
+        "末端位置fdr标注：11156m"
+      ],
+      "related_fdr_filenames": [
+        "喀纳斯变电站至1号分支箱,喀白线.fdr",
+        "喀纳斯变电站至3号分支箱.fdr",
+        "喀纳斯变电站至喀白线1号塔.fdr",
+        "云喀线喀纳斯变电站至81号塔.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-19 9.55.15深圳110kV布吉变电站10KV禾坑线F01信义逸翠园五栋#2智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-19 9.55.15深圳110kV布吉变电站10KV禾坑线F01信义逸翠园五栋#2智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：YJV22-3x300mm2    4035米",
+        "FDR全长：3870m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-19 9.55.15.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    1145米",
+        "工程师认为200MΩ的高阻一般是浸水导致的，这条电缆存在中度受潮情况，接头的反射幅值都比较低，第一个接头（221m）的异常特征最显著",
+        "FDR全长：1120m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-3 13.07.08.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆全长1140m",
+        "FDR全长1142m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-28 13.53.02.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    2137米",
+        "FDR全长1901m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-23 12.06.02.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "接头位置FDR的标注：222m、240m、255m、285m、355m、421m",
+        "电缆标签参数：ZRC-YJV22-3x300mm2    529米",
+        "现场测到的总长是603m，只测到一个中间接头225",
+        "FDR全长：598m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-25 10.48.04.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2   1370米",
+        "FDR全长：1431m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-17 15.27.20.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    1057.09米",
+        "FDR全长标注：1213m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-21 15.34.27.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-8.7/15kV-3x300mm2    新40m+旧的1095m",
+        "FDR全长1183m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-24 13.08.39.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR标注末端：830m",
+        "电缆标签参数：ZRC-YJV22-3x300mm2    1724米",
+        "这条154米短路了"
+      ],
+      "related_fdr_filenames": [
+        "2026-8-22 12.15.49.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR末端位置：1480m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-9 14.56.52.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-4 12.46.07深圳正坑变电站10kV正海线F08日辉台户外5G智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-4 12.46.07深圳正坑变电站10kV正海线F08日辉台户外5G智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2  新260m+旧3385m",
+        "FDR全长：4290m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-4 12.46.07.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   1684米",
+        "FDR全长标注：1777m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-23 10.41.51.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "接头FDR人工标注：96m，463m，671m，935m",
+        "电缆FDR全长标注：1176m",
+        "电缆标签参数：ZR-YJV22-3x300mm2  长新284m+旧796m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-14 9.57.49.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2  新435m+旧525米",
+        "FDR全长：922m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-12 16.20.43.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "接头位置FDR标注：391m，471m，798m，985m，1248m",
+        "电缆标签参数：ZRC-YJV22-3x300mm2    1456米",
+        "FDR全长标注：1622m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-22 9.54.32.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-10 12.26.12深圳岗头变电站10kV贝尔线F02日辉台#1智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-10 12.26.12深圳岗头变电站10kV贝尔线F02日辉台#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    3289米",
+        "FDR全长：3290m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-10 12.26.12.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "这条电缆是2026.6.23晚上同一条电缆，相较于之前，为了干掉那个缺陷点，380m附近的一个接头换了一百多米电缆",
+        "电缆标签参数：FYZA-YJV22-3x300mm2   新28米＋旧440米",
+        "FDR全长：448m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-23 17.24.18.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2  长新86m+旧1572m",
+        "FDR全长标注：1407m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-7 10.32.12.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-2-深圳顺和达厂户内公用三遥柜601开关\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "现场反映这条BC相绝缘低，250米左右三相有局放",
+        "这条BC相绝缘低，250米左右三相有局放",
+        "FDR总长：319m"
+      ],
+      "related_fdr_filenames": [
+        "顺和达厂户内公用三遥柜601开关.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   旧1487m+新258m",
+        "FDR全长：1787m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-15 14.20.30.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2023-12-26-无锡蓝安+藕光",
+      "length_bucket": "unknown_or_conflicting",
+      "bucket_basis": "TXT无长度声明。",
+      "source_relative_paths": [
+        "2023-12-26-无锡蓝安+藕光\\其他信息.txt"
+      ],
+      "explicit_length_claims": [],
+      "related_fdr_filenames": [
+        "蓝安431-1100米.db8.fdr",
+        "藕光_new.db8.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-12 16.08.02深圳110KV屯州变电站10kV屯发线F12消防#3保测公用智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-12 16.08.02深圳110KV屯州变电站10kV屯发线F12消防#3保测公用智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2    新1474米+旧1460米",
+        "工程师认为这条电缆新旧拼接的，比较有代表性，1551m附近新旧拼接，工程师认为新旧交界的接头可能有异常，其它地方不明显",
+        "FDR全长：3168m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-12 16.08.02.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-29 10.07.24深圳樟树布变电站10kV环湖线F13南岭后山智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-29 10.07.24深圳樟树布变电站10kV环湖线F13南岭后山智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    2999米",
+        "工程师结合FDR数据，认为741m这里有个负峰。估计是这个位置。现场人员在752我们测到一个中间头，但是由于故障车坏了启动不了，现场人员只能摸过去了，工程师认为应该就是那里，但是这条电缆波速度比较低，只有153左右，所以实际位置应该在650m左右，附近还有一个接头在450m位置。现场人员是从600往后走的，没有的话就去400",
+        "FDR全长：3168m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-29 10.07.24.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2   旧1544m+新270m",
+        "FDR全长标注：1641m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-16 15.01.32.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-23 12.47.14深圳龙岗区兴业兴某地",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-23 12.47.14深圳龙岗区兴业兴某地\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数没有",
+        "FDR全长标注：464m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-23 12.47.14.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-20 10.46.01深圳某地两段电缆",
+      "length_bucket": "unknown_or_conflicting",
+      "bucket_basis": "两段线路拓扑中有未测区段；两份分段FDR另列为637m、960m，不合并推定整线长。",
+      "source_relative_paths": [
+        "2026-7-20 10.46.01深圳某地两段电缆\\补充信息.txt"
+      ],
+      "explicit_length_claims": [
+        "在此之前还进行了一次测试，那次测试的线路不一样，今天测出来206米那个中间头，就是我们第一次测试从电房出来1715米那个头（第一次应该是从柜开始测的，因为第一次测试总长是1997米，然后接头位于1715米，还俗拿过来很接近），见“第一次和第二次的对比.jpg”，第一次测试的震荡波就是在1715m（见“第一次测试的震荡波.jpg”）"
+      ],
+      "related_fdr_filenames": []
+    },
+    {
+      "relative_directory": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "TXT只写接头位置100m至1400m；同目录FDR文件名含1500m，按文件名标记列入短线候选，非FDR内部长度核验。",
+      "source_relative_paths": [
+        "2026-6某地进行的1500m不同位置电缆接头浸水试验\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "这是我们最近用一根长电缆（正常情况下绝缘介损比XLPE电缆大很多）做了不同位置浸水的试验，衰减规律还挺好。"
+      ],
+      "related_fdr_filenames": [
+        "1500m电缆单个接头浸水试验.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-24 16.31.22深圳屯州变电第10kv屯碧线F11中富智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-24 16.31.22深圳屯州变电第10kv屯碧线F11中富智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2    新1556米+旧2610米",
+        "FDR全长：4604m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-24 16.31.22.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR电缆末端标注：2008m",
+        "电缆标签参数：ZRC-YJV22-8.7/15kV-3x300mm2    2214米"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-15 16.19.30（之前）.fdr",
+        "2026-8-22 15.06.16.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-8.7/15kV-3x300mm2  1400米",
+        "FDR全长：1135m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-19 17.00.31.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   1967米",
+        "FDR全长：1964m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-20 10.29.21.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2025-2-17 11.25.49北京城区白塔寺",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2025-2-17 11.25.49北京城区白塔寺\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全长1100m"
+      ],
+      "related_fdr_filenames": [
+        "2025-2-17 11.25.49城区白塔寺.fdr",
+        "2025-2-17 12.30.59白塔寺复测.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全长标注：637m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-20 10.46.01.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2    旧689m+新35m",
+        "FDR全长：2206m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-4 10.18.27.fdr",
+        "2026-6-4 9.28.27.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   旧1861m+新110m",
+        "FDR全长：864m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-8 13.21.33.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-4 14.25.31深圳220kV远丰变电站10kV远力线F07远全#2智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-4 14.25.31深圳220kV远丰变电站10kV远力线F07远全#2智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "接头位置FDR标注：83m、358m、437m、722m，后面不太清晰，分别是1000m、1446m、1647m、1840m、2205m、2527m、2793m、3054m",
+        "电缆标签参数：ZRC-YJV22-3x300mm2   4808米",
+        "FDR全长：4660m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-4 14.25.31.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-17 9.29.37深圳110KV博树布变电站10kV南岭四线F06南岭公园丙三遥柜",
+      "length_bucket": "unknown_or_conflicting",
+      "bucket_basis": "标签1283m与TXT所记FDR全长2949m跨越阈值。",
+      "source_relative_paths": [
+        "2026-6-17 9.29.37深圳110KV博树布变电站10kV南岭四线F06南岭公园丙三遥柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：YJV22-3x300mm2    1283米",
+        "FDR全长：2949m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-17 9.29.37.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-23 18.10.09深圳简龙变电站10kV简深线F17",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-23 18.10.09深圳简龙变电站10kV简深线F17\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2    7200米",
+        "工程师测到末端全长7456m，未发现明显缺陷特征"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-23 18.10.09.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2    旧764m+新586m",
+        "FDR全长：1268m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-30 12.13.22.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2025-3-7 石杨线5号至6号进水",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2025-3-7 石杨线5号至6号进水\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全场385m"
+      ],
+      "related_fdr_filenames": [
+        "2025-3-6 15.47.07石杨线5号至6号.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-9陕西杨凌测试",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-9陕西杨凌测试\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全场大约2764m"
+      ],
+      "related_fdr_filenames": [
+        "杨凌测试-标准-复测.fdr",
+        "杨凌测试.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-30 17.21.55深圳樟树布变电站10kV环湖线F13南岭后山智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-30 17.21.55深圳樟树布变电站10kV环湖线F13南岭后山智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "针对：2026-5-30 17.21.55.fdr（B相[末端开路]没测到，只能看A相和C相）",
+        "电缆标签参数：ZRC-YJV22-3x300mm2    2999米",
+        "现场人员反馈七百多米这里没找到头，不过故障点处理后绝缘恢复了，并且没在800米，在大约2800米处处理的，电缆总长3150，接近站内末端了",
+        "FDR全长：3181m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-30 17.21.55.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-4 11.00.27深圳坪地变电站10kV长美线F53富坪中路#1智能柜",
+      "length_bucket": "unknown_or_conflicting",
+      "bucket_basis": "标签11500m与FDR/振荡波全长约2318/2368m跨阈值，且正文含疑似复制的另一案例内容。",
+      "source_relative_paths": [
+        "2026-9-4 11.00.27深圳坪地变电站10kV长美线F53富坪中路#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2    11500米",
+        "工程师标注了：410m、905m、2018m，电缆全长2318m"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-4 11.00.27.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2025-5-15 15.23.15深圳龙岗某地（浸水）",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全长标注：1930m"
+      ],
+      "related_fdr_filenames": [
+        "2025-5-15 15.23.15.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2 长旧2699m+新37m",
+        "电缆末端FDR标注：2868m"
+      ],
+      "related_fdr_filenames": [
+        "2026-8-26 9.53.21.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：FYZA-YJV22-3x300mm2   新7米+旧1326米",
+        "FDR全长标注：511m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-5 17.00.06.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-6-1 11.30.41深圳远丰变电站10kV远守线F1远守智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-6-1 11.30.41深圳远丰变电站10kV远守线F1远守智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   3041米",
+        "FDR全长标注：2810m"
+      ],
+      "related_fdr_filenames": [
+        "2026-6-1 11.30.41.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-7-13 16.03.35深圳大芬变电站10KV凯龙线F53大芬站外#53智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-7-13 16.03.35深圳大芬变电站10KV凯龙线F53大芬站外#53智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   2899米",
+        "FDR的前面一段有浸水的情况，问题不大（工程师标注了853m和997m）",
+        "FDR全长：3748m"
+      ],
+      "related_fdr_filenames": [
+        "2026-7-13 16.03.35.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-9-11 11.54.03深圳香园变电站10kV香中学线F47香中智能柜",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-9-11 11.54.03深圳香园变电站10kV香中学线F47香中智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "FDR全长2750m",
+        "电缆标签：YJV22-3*300mm2/4183.07米"
+      ],
+      "related_fdr_filenames": [
+        "2026-9-11 11.30.56.fdr",
+        "2026-9-11 11.54.03.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜",
+      "length_bucket": "up_to_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：ZRC-YJV22-3x300mm2   529米",
+        "FDR全长：574m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-28 20.18.53.fdr"
+      ]
+    },
+    {
+      "relative_directory": "2026-5-27 22.36.14深圳龙岗某地",
+      "length_bucket": "over_2500m",
+      "bucket_basis": "按该TXT中的明确全长/末端/标签说法分桶；各来源原句见length_claims，不使用坐标轴范围。",
+      "source_relative_paths": [
+        "2026-5-27 22.36.14深圳龙岗某地\\其他信息.txt"
+      ],
+      "explicit_length_claims": [
+        "电缆标签参数：图片过期了看不到",
+        "FDR全长：2795m"
+      ],
+      "related_fdr_filenames": [
+        "2026-5-27 22.36.14.fdr"
+      ]
+    }
+  ]
+}

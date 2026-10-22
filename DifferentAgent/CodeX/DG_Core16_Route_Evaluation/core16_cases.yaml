@@ -1,0 +1,259 @@
+schema_version: dg-core16-route-evaluation-1
+
+# 本文件是 Core-16 的唯一工况参数来源。RLGC 数值均按每 0.4 m 等效单元填写。
+frequency_grid:
+  start_hz: 9000.0
+  stop_hz: 200000000.0
+  points: 10000
+
+fdr:
+  algorithm2_time_points: 10000
+  algorithm2_chunk_size: 256
+  distance_max_m: 60.0
+
+measurement:
+  seed: 20260902
+  delay_ns: 1.35
+  loss_db_at_100mhz: 0.12
+  directivity: 0.0022
+  source_match: 0.009
+  tracking: 0.985
+  tracking_phase_rad: 0.026
+  noise_sigma: 0.0014
+  noise_correlation: 0.965
+
+routes:
+  - dg_v3_rlgc
+  - cst_v1_ladder_0p1m
+  - cst_v1_continuous
+
+cable:
+  body_length_m: 40.0
+  base_cell_length_m: 0.4
+  cst_ladder_cell_length_m: 0.1
+  base_rlgc_per_0p4m:
+    r_ohm: 0.01
+    l_uh: 0.30
+    g_us: 5.0
+    c_pf: 16.0
+  attachments:
+    front_tl:
+      length_m: 1.0
+      impedance_ohm: 135.0
+      epsr: 1.0
+      mur: 1.0
+      lossless: true
+    special_joint1:
+      position_m: 10.0
+      series_r_ohm: 0.1
+      series_l_uh: 1.0
+      shunt_c_pf: 8.0
+      shunt_r_ohm: 200000.0
+    tl300:
+      positions_m: [20.0, 30.0]
+      length_m: 0.5
+      impedance_ohm: 300.0
+      epsr: 1.0
+      mur: 1.0
+      lossless: true
+    terminal:
+      type: open
+      extra_shunt_c_pf: 16.0
+      extra_shunt_r_ohm: 200000.0
+
+cases:
+  - id: C00
+    title: 正常
+    category: baseline
+    purpose: 完好同型号电缆基准
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C01
+    title: R↑（局部）
+    category: local
+    purpose: 接头压接不良、局部接触电阻、导体损伤
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 14.8, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 14.8, end_m: 15.2, r_ohm: 10.0, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 15.2, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C02
+    title: R↑↑（局部）
+    category: local
+    purpose: 严重高阻接触、断股/近断路型工况
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 14.8, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 14.8, end_m: 15.2, r_ohm: 50.0, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 15.2, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C03
+    title: G↑（长区段）
+    category: long_section
+    purpose: 长区段介质损耗增加的主导分量
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 50.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C04
+    title: G↑↑（局部）
+    category: local
+    purpose: 局部强漏导/高损耗
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 14.8, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 14.8, end_m: 15.2, r_ohm: 0.01, l_uh: 0.30, g_us: 500.0, c_pf: 16.0}
+      - {start_m: 15.2, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C05
+    title: G↑（分段）
+    category: segmented_loss
+    purpose: 多区段不同程度损耗
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 50.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 500.0, c_pf: 16.0}
+    # C05 特例：末端属于第四段，沿用原 segmented_loss 的末端支路语义。
+    terminal: {extra_shunt_g_us: 500.0, extra_shunt_c_pf: 16.0}
+
+  - id: C06
+    title: C↑（长区段）
+    category: long_section
+    purpose: 长区段介电参数增加
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 20.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C07
+    title: C↑↑（局部）
+    category: local
+    purpose: 局部强容性异常
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 14.8, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 14.8, end_m: 15.2, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 32.0}
+      - {start_m: 15.2, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C08
+    title: C↓（局部）
+    category: local
+    purpose: 局部低电容/低介电异常
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 14.8, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 14.8, end_m: 15.2, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 8.0}
+      - {start_m: 15.2, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C09
+    title: G↑+C↑（局部）
+    category: local
+    purpose: 局部受潮、水树/湿损型复合介质异常
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 14.8, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 14.8, end_m: 15.2, r_ohm: 0.01, l_uh: 0.30, g_us: 500.0, c_pf: 24.0}
+      - {start_m: 15.2, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C10
+    title: G↑+C↑（长区段）
+    category: long_section
+    purpose: 分布受潮、长区段水树/湿老化
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 50.0, c_pf: 20.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C11
+    title: R↑+G↑（局部）
+    category: local
+    purpose: 接触异常形成热点并伴随绝缘损耗增加
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 14.8, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 14.8, end_m: 15.2, r_ohm: 5.0, l_uh: 0.30, g_us: 50.0, c_pf: 16.0}
+      - {start_m: 15.2, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C12
+    title: R↑+G↑+C↑（局部）
+    category: local
+    purpose: 热点长期发展后的导体+绝缘复合劣化
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 14.8, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 14.8, end_m: 15.2, r_ohm: 5.0, l_uh: 0.30, g_us: 50.0, c_pf: 20.0}
+      - {start_m: 15.2, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C13
+    title: R↓+L↑+G↓+C↓（整段）
+    category: replacement
+    purpose: 异型电缆拼接 A：高特性阻抗、低损耗型
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.005, l_uh: 0.45, g_us: 2.5, c_pf: 10.67}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C14
+    title: R↑+L↓+G↑+C↑（整段）
+    category: replacement
+    purpose: 异型电缆拼接 B：低特性阻抗、较高损耗型
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.02, l_uh: 0.20, g_us: 10.0, c_pf: 24.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+  - id: C15
+    title: R↑+L↑+G↑+C↓（整段）
+    category: replacement
+    purpose: 异型/修复电缆拼接 C：另一组全 RLGC 差异
+    segments:
+      - {start_m: 0.0, end_m: 10.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 10.0, end_m: 20.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+      - {start_m: 20.0, end_m: 30.0, r_ohm: 0.03, l_uh: 0.36, g_us: 25.0, c_pf: 12.0}
+      - {start_m: 30.0, end_m: 40.0, r_ohm: 0.01, l_uh: 0.30, g_us: 5.0, c_pf: 16.0}
+    terminal: {extra_shunt_g_us: 5.0, extra_shunt_c_pf: 16.0}
+
+gates:
+  passivity_tolerance: 1.0e-9

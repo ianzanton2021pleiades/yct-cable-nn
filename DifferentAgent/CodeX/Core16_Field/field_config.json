@@ -1,0 +1,31 @@
+{
+  "schema": "core16-field-exploratory-1",
+  "parameter_status": "现场统计约束的探索参数；未冻结为训练数据参数",
+  "seed": 20261022,
+  "reference_hz": 1000000.0,
+  "lengths_m": [600.0, 1500.0, 2400.0],
+  "local_extent_m": 2.0,
+  "joint_positions_fraction": [0.0832, 0.2873, 0.5212, 0.6468, 0.8069],
+  "body": {
+    "z0_ohm": 19.8,
+    "velocity_m_s": 179325000.0,
+    "r_dc_ohm_per_m": 0.001,
+    "r_skin_ref_ohm_per_m": 0.06464,
+    "g_dc_s_per_m": 1e-10,
+    "tan_delta": 0.031676,
+    "debye_corner_hz": 1000000.0
+  },
+  "background": {"blocks": 12, "z_log_sigma": 0.02, "v_log_sigma": 0.005},
+  "joint": {"series_r_ohm": 0.05, "series_l_h": 1e-7, "shunt_g_s": 0.0, "shunt_c_f": 1e-10},
+  "fixture": {"z0_ohm": 50.0, "delay_s": 2.44e-8, "loss_db_ref": 0.154, "series_r_ohm": 7.9, "series_l_h": 1.15e-6, "shunt_g_s": 0.0, "shunt_c_f": 0.0},
+  "measurement": {"directivity": 0.0, "source_match": 0.0, "tracking": 1.0, "noise_sigma": 0.0},
+  "frequency": {"start_hz": 9000.0, "stop_hz": 200000000.0, "points": 32768},
+  "response": {"velocity_m_s": 172000000.0, "distance_multiplier": 1.3, "distance_step_m": 0.5, "step_smoothing_m": 1.0, "impulse_smoothing_m": 3.0},
+  "evidence": {
+    "velocity": "response固定172 m/us来自仪器距离设置；body约179.325 m/us是同2430m案例的有效材料拟合，不是独立真实波速测量",
+    "body_and_joint": "Z0约19.8ohm取2430m案例高频半无限等效负载拟合。Rskin/tan_delta/body速度再取同例末端窗端到端拟合，非唯一真实材料反演。接头相对位置参考637m案例53/183/332/412/514m；412m疑似双接头只作一个位置。局部2m长度和接头RLC仍为先验",
+    "background": "探索用轻微分布不均匀先验，幅度尚待独立标定",
+    "fixture": "2430m案例A相5-200MHz短接+测量联合拟合的近端等效参数，测量复数RMSE=0.0887，短接RMSE=0.0805；仅代表性候选。另两例拟合较差，未作通用冻结；并联C贴近零边界",
+    "measurement": "不从不同相/工况差异伪造噪声估计；未识别误差项维持零增量"
+  }
+}
