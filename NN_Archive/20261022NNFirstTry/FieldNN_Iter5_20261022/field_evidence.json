@@ -1,0 +1,3498 @@
+{
+ "records": [
+  {
+   "case_group": "2023-12-26-无锡蓝安+藕光",
+   "cable_group": "development_case:wuxi_baian_mixed_directory",
+   "source_relative_path": "2023-12-26-无锡蓝安+藕光/蓝安431-1100米.db8.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1070.1,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "软件计算出的A相、B相、C相电缆的全长分别是1070.1m、1071.0m、1070.5m，接头测算结果为6个",
+   "file": "2023-12-26-无锡蓝安+藕光\\20231226-2-国网无锡供电公司20kV配电电缆宽频阻抗谱测试报告.docx",
+   "note": "DOCX线路2=壹方1#站蓝安2环431B—雅锦园1#站蓝安431（报告内称蓝安#1）；与文件名\"1100米\"最接近，但不能确证.db8对应此线路"
+  },
+  {
+   "case_group": "2023-12-26-无锡蓝安+藕光",
+   "cable_group": "development_case:wuxi_baian_mixed_directory",
+   "source_relative_path": "2023-12-26-无锡蓝安+藕光/蓝安431-1100米.db8.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    405,
+    485,
+    730,
+    786,
+    1005
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "线路全长为1062米，以雅锦园测为0m，共5个可能的接头点，分别为接头1：405m、接头2：485m、接头3：730m、接头4：786m和接头5：1005m",
+   "file": "2023-12-26-无锡蓝安+藕光\\川大-无锡宽频谱测试报告.docx",
+   "note": "川大报告；其他信息.txt明确\"川大的测试报告只作为参考，主要还是我们的为准\""
+  },
+  {
+   "case_group": "2023-12-26-无锡蓝安+藕光",
+   "cable_group": "development_case:wuxi_baian_mixed_directory",
+   "source_relative_path": "2023-12-26-无锡蓝安+藕光/藕光_new.db8.fdr",
+   "sweep_rowids": [
+    3,
+    4,
+    5
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1019.8,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "软件计算出的A相、B相、C相电缆的全长分别是1019.8m、1017.7m、1027.1m",
+   "file": "2023-12-26-无锡蓝安+藕光\\20231226-2-国网无锡供电公司20kV配电电缆宽频阻抗谱测试报告.docx",
+   "note": "DOCX线路3=华广1#站藕光2环412B—藕光2#柜藕光F412；与\"藕光_new.db8.fdr\"对应关系为目录级推断"
+  },
+  {
+   "case_group": "2023-12-26-无锡蓝安+藕光",
+   "cable_group": "development_case:wuxi_baian_mixed_directory",
+   "source_relative_path": "2023-12-26-无锡蓝安+藕光/藕光_new.db8.fdr",
+   "sweep_rowids": [
+    3,
+    4,
+    5
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    335,
+    395
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "此外，B相还在335m、395m的位置出现较强的反射，此异常虽然未造成绝缘电阻的显著降低，但在2倍额定电压极低频局部放电测试中，B相325m处出现最大约820pC的放电脉冲。",
+   "file": "2023-12-26-无锡蓝安+藕光\\20231226-2-国网无锡供电公司20kV配电电缆宽频阻抗谱测试报告.docx"
+  },
+  {
+   "case_group": "2023-12-26-无锡蓝安+藕光",
+   "cable_group": "development_case:wuxi_baian_mixed_directory",
+   "source_relative_path": "2023-12-26-无锡蓝安+藕光/蓝安431-1100米.db8.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1100.0,
+   "evidence_type": "filename_only",
+   "confidence": "low",
+   "quote": "蓝安431-1100米.db8.fdr",
+   "file": "2023-12-26-无锡蓝安+藕光\\蓝安431-1100米.db8.fdr",
+   "note": "长度仅出现在文件名；DOCX实测1070.1m，两者相差约30m"
+  },
+  {
+   "case_group": "2023-12-26-无锡蓝安+藕光",
+   "cable_group": "development_case:wuxi_baian_mixed_directory",
+   "source_relative_path": "2023-12-26-无锡蓝安+藕光/蓝安431-1100米.db8.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "inferred",
+   "confidence": "low",
+   "quote": "（推断）文件名\"蓝安431-1100米\"的\"431\"与DOCX中蓝安431电缆#1（全长1070.1m、6个接头）最接近；无法从目录内容确证该.db8属于哪一条线路",
+   "file": "2023-12-26-无锡蓝安+藕光\\蓝安431-1100米.db8.fdr",
+   "note": "仅为目录级推断，非文件内声明；manifest的development_case分组也承认无法唯一映射"
+  },
+  {
+   "case_group": "2025-2-17 11.25.49北京城区白塔寺",
+   "cable_group": "unconfirmed_case:2025-2-17 11.25.49北京城区白塔寺",
+   "source_relative_path": "2025-2-17 11.25.49北京城区白塔寺/2025-2-17 11.25.49城区白塔寺.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    240
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这是在北京的测试结果，耐压前后。耐压前觉得240m有问题（阻抗上升），耐压后240m击穿。但是其他接头在耐压后更明显了，耐压后全长也变化了。",
+   "file": "2025-2-17 11.25.49北京城区白塔寺\\其他信息.txt",
+   "note": "同一TXT还注明\"针对：2025-2-17 11.25.49城区白塔寺.fdr，这是耐压前的\""
+  },
+  {
+   "case_group": "2025-2-17 11.25.49北京城区白塔寺",
+   "cable_group": "unconfirmed_case:2025-2-17 11.25.49北京城区白塔寺",
+   "source_relative_path": "2025-2-17 11.25.49北京城区白塔寺/2025-2-17 12.30.59白塔寺复测.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1100.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长1100m",
+   "file": "2025-2-17 11.25.49北京城区白塔寺\\其他信息.txt",
+   "note": "耐压后复测文件；TXT称\"耐压后全长也变化了\""
+  },
+  {
+   "case_group": "2025-3-7 石杨线5号至6号进水",
+   "cable_group": "unconfirmed_case:2025-3-7 石杨线5号至6号进水",
+   "source_relative_path": "2025-3-7 石杨线5号至6号进水/2025-3-6 15.47.07石杨线5号至6号.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    200
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师判断从200m开始进水",
+   "file": "2025-3-7 石杨线5号至6号进水\\其他信息.txt"
+  },
+  {
+   "case_group": "2025-3-7 石杨线5号至6号进水",
+   "cable_group": "unconfirmed_case:2025-3-7 石杨线5号至6号进水",
+   "source_relative_path": "2025-3-7 石杨线5号至6号进水/2025-3-6 15.47.07石杨线5号至6号.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 385.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全场385m",
+   "file": "2025-3-7 石杨线5号至6号进水\\其他信息.txt",
+   "note": "\"工程师标注.png\"/\"标准图谱.png\"为FDR界面截图"
+  },
+  {
+   "case_group": "2025-5-15 15.23.15深圳龙岗某地（浸水）",
+   "cable_group": "unconfirmed_case:2025-5-15 15.23.15深圳龙岗某地（浸水）",
+   "source_relative_path": "2025-5-15 15.23.15深圳龙岗某地（浸水）/2025-5-15 15.23.15.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    364,
+    400,
+    420,
+    476
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场人员说420后面这个头击穿了，400米前面那个应该也有问题，最好找出来一起换了。",
+   "file": "2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt"
+  },
+  {
+   "case_group": "2025-5-15 15.23.15深圳龙岗某地（浸水）",
+   "cable_group": "unconfirmed_case:2025-5-15 15.23.15深圳龙岗某地（浸水）",
+   "source_relative_path": "2025-5-15 15.23.15深圳龙岗某地（浸水）/2025-5-15 15.23.15.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    364,
+    476
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "诊断结果：364m-476m局部浸水",
+   "file": "2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt",
+   "note": "工程师并提示\"传统的TDR测试一般会有30-40米的误差\""
+  },
+  {
+   "case_group": "2025-5-15 15.23.15深圳龙岗某地（浸水）",
+   "cable_group": "unconfirmed_case:2025-5-15 15.23.15深圳龙岗某地（浸水）",
+   "source_relative_path": "2025-5-15 15.23.15深圳龙岗某地（浸水）/2025-5-15 15.23.15.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1930.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1930m",
+   "file": "2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt"
+  },
+  {
+   "case_group": "2025-7-7 11.55.08邦润线(浸水)",
+   "cable_group": "unconfirmed_case:2025-7-7 11.55.08邦润线(浸水)",
+   "source_relative_path": "2025-7-7 11.55.08邦润线(浸水)/邦润线2025-7-7 11.55.08.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    270,
+    420
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为：270m位置B相阻抗下降，420m位置三相阻抗下降，未发现明显的接头反射特征，本体局部波动偏大，符合浸水的典型特征，420m发现了接头",
+   "file": "2025-7-7 11.55.08邦润线(浸水)\\readme.txt"
+  },
+  {
+   "case_group": "2025-7-7 11.55.08邦润线(浸水)",
+   "cable_group": "unconfirmed_case:2025-7-7 11.55.08邦润线(浸水)",
+   "source_relative_path": "2025-7-7 11.55.08邦润线(浸水)/邦润线2025-7-7 11.55.08.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    417,
+    478
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场人员说417米，478米位置是接头，但是他们fdr打出来好像看不太出来",
+   "file": "2025-7-7 11.55.08邦润线(浸水)\\readme.txt"
+  },
+  {
+   "case_group": "2025-7-7 11.55.08邦润线(浸水)",
+   "cable_group": "unconfirmed_case:2025-7-7 11.55.08邦润线(浸水)",
+   "source_relative_path": "2025-7-7 11.55.08邦润线(浸水)/邦润线2025-7-7 11.55.08.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 640.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：640m",
+   "file": "2025-7-7 11.55.08邦润线(浸水)\\readme.txt",
+   "note": "同一readme首行写明\"接头位置没人工标注\""
+  },
+  {
+   "case_group": "2025-8-20 11.44.04山东驻马店华润电力",
+   "cable_group": "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力",
+   "source_relative_path": "2025-8-20 11.44.04山东驻马店华润电力/2025-8-20 11.44.04驻马店华润.fdr",
+   "sweep_rowids": [
+    1,
+    3,
+    4
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    577,
+    1177,
+    1758,
+    1885
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "电缆测试全长为 2247m，分接箱/接头分别位于 577m、1177m、1758m、1885m 位置。",
+   "file": "2025-8-20 11.44.04山东驻马店华润电力\\华润电力盘古风电场电缆宽频阻抗谱测试报告.pdf"
+  },
+  {
+   "case_group": "2025-8-20 11.44.04山东驻马店华润电力",
+   "cable_group": "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力",
+   "source_relative_path": "2025-8-20 11.44.04山东驻马店华润电力/2025-8-20 11.44.04驻马店华润.fdr",
+   "sweep_rowids": [
+    1,
+    3,
+    4
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    1177,
+    1885
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "1、1177m 分接箱位置的阻抗突升明显，表明该位置局部电容下降，造成这类问题的原因一般是因外屏蔽损伤/局部放电。 2、1885m 接头呈现绝缘性能降低的现象（阻抗下降，脉冲反射特征减弱），C 相局部阻抗最低。",
+   "file": "2025-8-20 11.44.04山东驻马店华润电力\\华润电力盘古风电场电缆宽频阻抗谱测试报告.pdf"
+  },
+  {
+   "case_group": "2025-8-20 11.44.04山东驻马店华润电力",
+   "cable_group": "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力",
+   "source_relative_path": "2025-8-20 11.44.04山东驻马店华润电力/2025-8-20 11.44.04驻马店华润.fdr",
+   "sweep_rowids": [
+    1,
+    3,
+    4
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    1885,
+    1177
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场首先解剖了1885m 接头， 证实其存在低阻故障； 解剖完成后对电缆的剩余部分施加高压时，1177m 接头位置观察到明显的放电现象。",
+   "file": "2025-8-20 11.44.04山东驻马店华润电力\\华润电力盘古风电场电缆宽频阻抗谱测试报告.pdf",
+   "note": "唯一有解剖验证的现场缺陷位置"
+  },
+  {
+   "case_group": "2025-8-20 11.44.04山东驻马店华润电力",
+   "cable_group": "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力",
+   "source_relative_path": "2025-8-20 11.44.04山东驻马店华润电力/2025-8-20 11.44.04驻马店华润.fdr",
+   "sweep_rowids": [
+    1,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2246.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这个电缆是完整的，工程师出具了报告“华润电力盘古风电场电缆宽频阻抗谱测试报告.pdf”，FDR总长度2246m",
+   "file": "2025-8-20 11.44.04山东驻马店华润电力\\其他信息.txt"
+  },
+  {
+   "case_group": "2025-8-20 11.44.04山东驻马店华润电力",
+   "cable_group": "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力",
+   "source_relative_path": "2025-8-20 11.44.04山东驻马店华润电力/2025-8-20 15.18.36驻马店1767米.fdr",
+   "sweep_rowids": [
+    2,
+    3,
+    4
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    1758
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这是“2025-8-20 11.44.04驻马店华润.fdr”这条电缆，从1758m分接箱开始往末端测量的部分",
+   "file": "2025-8-20 11.44.04山东驻马店华润电力\\其他信息.txt"
+  },
+  {
+   "case_group": "2025-8-20 11.44.04山东驻马店华润电力",
+   "cable_group": "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力",
+   "source_relative_path": "2025-8-20 11.44.04山东驻马店华润电力/2025-8-20 15.18.36驻马店1767米.fdr",
+   "sweep_rowids": [
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1767.0,
+   "evidence_type": "filename_only",
+   "confidence": "low",
+   "quote": "2025-8-20 15.18.36驻马店1767米.fdr",
+   "file": "2025-8-20 11.44.04山东驻马店华润电力\\2025-8-20 15.18.36驻马店1767米.fdr",
+   "note": "文件名\"1767米\"是分段长度；TXT说明该段起点是主线1758m，不是缺陷位置"
+  },
+  {
+   "case_group": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+   "cable_group": "unconfirmed_case:2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+   "source_relative_path": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜/2026-5-20 10.29.21.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    170,
+    191,
+    242,
+    514,
+    752,
+    913,
+    1015,
+    1126,
+    1279,
+    1415,
+    1568,
+    1823,
+    1973
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场人员低压脉冲测出来的中间头：170-191-242-514-752-913-1015-1126-1279-1415-1568-1823-1973",
+   "file": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+   "cable_group": "unconfirmed_case:2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+   "source_relative_path": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜/2026-5-20 10.29.21.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    171
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为171m接头是正常的，后面有比较明显的外屏蔽损伤缺陷，基本没有其他接头的特征了",
+   "file": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜\\其他信息.txt",
+   "note": "缺陷本身未给出具体米数"
+  },
+  {
+   "case_group": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+   "cable_group": "unconfirmed_case:2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+   "source_relative_path": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜/2026-5-20 10.29.21.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1964.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1964m",
+   "file": "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜\\其他信息.txt",
+   "note": "电缆标签参数1967米，与FDR全长1964m基本一致"
+  },
+  {
+   "case_group": "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜",
+   "cable_group": "unconfirmed_case:2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜",
+   "source_relative_path": "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜/2026-5-21 11.54.20.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    55,
+    91,
+    175,
+    638,
+    682
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师标注了55m、91m、175m、638m、682m存在接头，应该没有缺陷",
+   "file": "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜",
+   "cable_group": "unconfirmed_case:2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜",
+   "source_relative_path": "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜/2026-5-21 11.54.20.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 770.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：770m",
+   "file": "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜\\其他信息.txt",
+   "note": "电缆标签\"旧710米+新53米\"，与770m接近"
+  },
+  {
+   "case_group": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+   "cable_group": "unconfirmed_case:2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+   "source_relative_path": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开/2026-5-21 15.34.27.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    150
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为，150m轻微异常",
+   "file": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+   "cable_group": "unconfirmed_case:2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+   "source_relative_path": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开/2026-5-21 15.34.27.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    161,
+    357,
+    442,
+    688,
+    824,
+    1122,
+    1220
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场低压脉冲测到的中间头：1220-161-357-442-688-824-1122",
+   "file": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+   "cable_group": "unconfirmed_case:2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+   "source_relative_path": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开/2026-5-21 15.34.27.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1213.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1213m",
+   "file": "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "cable_group": "unconfirmed_case:2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "source_relative_path": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜/2026-5-25 10.48.04.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    222,
+    240,
+    255,
+    285,
+    355,
+    421
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "接头位置FDR的标注：222m、240m、255m、285m、355m、421m",
+   "file": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "cable_group": "unconfirmed_case:2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "source_relative_path": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜/2026-5-25 10.48.04.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    222,
+    255
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师结合FDR认为222m存在阻抗突然上升，255m存在绝缘下降，222m的故障特征相对明显一些",
+   "file": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "cable_group": "unconfirmed_case:2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "source_relative_path": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜/2026-5-25 10.48.04.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    225
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "225中间头解开以后，绝缘电阻成功恢复，应该就是225的接头问题",
+   "file": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜\\其他信息.txt",
+   "note": "另有文件名证据：子目录\"225m接头解开之后的绝缘电阻\""
+  },
+  {
+   "case_group": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "cable_group": "unconfirmed_case:2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "source_relative_path": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜/2026-5-25 10.48.04.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 598.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场测到的总长是603m，只测到一个中间接头225",
+   "file": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜\\其他信息.txt",
+   "note": "同TXT另写\"FDR全长：598m\""
+  },
+  {
+   "case_group": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "cable_group": "unconfirmed_case:2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+   "source_relative_path": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜/2026-5-25 10.48.04.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    225
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "225m接头解开之后的绝缘电阻",
+   "file": "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜\\225m接头解开之后的绝缘电阻\\",
+   "note": "子目录名；与TXT中的225m互相印证"
+  },
+  {
+   "case_group": "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜",
+   "cable_group": "unconfirmed_case:2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜",
+   "source_relative_path": "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜/2026-5-28 20.18.53.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    276,
+    421
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "工程师说276-421m的这一部分特征比较奇怪，没遇到过",
+   "file": "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜\\其他信息.txt",
+   "note": "给的是区间，未指认单个点"
+  },
+  {
+   "case_group": "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜",
+   "cable_group": "unconfirmed_case:2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜",
+   "source_relative_path": "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜/2026-5-28 20.18.53.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 574.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：574m",
+   "file": "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜",
+   "cable_group": "unconfirmed_case:2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜",
+   "source_relative_path": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜/2026-5-30 12.13.22.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    175,
+    688,
+    843,
+    930
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR中清晰可见的接头：175m，688m，843m，930m，后面的接头比较难直接分辨？",
+   "file": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜",
+   "cable_group": "unconfirmed_case:2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜",
+   "source_relative_path": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜/2026-5-30 12.13.22.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    930
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为930m的头有中等局部放电的特征，询问这边有没有维修过？",
+   "file": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜",
+   "cable_group": "unconfirmed_case:2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜",
+   "source_relative_path": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜/2026-5-30 12.13.22.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1268.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1268m",
+   "file": "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜",
+   "cable_group": "unconfirmed_case:2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜",
+   "source_relative_path": "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜/2026-5-31 10.42.00.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为前后对比一样，应该没问题。发现铭牌上标出了是新旧电缆混合的，所以反射特征有些奇怪是正常的",
+   "file": "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜\\其他信息.txt",
+   "note": "无位置声明"
+  },
+  {
+   "case_group": "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜",
+   "cable_group": "unconfirmed_case:2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜",
+   "source_relative_path": "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜/2026-5-31 10.42.00.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1268.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1268m",
+   "file": "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜",
+   "cable_group": "unconfirmed_case:2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜",
+   "source_relative_path": "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜/2026-6-11 13.12.49.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为电缆没有发现明显放电缺陷",
+   "file": "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜",
+   "cable_group": "unconfirmed_case:2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜",
+   "source_relative_path": "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜/2026-6-11 13.12.49.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 955.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：955m",
+   "file": "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜",
+   "cable_group": "unconfirmed_case:2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜",
+   "source_relative_path": "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜/2026-6-11 14.24.09.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "电缆其他位置都没有发现明显放电缺陷",
+   "file": "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜",
+   "cable_group": "unconfirmed_case:2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜",
+   "source_relative_path": "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜/2026-6-11 14.24.09.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1890.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1890m",
+   "file": "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-11 16.29.35深圳龙岗某地",
+   "cable_group": "unconfirmed_case:2026-6-11 16.29.35深圳龙岗某地",
+   "source_relative_path": "2026-6-11 16.29.35深圳龙岗某地/2026-6-11 16.29.35.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "low",
+   "quote": "由于技术支持小组群里没有具体的回复文本，可能没啥缺陷？",
+   "file": "2026-6-11 16.29.35深圳龙岗某地\\其他信息.txt",
+   "note": "推测语气，无位置"
+  },
+  {
+   "case_group": "2026-6-11 16.29.35深圳龙岗某地",
+   "cable_group": "unconfirmed_case:2026-6-11 16.29.35深圳龙岗某地",
+   "source_relative_path": "2026-6-11 16.29.35深圳龙岗某地/2026-6-11 16.29.35.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2030.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：2030m",
+   "file": "2026-6-11 16.29.35深圳龙岗某地\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-11 17.04.41深圳龙岗某地",
+   "cable_group": "unconfirmed_case:2026-6-11 17.04.41深圳龙岗某地",
+   "source_relative_path": "2026-6-11 17.04.41深圳龙岗某地/2026-6-11 17.04.41.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    392
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "目测392m存在接头",
+   "file": "2026-6-11 17.04.41深圳龙岗某地\\其他信息.txt",
+   "note": "原文用\"目测\"，非仪器定量"
+  },
+  {
+   "case_group": "2026-6-11 17.04.41深圳龙岗某地",
+   "cable_group": "unconfirmed_case:2026-6-11 17.04.41深圳龙岗某地",
+   "source_relative_path": "2026-6-11 17.04.41深圳龙岗某地/2026-6-11 17.04.41.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2118.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：2118m",
+   "file": "2026-6-11 17.04.41深圳龙岗某地\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+   "cable_group": "unconfirmed_case:2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+   "source_relative_path": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜/2026-6-12 16.20.43.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    452,
+    576,
+    637
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "我从FDR读出来的接头：452m，576m，637m，感觉接头特征比较典型",
+   "file": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+   "cable_group": "unconfirmed_case:2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+   "source_relative_path": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜/2026-6-12 16.20.43.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 922.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：922m",
+   "file": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜\\其他信息.txt",
+   "note": "现场低压脉冲给出 440-593-703-788-916，与FDR读数不一致但同量级"
+  },
+  {
+   "case_group": "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜",
+   "cable_group": "unconfirmed_case:2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜",
+   "source_relative_path": "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜/2026-6-15 14.20.30.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    320
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "阻抗谱没发现显著缺陷特征，工程师只是在320m左右发现了新/旧电缆接头",
+   "file": "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜",
+   "cable_group": "unconfirmed_case:2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜",
+   "source_relative_path": "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜/2026-6-15 14.20.30.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1787.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1787m",
+   "file": "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜",
+   "cable_group": "unconfirmed_case:2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜",
+   "source_relative_path": "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜/2026-6-16 15.01.32.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    520
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "并且认为可能存在520m接头受潮",
+   "file": "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜\\其他信息.txt",
+   "note": "原文\"可能存在\"，未验证"
+  },
+  {
+   "case_group": "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜",
+   "cable_group": "unconfirmed_case:2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜",
+   "source_relative_path": "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜/2026-6-16 15.01.32.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1641.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1641m",
+   "file": "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜",
+   "cable_group": "unconfirmed_case:2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜",
+   "source_relative_path": "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜/2026-6-17 15.27.20.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    400
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为是400m接头受潮了",
+   "file": "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜",
+   "cable_group": "unconfirmed_case:2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜",
+   "source_relative_path": "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜/2026-6-17 15.27.20.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1431.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1431m",
+   "file": "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "cable_group": "unconfirmed_case:2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "source_relative_path": "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜/2026-6-2 11.31.03.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为宽频阻抗谱的结果正常",
+   "file": "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "cable_group": "unconfirmed_case:2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "source_relative_path": "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜/2026-6-2 11.31.03.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1217.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1217m",
+   "file": "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\其他信息.txt",
+   "note": "电缆标签1514.2米与FDR全长1217m差异大"
+  },
+  {
+   "case_group": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "cable_group": "unconfirmed_case:2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "source_relative_path": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜/2026-6-23 10.41.51.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    111,
+    664,
+    1360
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为111m这边有个明显的缺陷，664m接头轻微外屏蔽损伤缺陷、1360m接头绝缘下降",
+   "file": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "cable_group": "unconfirmed_case:2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "source_relative_path": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜/2026-6-23 10.41.51.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    23,
+    108,
+    261,
+    415,
+    644,
+    1121,
+    1393,
+    1801
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场测到接头：23-108-261-415-644-1121-1393-1801（末端）",
+   "file": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "cable_group": "unconfirmed_case:2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+   "source_relative_path": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜/2026-6-23 10.41.51.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1777.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1777m",
+   "file": "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-23 12.47.14深圳龙岗区兴业兴某地",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-6-23 12.47.14深圳龙岗区兴业兴某地/2026-6-23 12.47.14.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    226,
+    341,
+    437
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为：这几个接头（226m，341m，437m）都受潮了，建议先解剖226m的",
+   "file": "2026-6-23 12.47.14深圳龙岗区兴业兴某地\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-23 12.47.14深圳龙岗区兴业兴某地",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-6-23 12.47.14深圳龙岗区兴业兴某地/2026-6-23 12.47.14.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 464.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：464m",
+   "file": "2026-6-23 12.47.14深圳龙岗区兴业兴某地\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜/2026-6-23 20.33.31.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    226,
+    341,
+    380
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "根据FDR，工程师判断341m应该是个头，解剖这里吧。226m可能是浸水的起点，水从341m接头那儿进去的",
+   "file": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜/2026-6-23 20.33.31.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    380
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "经过对比，工程师认为380米这边应该有接头的，打了会高压之后FDR特征和白天发生了明显变化",
+   "file": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜/2026-6-23 20.33.31.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    226
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场判断是进水老化，这条的故障点是本体故障，角铁捅破了运行好多年后跳的",
+   "file": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt",
+   "note": "另有\"现场人员反馈找不到头，226米在水泥路下面\""
+  },
+  {
+   "case_group": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜/2026-6-23 20.33.31.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 487.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：487m",
+   "file": "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）",
+   "cable_group": "unconfirmed_case:2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）",
+   "source_relative_path": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）/2026-6-24 11.51.24.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    437,
+    743,
+    1265
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场人员在故障车上查到的点大概在500m左右，工程师建议现场解剖了再看看，FDR波形上接头位置是437m和743m，576m有个小波动，不一定是接头",
+   "file": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）",
+   "cable_group": "unconfirmed_case:2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）",
+   "source_relative_path": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）/2026-6-24 11.51.24.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    735,
+    1265
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "工程师认为：这两个接头可以验证一下：735m中间头A相阻抗最低，1265m接头特征很微弱",
+   "file": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\其他信息.txt",
+   "note": "735m与同文件\"743m\"不一致，原文并存"
+  },
+  {
+   "case_group": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）",
+   "cable_group": "unconfirmed_case:2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）",
+   "source_relative_path": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）/2026-6-24 11.51.24.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1593.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1593m",
+   "file": "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-25 18.08.15深圳龙岗区某地",
+   "cable_group": "unconfirmed_case:2026-6-25 18.08.15深圳龙岗区某地",
+   "source_relative_path": "2026-6-25 18.08.15深圳龙岗区某地/2026-6-25 18.08.15.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    25,
+    55,
+    221,
+    335,
+    544,
+    616
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场测到的接头位于：25-55-221-335-544-616（电缆末尾）",
+   "file": "2026-6-25 18.08.15深圳龙岗区某地\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-25 18.08.15深圳龙岗区某地",
+   "cable_group": "unconfirmed_case:2026-6-25 18.08.15深圳龙岗区某地",
+   "source_relative_path": "2026-6-25 18.08.15深圳龙岗区某地/2026-6-25 18.08.15.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    221
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师根据FDR认为221m接头反射幅值异常的大",
+   "file": "2026-6-25 18.08.15深圳龙岗区某地\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-25 18.08.15深圳龙岗区某地",
+   "cable_group": "unconfirmed_case:2026-6-25 18.08.15深圳龙岗区某地",
+   "source_relative_path": "2026-6-25 18.08.15深圳龙岗区某地/2026-6-25 18.08.15.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 616.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：616m",
+   "file": "2026-6-25 18.08.15深圳龙岗区某地\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+   "cable_group": "linked_line:liulian_f16_june_2026",
+   "source_relative_path": "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜/2026-6-3 12.20.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    200
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为200m附近有明显的局部放电特殊值",
+   "file": "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+   "cable_group": "linked_line:liulian_f16_june_2026",
+   "source_relative_path": "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜/2026-6-3 12.20.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2225.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：2225m",
+   "file": "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜\\其他信息.txt",
+   "note": "同组linked_line注明同一条电缆三天测试"
+  },
+  {
+   "case_group": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+   "cable_group": "linked_line:liulian_f16_june_2026",
+   "source_relative_path": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜/2026-6-4 9.28.27.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    160,
+    1190
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师继续对比了A相数据（2026-6-3 12.20.16和2026-6-4 9.28.27）与B相数据（2026-6-3 12.20.16和2026-6-4 10.18.27），判断昨天切的是160m的接头，后面加压后应该能打穿的，他说这种情况东莞也遇到过好几次，接头后面一点点出现这种放电故障，认为1190m也有不同",
+   "file": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+   "cable_group": "linked_line:liulian_f16_june_2026",
+   "source_relative_path": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜/2026-6-4 9.28.27.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    1100,
+    1713,
+    1906
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "振荡波有三个局放点，分别是1100米、1713米、1906米",
+   "file": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜\\其他信息.txt",
+   "note": "局放点，不等同于接头"
+  },
+  {
+   "case_group": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+   "cable_group": "linked_line:liulian_f16_june_2026",
+   "source_relative_path": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜/2026-6-4 9.28.27.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2206.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：2206m",
+   "file": "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25",
+   "cable_group": "unconfirmed_case:2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25",
+   "source_relative_path": "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25/2026-6-5 17.00.06.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    55
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "工程师认为要消缺的话找下55m附近有没有接头吧，这边看着有点老化和浸水的特征",
+   "file": "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25\\其他信息.txt",
+   "note": "原文是建议排查位置，未确认"
+  },
+  {
+   "case_group": "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25",
+   "cable_group": "unconfirmed_case:2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25",
+   "source_relative_path": "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25/2026-6-5 17.00.06.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 511.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：511m",
+   "file": "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜",
+   "cable_group": "linked_line:liulian_f16_june_2026",
+   "source_relative_path": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜/2026-6-5 9.31.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    123
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "然后工程师认为这条电缆目前123m接头轻微老化，343-721m附近的区域存在轻微局部放电区域",
+   "file": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜",
+   "cable_group": "linked_line:liulian_f16_june_2026",
+   "source_relative_path": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜/2026-6-5 9.31.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    1000
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "今天从站外做过去，一千米那里昨晚找出来搞定了",
+   "file": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜\\其他信息.txt",
+   "note": "仅\"一千米\"量级描述"
+  },
+  {
+   "case_group": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜",
+   "cable_group": "linked_line:liulian_f16_june_2026",
+   "source_relative_path": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜/2026-6-5 9.31.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2211.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：2211m",
+   "file": "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    900,
+    1100,
+    1300,
+    1400
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "浸水接头的位置已经标注在文件名里面了，分别是100m~1400m",
+   "file": "2026-6某地进行的1500m不同位置电缆接头浸水试验\\其他信息.txt",
+   "note": "每个sweep的具体位置由sweep_name给出，见下条；800/1000/1200无对应sweep"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    2
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    100
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"100m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=2；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    200
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"200m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=3；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    4
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    300
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"300m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=4；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    5
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    400
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"400m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=5；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    6
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    500
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"500m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=6；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    7
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    600
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"600m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=7；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    8
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    700
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"700m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=8；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    9
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    900
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"900m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=9；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    10
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    1100
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"1100m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=10；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    11
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    1300
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"1300m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=11；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    12
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    1400
+   ],
+   "length_m": null,
+   "evidence_type": "filename_only",
+   "confidence": "high",
+   "quote": "sweep_name=\"1400m接头浸水\"",
+   "file": "manifest real_manifest.jsonl / 工程师标注信息1.jpg (软件sweep列表)",
+   "note": "rowid=12；sweep名为软件内显示名，非FDR坐标读数"
+  },
+  {
+   "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+   "cable_group": "development_experiment:1500m_wet_joint",
+   "source_relative_path": "2026-6某地进行的1500m不同位置电缆接头浸水试验/1500m电缆单个接头浸水试验.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1500.0,
+   "evidence_type": "filename_only",
+   "confidence": "medium",
+   "quote": "1500m电缆单个接头浸水试验.fdr",
+   "file": "2026-6某地进行的1500m不同位置电缆接头浸水试验\\1500m电缆单个接头浸水试验.fdr",
+   "note": "长度只来自文件名/文件夹名，不得当作缺陷位置；TXT仅说\"用一根长电缆\""
+  },
+  {
+   "case_group": "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16",
+   "cable_group": "unconfirmed_case:2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16",
+   "source_relative_path": "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16/2026-7-10 14.25.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    362,
+    876
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "接头位置没人工标注，我标注了一下，应该是362m和876m",
+   "file": "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16",
+   "cable_group": "unconfirmed_case:2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16",
+   "source_relative_path": "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16/2026-7-10 14.25.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1295.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1295m",
+   "file": "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-12 18.31.45深圳海源恒业#1智能柜",
+   "cable_group": "unconfirmed_case:2026-7-12 18.31.45深圳海源恒业#1智能柜",
+   "source_relative_path": "2026-7-12 18.31.45深圳海源恒业#1智能柜/2026-7-12 18.31.45.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    140,
+    142,
+    220
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师结合FDR认为，220m的接头看到已经修复过了，开断的时候有没有往两侧摇下绝缘（现场人员问了，没有摇），然后工程师建议往前找找140m附近有没有接头，因为工程师认为在142m的特征是受潮导致的绝缘下降，同时还伴有外金属屏蔽损伤的缺陷",
+   "file": "2026-7-12 18.31.45深圳海源恒业#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-12 18.31.45深圳海源恒业#1智能柜",
+   "cable_group": "unconfirmed_case:2026-7-12 18.31.45深圳海源恒业#1智能柜",
+   "source_relative_path": "2026-7-12 18.31.45深圳海源恒业#1智能柜/2026-7-12 18.31.45.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1114.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1114m",
+   "file": "2026-7-12 18.31.45深圳海源恒业#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜",
+   "cable_group": "unconfirmed_case:2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜",
+   "source_relative_path": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜/2026-7-13 11.37.12.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    414,
+    722,
+    1224
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "接头位置FDR标注：414m，722m，1224m",
+   "file": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜",
+   "cable_group": "unconfirmed_case:2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜",
+   "source_relative_path": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜/2026-7-13 11.37.12.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    1097,
+    1224
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "FDR在1097m和1224m接头存在异常特征，B相在1097m和另外两相差异大，1097m可能不是接头，优先找1224m位置的接头",
+   "file": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜",
+   "cable_group": "unconfirmed_case:2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜",
+   "source_relative_path": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜/2026-7-13 11.37.12.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1300.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1300m",
+   "file": "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜",
+   "cable_group": "unconfirmed_case:2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜",
+   "source_relative_path": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜/2026-7-14 9.57.49.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    96,
+    463,
+    671,
+    935
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "接头FDR人工标注：96m，463m，671m，935m",
+   "file": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜",
+   "cable_group": "unconfirmed_case:2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜",
+   "source_relative_path": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜/2026-7-14 9.57.49.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    95
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "95m附近外屏蔽有锈蚀，绝缘没有问题",
+   "file": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜",
+   "cable_group": "unconfirmed_case:2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜",
+   "source_relative_path": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜/2026-7-14 9.57.49.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1176.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "电缆FDR全长标注：1176m",
+   "file": "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜/2026-7-15 16.19.30.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    60,
+    1000,
+    1715
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "工程师认为60m-1000m段问题比较多，只能用二分法排除了，先解决局放问题吧，1700多米阻抗谱也显示有问题的。",
+   "file": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜\\其他信息.txt",
+   "note": "大区间；具体点见下条1715m"
+  },
+  {
+   "case_group": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜/2026-7-15 16.19.30.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    1715
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "振荡波在1715米中间头A相有集中局放点，局放量超标",
+   "file": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜/2026-7-15 16.19.30.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2024.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：2024m",
+   "file": "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜",
+   "cable_group": "unconfirmed_case:2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜",
+   "source_relative_path": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜/2026-7-19 17.00.31.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    543
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师判断543m位置大概率受潮了，程度不轻",
+   "file": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜",
+   "cable_group": "unconfirmed_case:2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜",
+   "source_relative_path": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜/2026-7-19 17.00.31.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    570,
+    853
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "振荡波在570和853米有两个局放点，宽频543和震荡波570的也许是同一个点",
+   "file": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜",
+   "cable_group": "unconfirmed_case:2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜",
+   "source_relative_path": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜/2026-7-19 17.00.31.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1135.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1135m",
+   "file": "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第一段（从柜子测）/2026-7-20 10.46.01.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    53,
+    183,
+    332,
+    412,
+    514
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "人工标注了接头：53m+183m+332m+412m（412m那边应该有两个接头）+514m",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第一段（从柜子测）/2026-7-20 10.46.01.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    58,
+    201,
+    330,
+    337,
+    459
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "第一段圈出来的位置有问题，具体哪里不确定，用耐压打一下吧（圈出来的位置为：58m处至201m，337m至459m阻抗下降，可能存在电缆截面积不同）",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第一段（从柜子测）/2026-7-20 10.46.01.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    330
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "第一段330m接头看起来浸水最严重（那个头应该就是第一次测有局放点的那个头）",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第一段（从柜子测）/2026-7-20 10.46.01.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 637.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：637m",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第二段（变电站门口到中间头）/2026-7-20 11.16.44.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    84,
+    206,
+    207,
+    300,
+    526,
+    670,
+    721,
+    947
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场人员测出来的接头：84-207-300-526-670-721-947（末端）",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\第二段（变电站门口到中间头）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第二段（变电站门口到中间头）/2026-7-20 11.16.44.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    206
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "第二段电缆206m位置可以去看一眼",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\第二段（变电站门口到中间头）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第二段（变电站门口到中间头）/2026-7-20 11.16.44.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 960.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长人工标注：960m",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\第二段（变电站门口到中间头）\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第二段（变电站门口到中间头）/2026-7-20 11.16.44.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    206,
+    1715
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "测出来206米那个中间头，就是现场人员们第一次测试（7.15）从电房出来1715米那个头（震荡波有局放）",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\第二段（变电站门口到中间头）\\其他信息.txt",
+   "note": "跨次测试同一接头的两次坐标"
+  },
+  {
+   "case_group": "2026-7-20 10.46.01深圳某地两段电缆",
+   "cable_group": "development_topology:maao_f52_july_2026",
+   "source_relative_path": "2026-7-20 10.46.01深圳某地两段电缆/第二段（变电站门口到中间头）/2026-7-20 11.16.44.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1997.0,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "第一次应该是从柜开始测的，因为第一次测试总长是1997米，然后接头位于1715米",
+   "file": "2026-7-20 10.46.01深圳某地两段电缆\\补充信息.txt",
+   "note": "这 1997 m 说的是 7-15 首次测试的总长（对应 7-15 的 .fdr），只是写在了 7-20 目录的补充信息里；与 7-15 的\"FDR全长：2024m\"相差 27 m"
+  },
+  {
+   "case_group": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜",
+   "cable_group": "unconfirmed_case:2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜",
+   "source_relative_path": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜/2026-7-22 9.54.32.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    391,
+    471,
+    798,
+    985,
+    1248
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "接头位置FDR标注：391m，471m，798m，985m，1248m",
+   "file": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜",
+   "cable_group": "unconfirmed_case:2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜",
+   "source_relative_path": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜/2026-7-22 9.54.32.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    900,
+    1000,
+    1024
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "电缆终端头的阻抗差异有些大，900-1000m之间找找看有没有接头",
+   "file": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜\\其他信息.txt",
+   "note": "区间建议"
+  },
+  {
+   "case_group": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜",
+   "cable_group": "unconfirmed_case:2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜",
+   "source_relative_path": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜/2026-7-22 9.54.32.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1622.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1622m",
+   "file": "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜/2026-7-23 17.24.18.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    380
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这条电缆是2026.6.23晚上同一条电缆，相较于之前，为了干掉那个缺陷点，380m附近的一个接头换了一百多米电缆",
+   "file": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜/2026-7-23 17.24.18.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    330
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "目前330m位置有点受潮的特征，其他没什么",
+   "file": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+   "cable_group": "linked_cable:nanling_f55_june_2026",
+   "source_relative_path": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜/2026-7-23 17.24.18.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 448.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：448m",
+   "file": "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜",
+   "cable_group": "unconfirmed_case:2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜",
+   "source_relative_path": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜/2026-7-3 13.07.08.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    221,
+    388,
+    667,
+    1020
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师在阻抗谱看到四个中间头221-388-667-1020m",
+   "file": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜",
+   "cable_group": "unconfirmed_case:2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜",
+   "source_relative_path": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜/2026-7-3 13.07.08.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    221
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这条电缆存在中度受潮情况，接头的反射幅值都比较低，第一个接头（221m）的异常特征最显著",
+   "file": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜",
+   "cable_group": "unconfirmed_case:2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜",
+   "source_relative_path": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜/2026-7-3 13.07.08.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1120.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1120m",
+   "file": "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜",
+   "cable_group": "unconfirmed_case:2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜",
+   "source_relative_path": "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜/2026-7-7 10.32.12.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    100
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为100m接头轻微老化，绝缘正常可以投运",
+   "file": "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜",
+   "cable_group": "unconfirmed_case:2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜",
+   "source_relative_path": "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜/2026-7-7 10.32.12.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1407.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长标注：1407m",
+   "file": "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜",
+   "cable_group": "unconfirmed_case:2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜",
+   "source_relative_path": "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜/2026-7-8 13.21.33.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    100,
+    200
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "工程师认为100-200m段轻微受潮，严重程度不高",
+   "file": "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜\\其他信息.txt",
+   "note": "给的是区间"
+  },
+  {
+   "case_group": "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜",
+   "cable_group": "unconfirmed_case:2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜",
+   "source_relative_path": "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜/2026-7-8 13.21.33.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 864.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：864m",
+   "file": "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜",
+   "cable_group": "unconfirmed_case:2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜",
+   "source_relative_path": "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜/2026-7-9 14.56.52.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    64,
+    130,
+    580,
+    630
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "工程师大概标注了64-130m的区间，以及580-630m的区间，具体标注位置和标注内容图片过期看不清楚了",
+   "file": "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\其他信息.txt",
+   "note": "原文明确说标注图片已过期、内容看不清"
+  },
+  {
+   "case_group": "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜",
+   "cable_group": "unconfirmed_case:2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜",
+   "source_relative_path": "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜/2026-7-9 14.56.52.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1480.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR末端位置：1480m",
+   "file": "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜",
+   "cable_group": "unconfirmed_case:2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜",
+   "source_relative_path": "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜/2026-8-22 12.01.01.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这条电缆没问题",
+   "file": "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜",
+   "cable_group": "unconfirmed_case:2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜",
+   "source_relative_path": "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜/2026-8-22 12.01.01.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 330.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR电缆末端标注：330m",
+   "file": "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜\\其他信息.txt",
+   "note": "电缆标签301米与330m接近"
+  },
+  {
+   "case_group": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜",
+   "cable_group": "unconfirmed_case:2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜",
+   "source_relative_path": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜/2026-8-22 12.15.49.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    170,
+    331,
+    501,
+    646,
+    833
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "接头位置：170-331-501-646-833（833为末端）",
+   "file": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜",
+   "cable_group": "unconfirmed_case:2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜",
+   "source_relative_path": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜/2026-8-22 12.15.49.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    170
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "170m处测距仪显示波形向下 现场摇了绝缘 黄色相对地",
+   "file": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜",
+   "cable_group": "unconfirmed_case:2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜",
+   "source_relative_path": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜/2026-8-22 12.15.49.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 830.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR标注末端：830m",
+   "file": "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜\\其他信息.txt",
+   "note": "电缆标签1724米与FDR末端830m严重不符，两者不能混用"
+  },
+  {
+   "case_group": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜",
+   "cable_group": "unconfirmed_case:2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜",
+   "source_relative_path": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜/2026-8-22 15.06.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2008.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR电缆末端标注：2008m",
+   "file": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜",
+   "cable_group": "unconfirmed_case:2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜",
+   "source_relative_path": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜/2026-8-22 15.06.16.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这条电缆太复杂了，有好几段截面积不同的混在一起，看不出来问题",
+   "file": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜\\其他信息.txt",
+   "note": "无位置"
+  },
+  {
+   "case_group": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜",
+   "cable_group": "unconfirmed_case:2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜",
+   "source_relative_path": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜/2026-7-15 16.19.30（之前）.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "之前做过2次接头，第二次做的是：2026-7-15 16.19.30（之前）.fdr",
+   "file": "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜\\其他信息.txt",
+   "note": "该文件是7-15首测的拷贝，位置信息见7-15记录"
+  },
+  {
+   "case_group": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜",
+   "cable_group": "unconfirmed_case:2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜",
+   "source_relative_path": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜/2026-8-26 11.39.46.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    355
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR阻抗谱显示355m的接头问题比较大",
+   "file": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜",
+   "cable_group": "unconfirmed_case:2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜",
+   "source_relative_path": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜/2026-8-26 11.39.46.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    2334
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "震荡波在中相2334米有个别局放点",
+   "file": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜\\其他信息.txt",
+   "note": "局放点"
+  },
+  {
+   "case_group": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜",
+   "cable_group": "unconfirmed_case:2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜",
+   "source_relative_path": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜/2026-8-26 11.39.46.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2885.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "电缆末端FDR标注：2885m",
+   "file": "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜",
+   "cable_group": "unconfirmed_case:2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜",
+   "source_relative_path": "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜/2026-8-26 9.53.21.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现在应该没问题了",
+   "file": "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜",
+   "cable_group": "unconfirmed_case:2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜",
+   "source_relative_path": "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜/2026-8-26 9.53.21.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2868.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "电缆末端FDR标注：2868m",
+   "file": "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜",
+   "cable_group": "unconfirmed_case:2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜",
+   "source_relative_path": "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜/2026-8-28 15.26.01.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    159
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为，159m这个接头看起来问题最大",
+   "file": "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜",
+   "cable_group": "unconfirmed_case:2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜",
+   "source_relative_path": "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜/2026-8-28 15.26.01.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2488.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "电缆末端FDR标注：2488米",
+   "file": "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)",
+   "cable_group": "development_cable:sewage_f12",
+   "source_relative_path": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)/2026-9-14 11.14.34.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    396,
+    667,
+    1004,
+    1367,
+    1383
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR接头位置标注：396，667，1004，1367，1383m",
+   "file": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)",
+   "cable_group": "development_cable:sewage_f12",
+   "source_relative_path": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)/2026-9-14 11.14.34.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    667
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "先找一下667m的接头",
+   "file": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)",
+   "cable_group": "development_cable:sewage_f12",
+   "source_relative_path": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)/2026-9-14 11.14.34.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2430.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长2430m",
+   "file": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)",
+   "cable_group": "development_cable:sewage_f12",
+   "source_relative_path": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)/2026-9-14 11.14.34.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [
+    29
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "是之前污水厂的那条 29米的中间头解开后做的",
+   "file": "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)\\其他信息.txt",
+   "note": "交叉引用：非manifest目录2026-9-8的TXT写\"现场在35米找到一个中间头\"，29m/35m不一致"
+  },
+  {
+   "case_group": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+   "cable_group": "unconfirmed_case:2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+   "source_relative_path": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜/2026-9-16 10.45.47.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    213,
+    338,
+    644,
+    945
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR下接头位置人工标注：213-338-644-945",
+   "file": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+   "cable_group": "unconfirmed_case:2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+   "source_relative_path": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜/2026-9-16 10.45.47.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    338
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "338m接头存在老化",
+   "file": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+   "cable_group": "unconfirmed_case:2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+   "source_relative_path": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜/2026-9-16 10.45.47.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1078.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长1078m",
+   "file": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关",
+   "cable_group": "unconfirmed_case:2026-9-2-深圳顺和达厂户内公用三遥柜601开关",
+   "source_relative_path": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关/顺和达厂户内公用三遥柜601开关.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    135
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "工程师认为135m接头浸水",
+   "file": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关",
+   "cable_group": "unconfirmed_case:2026-9-2-深圳顺和达厂户内公用三遥柜601开关",
+   "source_relative_path": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关/顺和达厂户内公用三遥柜601开关.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    250
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "现场反映这条BC相绝缘低，250米左右三相有局放",
+   "file": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关",
+   "cable_group": "unconfirmed_case:2026-9-2-深圳顺和达厂户内公用三遥柜601开关",
+   "source_relative_path": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关/顺和达厂户内公用三遥柜601开关.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 319.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR总长：319m",
+   "file": "2026-9-2-深圳顺和达厂户内公用三遥柜601开关\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜",
+   "cable_group": "unconfirmed_case:2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜",
+   "source_relative_path": "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜/2026-9-21 16.35.27.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    33,
+    106,
+    295,
+    394,
+    600
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR标注的接头：33-106-295-394-600",
+   "file": "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜",
+   "cable_group": "unconfirmed_case:2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜",
+   "source_relative_path": "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜/2026-9-21 16.35.27.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 604.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长604m",
+   "file": "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\其他信息.txt",
+   "note": "震荡波测到的接头：113-194-309-453-606，与FDR读数不一致"
+  },
+  {
+   "case_group": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜",
+   "cable_group": "unconfirmed_case:2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜",
+   "source_relative_path": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜/2026-9-23 12.06.02.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    537
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "537m这个接头要是之前没有维修过的话这次需要关注下，没用很严重，还是潜伏性缺陷",
+   "file": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜",
+   "cable_group": "unconfirmed_case:2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜",
+   "source_relative_path": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜/2026-9-23 12.06.02.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "joint_position",
+   "positions_m": [
+    381,
+    543,
+    594,
+    874,
+    1275,
+    1870
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "振荡波无异常，测到的接头分别是16-381-543-594-874-1275-1870",
+   "file": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜",
+   "cable_group": "unconfirmed_case:2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜",
+   "source_relative_path": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜/2026-9-23 12.06.02.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1901.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长1901m",
+   "file": "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开",
+   "cable_group": "unconfirmed_case:2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开",
+   "source_relative_path": "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开/2026-9-24 13.08.39.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这条电缆没什么问题",
+   "file": "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开",
+   "cable_group": "unconfirmed_case:2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开",
+   "source_relative_path": "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开/2026-9-24 13.08.39.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1183.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长1183m",
+   "file": "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+   "cable_group": "unconfirmed_case:2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+   "source_relative_path": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜/2026-9-28 12.51.40.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    234
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "234m位置有缺陷，早期阶段",
+   "file": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+   "cable_group": "unconfirmed_case:2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+   "source_relative_path": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜/2026-9-28 12.51.40.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    1490
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "medium",
+   "quote": "振荡波在1490米有集中局放点，局放波形非常典型",
+   "file": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜\\其他信息.txt",
+   "note": "局放点"
+  },
+  {
+   "case_group": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+   "cable_group": "unconfirmed_case:2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+   "source_relative_path": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜/2026-9-28 12.51.40.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1687.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长：1687m",
+   "file": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜",
+   "cable_group": "unconfirmed_case:2026-9-28 13.53.02深圳新沙路二十二公用断路器柜",
+   "source_relative_path": "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜/2026-9-28 13.53.02.fdr",
+   "sweep_rowids": [
+    1,
+    4,
+    5
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 1140.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "电缆全长1140m",
+   "file": "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜\\其他信息.txt",
+   "note": "同TXT另写\"FDR全长1142m\"；仪器导出报告参数为\"试品长度 1150\""
+  },
+  {
+   "case_group": "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜",
+   "cable_group": "unconfirmed_case:2026-9-28 13.53.02深圳新沙路二十二公用断路器柜",
+   "source_relative_path": "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜/2026-9-28 13.53.02.fdr",
+   "sweep_rowids": [
+    1,
+    4,
+    5
+   ],
+   "claim": "conclusion",
+   "positions_m": [],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "这条电缆受潮有些严重，但击穿风险应该不高",
+   "file": "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜\\其他信息.txt",
+   "note": "无位置"
+  },
+  {
+   "case_group": "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校",
+   "cable_group": "unconfirmed_case:2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校",
+   "source_relative_path": "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校/2026-9-28 9.35.41.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "defect_position",
+   "positions_m": [
+    400
+   ],
+   "length_m": null,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "看到两个问题点：1. 测试终端阻抗下降  2. 400m接头受潮",
+   "file": "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校\\其他信息.txt"
+  },
+  {
+   "case_group": "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校",
+   "cable_group": "unconfirmed_case:2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校",
+   "source_relative_path": "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校/2026-9-28 9.35.41.fdr",
+   "sweep_rowids": [
+    1,
+    2,
+    3
+   ],
+   "claim": "length",
+   "positions_m": [],
+   "length_m": 2438.0,
+   "evidence_type": "engineer_note",
+   "confidence": "high",
+   "quote": "FDR全长2438m",
+   "file": "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校\\其他信息.txt",
+   "note": "仪器导出报告参数为\"试品长度 2500\""
+  }
+ ],
+ "covered_case_groups": [
+  "2023-12-26-无锡蓝安+藕光",
+  "2025-2-17 11.25.49北京城区白塔寺",
+  "2025-3-7 石杨线5号至6号进水",
+  "2025-5-15 15.23.15深圳龙岗某地（浸水）",
+  "2025-7-7 11.55.08邦润线(浸水)",
+  "2025-8-20 11.44.04山东驻马店华润电力",
+  "2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+  "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜",
+  "2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+  "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+  "2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜",
+  "2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜",
+  "2026-6-11 17.04.41深圳龙岗某地",
+  "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+  "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜",
+  "2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜",
+  "2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜",
+  "2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+  "2026-6-23 12.47.14深圳龙岗区兴业兴某地",
+  "2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+  "2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）",
+  "2026-6-25 18.08.15深圳龙岗区某地",
+  "2026-6-3 12.20.16深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+  "2026-6-4 9.28.27深圳李朗变电站10kV李联线F16三医院应急院区#1智能柜",
+  "2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25",
+  "2026-6-5 9.31.16深圳220kV李朗变电站10kV李联线F16李朗站外#16智能柜",
+  "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+  "2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16",
+  "2026-7-12 18.31.45深圳海源恒业#1智能柜",
+  "2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜",
+  "2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜",
+  "2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜",
+  "2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜",
+  "2026-7-20 10.46.01深圳某地两段电缆",
+  "2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜",
+  "2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜",
+  "2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜",
+  "2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜",
+  "2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜",
+  "2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜",
+  "2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜",
+  "2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜",
+  "2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜",
+  "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)",
+  "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+  "2026-9-2-深圳顺和达厂户内公用三遥柜601开关",
+  "2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜",
+  "2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜",
+  "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+  "2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校"
+ ],
+ "missing_case_groups": [
+  "2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜",
+  "2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜",
+  "2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜",
+  "2026-6-11 16.29.35深圳龙岗某地",
+  "2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜",
+  "2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜",
+  "2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜",
+  "2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜",
+  "2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开",
+  "2026-9-28 13.53.02深圳新沙路二十二公用断路器柜"
+ ]
+}

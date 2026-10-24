@@ -1,0 +1,57 @@
+{
+  "checkpoint": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\Workbuddy\\FieldNN_PINN_20261023\\output\\field_ft_150\\best.pt",
+  "view": "mixed",
+  "event_loss": 0.7916294898946041,
+  "positive_part": 0.5979238177814656,
+  "negative_part": 0.19370567211313852,
+  "background_probability": {
+    "mean": 0.0070640649646520615,
+    "p90": 0.014281935058534145,
+    "p99": 0.11338309943675995,
+    "p999": 0.28736767172813416,
+    "max": 0.9259026646614075,
+    "share_above_0_02": 0.08169901529947916
+  },
+  "recall_by_distance": [
+    {
+      "range_m": [
+        0.0,
+        500.0
+      ],
+      "events": 1665,
+      "recall_at_5m": 0.6738738738738739
+    },
+    {
+      "range_m": [
+        500.0,
+        1000.0
+      ],
+      "events": 554,
+      "recall_at_5m": 0.7509025270758123
+    },
+    {
+      "range_m": [
+        1000.0,
+        1500.0
+      ],
+      "events": 254,
+      "recall_at_5m": 0.7362204724409449
+    },
+    {
+      "range_m": [
+        1500.0,
+        2000.0
+      ],
+      "events": 92,
+      "recall_at_5m": 0.6739130434782609
+    },
+    {
+      "range_m": [
+        2000.0,
+        2700.0
+      ],
+      "events": 9,
+      "recall_at_5m": 0.5555555555555556
+    }
+  ]
+}

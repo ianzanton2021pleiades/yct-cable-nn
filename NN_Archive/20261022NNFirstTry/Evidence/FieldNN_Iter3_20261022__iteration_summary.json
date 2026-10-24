@@ -1,0 +1,223 @@
+{
+  "smoke_only": false,
+  "data": "E:\\CableNNDataSet\\CodeX\\FieldNN_Iter3_20261022",
+  "cpu": {
+    "physical_cores_used": 7,
+    "physical_cores_reserved": 1,
+    "affinity_mask": "0x3fff"
+  },
+  "models": {
+    "unet": {
+      "test": {
+        "model_name": "unet",
+        "checkpoint_epoch": 14,
+        "split": "test",
+        "thresholds": {
+          "event": 0.5,
+          "interval": 0.3,
+          "terminal": 0.85
+        },
+        "metrics": {
+          "curve_count": 1200,
+          "event_metrics_by_tolerance_m": {
+            "2": {
+              "tolerance_m": 2.0,
+              "curve_count": 1200,
+              "truth_event_count": 2475,
+              "prediction_event_count": 2360,
+              "matched_event_count": 2107,
+              "precision": 0.8927966101694915,
+              "recall": 0.8513131313131314,
+              "f1": 0.8715615305067218,
+              "matched_truth_coverage": 0.8513131313131314,
+              "matched_prediction_coverage": 0.8927966101694915,
+              "mean_matched_mae_m": 0.2781394139729501
+            },
+            "5": {
+              "tolerance_m": 5.0,
+              "curve_count": 1200,
+              "truth_event_count": 2475,
+              "prediction_event_count": 2360,
+              "matched_event_count": 2112,
+              "precision": 0.8949152542372881,
+              "recall": 0.8533333333333334,
+              "f1": 0.8736297828335057,
+              "matched_truth_coverage": 0.8533333333333334,
+              "matched_prediction_coverage": 0.8949152542372881,
+              "mean_matched_mae_m": 0.28518352222743315
+            },
+            "10": {
+              "tolerance_m": 10.0,
+              "curve_count": 1200,
+              "truth_event_count": 2475,
+              "prediction_event_count": 2360,
+              "matched_event_count": 2120,
+              "precision": 0.8983050847457628,
+              "recall": 0.8565656565656565,
+              "f1": 0.8769389865563598,
+              "matched_truth_coverage": 0.8565656565656565,
+              "matched_prediction_coverage": 0.8983050847457628,
+              "mean_matched_mae_m": 0.31180688061477274
+            }
+          },
+          "interval_metrics": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 586,
+            "matched_interval_count": 487,
+            "precision": 0.8310580204778157,
+            "recall": 0.9347408829174664,
+            "f1": 0.8798554652213189,
+            "matched_truth_coverage": 0.9347408829174664,
+            "matched_prediction_coverage": 0.8310580204778157,
+            "mean_matched_iou": 0.9664786104494343,
+            "grid_overall_iou": 0.9022821158964367,
+            "grid_intersection_points": 165779,
+            "grid_union_points": 183733,
+            "grid_point_count_total": 9830400
+          },
+          "terminal_metrics": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1031,
+            "terminal_hit_count": 1030,
+            "terminal_miss_count": 4,
+            "terminal_false_positive_count": 1,
+            "terminal_hit_rate": 0.9961315280464217,
+            "precision": 0.9990300678952473,
+            "recall": 0.9961315280464217,
+            "f1": 0.9975786924939467,
+            "mean_terminal_error_m": 0.40370419095690857,
+            "mean_matched_terminal_error_m": 0.2735064414767342
+          }
+        },
+        "false_positive_summary": {
+          "zero_event_curve_count": 374,
+          "false_events_per_zero_event_curve": 0.013368983957219251,
+          "events_per_curve_median": 2.0,
+          "post_terminal_event_count": 0
+        },
+        "evaluated": 1200,
+        "supervision_coverage": {
+          "ignored_fraction_by_head": {
+            "event": 0.008966166178385417,
+            "interval": 0.008878173828125,
+            "terminal": 0.0017055257161458332
+          },
+          "policy": "Predictions in undefined synthetic target windows are excluded; measured-field inference remains full-grid."
+        },
+        "label_axis": "nominal-velocity response distance; physical geometry retained separately"
+      },
+      "run": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter3_20261022\\output\\iteration3\\unet",
+      "field_output": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter3_20261022\\output\\iteration3\\unet\\field"
+    },
+    "transformer": {
+      "test": {
+        "model_name": "transformer",
+        "checkpoint_epoch": 23,
+        "split": "test",
+        "thresholds": {
+          "event": 0.5,
+          "interval": 0.975,
+          "terminal": 0.8
+        },
+        "metrics": {
+          "curve_count": 1200,
+          "event_metrics_by_tolerance_m": {
+            "2": {
+              "tolerance_m": 2.0,
+              "curve_count": 1200,
+              "truth_event_count": 2475,
+              "prediction_event_count": 2512,
+              "matched_event_count": 2205,
+              "precision": 0.8777866242038217,
+              "recall": 0.8909090909090909,
+              "f1": 0.8842991778624424,
+              "matched_truth_coverage": 0.8909090909090909,
+              "matched_prediction_coverage": 0.8777866242038217,
+              "mean_matched_mae_m": 0.25426125762255963
+            },
+            "5": {
+              "tolerance_m": 5.0,
+              "curve_count": 1200,
+              "truth_event_count": 2475,
+              "prediction_event_count": 2512,
+              "matched_event_count": 2214,
+              "precision": 0.8813694267515924,
+              "recall": 0.8945454545454545,
+              "f1": 0.8879085622618809,
+              "matched_truth_coverage": 0.8945454545454545,
+              "matched_prediction_coverage": 0.8813694267515924,
+              "mean_matched_mae_m": 0.26702705405579213
+            },
+            "10": {
+              "tolerance_m": 10.0,
+              "curve_count": 1200,
+              "truth_event_count": 2475,
+              "prediction_event_count": 2512,
+              "matched_event_count": 2222,
+              "precision": 0.8845541401273885,
+              "recall": 0.8977777777777778,
+              "f1": 0.8911169039502707,
+              "matched_truth_coverage": 0.8977777777777778,
+              "matched_prediction_coverage": 0.8845541401273885,
+              "mean_matched_mae_m": 0.2923150810749663
+            }
+          },
+          "interval_metrics": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 581,
+            "matched_interval_count": 496,
+            "precision": 0.8537005163511188,
+            "recall": 0.9520153550863724,
+            "f1": 0.9001814882032668,
+            "matched_truth_coverage": 0.9520153550863724,
+            "matched_prediction_coverage": 0.8537005163511188,
+            "mean_matched_iou": 0.9768946573963548,
+            "grid_overall_iou": 0.9085861292743059,
+            "grid_intersection_points": 169524,
+            "grid_union_points": 186580,
+            "grid_point_count_total": 9830400
+          },
+          "terminal_metrics": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1032,
+            "terminal_hit_count": 1032,
+            "terminal_miss_count": 2,
+            "terminal_false_positive_count": 0,
+            "terminal_hit_rate": 0.9980657640232108,
+            "precision": 1.0,
+            "recall": 0.9980657640232108,
+            "f1": 0.9990319457889641,
+            "mean_terminal_error_m": 0.2779745494913626,
+            "mean_matched_terminal_error_m": 0.2779745494913626
+          }
+        },
+        "false_positive_summary": {
+          "zero_event_curve_count": 374,
+          "false_events_per_zero_event_curve": 0.008021390374331552,
+          "events_per_curve_median": 2.0,
+          "post_terminal_event_count": 2
+        },
+        "evaluated": 1200,
+        "supervision_coverage": {
+          "ignored_fraction_by_head": {
+            "event": 0.008966166178385417,
+            "interval": 0.008878173828125,
+            "terminal": 0.0017055257161458332
+          },
+          "policy": "Predictions in undefined synthetic target windows are excluded; measured-field inference remains full-grid."
+        },
+        "label_axis": "nominal-velocity response distance; physical geometry retained separately"
+      },
+      "run": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter3_20261022\\output\\iteration3\\transformer",
+      "field_output": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter3_20261022\\output\\iteration3\\transformer\\field"
+    }
+  }
+}

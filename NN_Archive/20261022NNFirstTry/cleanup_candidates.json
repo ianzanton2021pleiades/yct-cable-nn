@@ -1,0 +1,368 @@
+[
+  {
+    "Path": "FieldNN_20261022/output/smoke_audit",
+    "Files": 2,
+    "Bytes": 787014,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/output/smoke_field_inference",
+    "Files": 2,
+    "Bytes": 12849,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/output/smoke_log_audit",
+    "Files": 2,
+    "Bytes": 783035,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/output/smoke_log_field",
+    "Files": 2,
+    "Bytes": 13054,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/output/smoke_log_pipeline",
+    "Files": 30,
+    "Bytes": 492727,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/output/smoke_pipeline",
+    "Files": 24,
+    "Bytes": 463117,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/output/smoke_resume",
+    "Files": 3,
+    "Bytes": 6130,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/smoke_data",
+    "Files": 7,
+    "Bytes": 2996,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/smoke_log_data",
+    "Files": 14,
+    "Bytes": 154096,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_20261022/smoke_v2_data",
+    "Files": 14,
+    "Bytes": 154057,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Hybrid_20261022/__pycache__",
+    "Files": 8,
+    "Bytes": 160423,
+    "Reason": "Python字节码缓存"
+  },
+  {
+    "Path": "FieldNN_Hybrid_20261022/output/domain_smoke",
+    "Files": 3,
+    "Bytes": 5598,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Hybrid_20261022/output/pretrain_smoke",
+    "Files": 4,
+    "Bytes": 101946,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Hybrid_20261022/output/smoke_hybrid",
+    "Files": 5,
+    "Bytes": 30870,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Hybrid_20261022/output/stable_smoke",
+    "Files": 4,
+    "Bytes": 5985,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter10_20261023/__pycache__",
+    "Files": 1,
+    "Bytes": 73148,
+    "Reason": "Python字节码缓存"
+  },
+  {
+    "Path": "FieldNN_Iter10_20261023/output/existing_iter8/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter10_20261023/output/iter10_50ep/deliverables/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter10_20261023/output/iter10_50ep/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter11_20261023/output/coverage_workpoint/cpu_cache_export_060/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter11_20261023/output/coverage_workpoint/stale_export_from_094_filtered_predictions/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter11_20261023/output/iter11_50ep/deliverables/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter11_20261023/output/iter11_50ep/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter12_20261023/output/final_delivery/best_exporter/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter12_20261023/output/final_delivery/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter12_20261023/output/iter12_50ep/deliverables/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter12_20261023/output/iter12_50ep/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter2/output/smoke_v3",
+    "Files": 4,
+    "Bytes": 1662,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/__pycache__",
+    "Files": 6,
+    "Bytes": 145089,
+    "Reason": "Python字节码缓存"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/output/iteration3/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/output/smoke_scale1024",
+    "Files": 6,
+    "Bytes": 15362,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/output/smoke_train_cpu",
+    "Files": 3,
+    "Bytes": 2038,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/output/smoke_train_cpu_data",
+    "Files": 4,
+    "Bytes": 556,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/output/source_axis_plot_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/smoke_data",
+    "Files": 8,
+    "Bytes": 209058,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/smoke_data_v2",
+    "Files": 8,
+    "Bytes": 210591,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter3_20261022/smoke_output",
+    "Files": 29,
+    "Bytes": 599680,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter4_20261022/__pycache__",
+    "Files": 2,
+    "Bytes": 46103,
+    "Reason": "Python字节码缓存"
+  },
+  {
+    "Path": "FieldNN_Iter4_20261022/output/adaptation4/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter4_20261022/output/cpu_smoke_data",
+    "Files": 4,
+    "Bytes": 1046,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter4_20261022/output/cpu_smoke_run",
+    "Files": 3,
+    "Bytes": 2047,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter4_20261022/smoke_cache",
+    "Files": 8,
+    "Bytes": 606476,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter4_20261022/smoke_output",
+    "Files": 45,
+    "Bytes": 673922,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter5_20261022/__pycache__",
+    "Files": 2,
+    "Bytes": 22866,
+    "Reason": "Python字节码缓存"
+  },
+  {
+    "Path": "FieldNN_Iter5_20261022/output/iter5/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter5_20261022/output/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter6_20261022/__pycache__",
+    "Files": 2,
+    "Bytes": 58458,
+    "Reason": "Python字节码缓存"
+  },
+  {
+    "Path": "FieldNN_Iter6_20261022/output/iter6/matplotlib_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter6_20261022/output/smoke_field_cache",
+    "Files": 3,
+    "Bytes": 15255,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter6_20261022/smoke_eval_wet",
+    "Files": 3,
+    "Bytes": 159464,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter6_20261022/smoke_field_cache",
+    "Files": 3,
+    "Bytes": 26746,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter6_20261022/smoke_output",
+    "Files": 37,
+    "Bytes": 397440,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter7_20261022/output/iter7/matplotlib_cache",
+    "Files": 0,
+    "Bytes": 0,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter7_20261022/smoke_output",
+    "Files": 8,
+    "Bytes": 13547,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter8_20261022/__pycache__",
+    "Files": 4,
+    "Bytes": 46757,
+    "Reason": "Python字节码缓存"
+  },
+  {
+    "Path": "FieldNN_Iter8_20261022/output/iter8/matplotlib_cache",
+    "Files": 0,
+    "Bytes": 0,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter8_20261022/output/progress_plot_cache",
+    "Files": 1,
+    "Bytes": 159547,
+    "Reason": "绘图/字体缓存，可重新生成"
+  },
+  {
+    "Path": "FieldNN_Iter8_20261022/smoke_data",
+    "Files": 6,
+    "Bytes": 38705,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_Iter8_20261022/smoke_output",
+    "Files": 42,
+    "Bytes": 144199,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_PINN_20261023/output/smoke_run",
+    "Files": 3,
+    "Bytes": 3116,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  },
+  {
+    "Path": "FieldNN_PINN2_20261023/output/smoke",
+    "Files": 4,
+    "Bytes": 5350,
+    "Reason": "短链路smoke小样与输出，非正式实验结果"
+  }
+]

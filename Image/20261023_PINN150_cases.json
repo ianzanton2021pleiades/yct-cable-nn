@@ -1,0 +1,111 @@
+{
+  "base": {
+    "curves": 54,
+    "truth_events": 201,
+    "candidates": 182,
+    "candidates_per_curve": 3.3703703703703702,
+    "hit_rate_10": 0.29850746268656714,
+    "hit_rate_20": 0.4129353233830846,
+    "hit_rate_30": 0.4427860696517413,
+    "group_macro_hit_20": 0.5129921360690592,
+    "groups": 13,
+    "strict": {
+      "curves": 21,
+      "truth_events": 99,
+      "candidates": 87,
+      "candidates_per_curve": 4.142857142857143,
+      "hit_rate_10": 0.31313131313131315,
+      "hit_rate_20": 0.48484848484848486,
+      "hit_rate_30": 0.5151515151515151,
+      "group_macro_hit_20": 0.5457142857142856,
+      "groups": 5
+    },
+    "non_wet": {
+      "curves": 43,
+      "truth_events": 190,
+      "candidates": 160,
+      "candidates_per_curve": 3.7209302325581395,
+      "hit_rate_10": 0.28421052631578947,
+      "hit_rate_20": 0.4052631578947368,
+      "hit_rate_30": 0.4368421052631579,
+      "group_macro_hit_20": 0.5102869352869354,
+      "groups": 12
+    },
+    "wet_1500": {
+      "curves": 11,
+      "truth_events": 11,
+      "candidates": 22,
+      "candidates_per_curve": 2.0,
+      "hit_rate_10": 0.5454545454545454,
+      "hit_rate_20": 0.5454545454545454,
+      "hit_rate_30": 0.5454545454545454,
+      "group_macro_hit_20": 0.5454545454545454,
+      "groups": 1
+    }
+  },
+  "physics_terminal": {
+    "events_identical": true,
+    "terminal_changed": 1
+  },
+  "cases": [
+    {
+      "case": 1,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case1.png",
+      "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+      "sweep_name": "100m接头浸水",
+      "truth_m": [
+        86.0
+      ],
+      "hits20": 1,
+      "candidates": 2,
+      "terminal_m": null,
+      "known_length_m": 1500.0
+    },
+    {
+      "case": 2,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case2.png",
+      "case_group": "2025-8-20 11.44.04山东驻马店华润电力",
+      "sweep_name": "B相",
+      "truth_m": [
+        577.0,
+        1177.0,
+        1758.0,
+        1885.0
+      ],
+      "hits20": 4,
+      "candidates": 6,
+      "terminal_m": 2260.4382859235748,
+      "known_length_m": 2246.0
+    },
+    {
+      "case": 3,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case3.png",
+      "case_group": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+      "sweep_name": "A相[末端开路]",
+      "truth_m": [
+        452.0,
+        576.0,
+        637.0
+      ],
+      "hits20": 3,
+      "candidates": 5,
+      "terminal_m": 924.8870711756807,
+      "known_length_m": 922.0
+    },
+    {
+      "case": 4,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case4.png",
+      "case_group": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+      "sweep_name": "C相[末端开路]",
+      "truth_m": [
+        452.0,
+        576.0,
+        637.0
+      ],
+      "hits20": 3,
+      "candidates": 6,
+      "terminal_m": 925.283848125992,
+      "known_length_m": 922.0
+    }
+  ]
+}

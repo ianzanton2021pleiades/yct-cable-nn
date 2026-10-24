@@ -1,0 +1,88 @@
+{
+  "schema": "fieldnn-hybrid-1",
+  "seed": 2026102207,
+  "frequency": {
+    "start_hz": 9000.0,
+    "stop_hz": 200000000.0,
+    "points": 32768,
+    "spacing": "log"
+  },
+  "response": {
+    "distance_max_m": 3250.0,
+    "points": 8192,
+    "velocity_m_s": 172000000.0,
+    "event_sigma_m": 5.0,
+    "terminal_sigma_m": 5.0,
+    "max_event_lobe_width_m": 40.0,
+    "max_terminal_lobe_width_m": 40.0,
+    "ignore_window_m": 20.0
+  },
+  "model": {
+    "input_channels": 8,
+    "width": 32,
+    "depth": 3,
+    "state_size": 8,
+    "dropout": 0.1
+  },
+  "training": {
+    "epochs": 24,
+    "batch_size": 64,
+    "learning_rate": 3e-05,
+    "weight_decay": 0.02,
+    "patience": 6,
+    "num_workers": 6,
+    "warmup_epochs": 1,
+    "plateau_factor": 0.5,
+    "plateau_patience": 2,
+    "min_learning_rate": 1e-06,
+    "amp": true,
+    "amp_init_scale": 1024.0,
+    "ema_decay": 0.999,
+    "synthetic_fraction": 0.45,
+    "hybrid_fraction": 0.45,
+    "field_fraction": 0.05,
+    "calibration_fraction": 0.05
+  },
+  "evaluation": {
+    "event_tolerances_m": [2.0, 5.0, 10.0],
+    "event_min_separation_m": 3.0,
+    "interval_min_width_m": 3.0,
+    "interval_merge_gap_m": 2.0,
+    "terminal_tolerance_m": 10.0,
+    "near_exclusion_m": 30.0,
+    "event_prominence": 0.10
+  },
+  "hybrid": {
+    "variants_per_trace": {"train": 10, "val": 4, "test": 4},
+    "inject_min_m": 30.0,
+    "inject_max_m": 2400.0,
+    "inject_safe_fraction": 0.85,
+    "fallback_end_m": 1000.0,
+    "event_sigma_m": [3.0, 35.0],
+    "event_target_snr": [1.2, 8.0],
+    "interval_probability": 0.15,
+    "two_event_probability": 0.20,
+    "interval_width_m": [20.0, 100.0],
+    "known_event_weight": 0.75,
+    "known_event_sigma_m": 15.0,
+    "min_event_separation_m": 60.0,
+    "known_event_exclusion_m": 40.0,
+    "label_sigma_fraction": 0.60,
+    "label_sigma_min_m": 2.5,
+    "time_shift_m": 2.0,
+    "gain_ripple": 0.02,
+    "phase_ripple_rad": 0.05,
+    "noise_fraction": [0.0003, 0.002],
+    "sparsity_weight": 0.01,
+    "sparsity_topk": 64,
+    "feature_noise_sigma": [0.005, 0.02]
+  },
+  "strict_cases": [
+    "2025-8-20 11.44.04山东驻马店华润电力",
+    "2026-7-20 10.46.01深圳某地两段电缆",
+    "2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜",
+    "2026-9-14 11.14.34深圳220KV清水河站10kV布吉环保二线F12北控环保污水厂#1智能柜(从接头开始测)",
+    "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜"
+  ],
+  "wet_case": "2026-6某地进行的1500m不同位置电缆接头浸水试验"
+}

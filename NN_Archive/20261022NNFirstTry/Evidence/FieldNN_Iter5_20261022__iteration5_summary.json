@@ -1,0 +1,1025 @@
+{
+  "schema": "fieldnn-iter5-final-1",
+  "data": "E:\\CableNNDataSet\\CodeX\\FieldNN_Iter4_20261022",
+  "training": "fine-tuned from Iter4 best with width-aware targets and 1-6x fixture bank",
+  "near_end_suppression_m": 30.0,
+  "operating_point": "event threshold selected by val precision target 0.90; U-Net locked at 0.6",
+  "models": {
+    "unet": {
+      "thresholds": {
+        "event": 0.6,
+        "interval": 0.99,
+        "terminal": 0.4
+      },
+      "synthetic": {
+        "mixed": {
+          "checkpoint_epoch": 9,
+          "thresholds": {
+            "event": 0.6,
+            "interval": 0.99,
+            "terminal": 0.4
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 1840,
+            "matched_event_count": 1739,
+            "precision": 0.9451086956521739,
+            "recall": 0.7026262626262626,
+            "f1": 0.8060254924681344,
+            "matched_truth_coverage": 0.7026262626262626,
+            "matched_prediction_coverage": 0.9451086956521739,
+            "mean_matched_mae_m": 0.5323063355376411
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 495,
+            "matched_interval_count": 460,
+            "precision": 0.9292929292929293,
+            "recall": 0.8829174664107485,
+            "f1": 0.905511811023622,
+            "matched_truth_coverage": 0.8829174664107485,
+            "matched_prediction_coverage": 0.9292929292929293,
+            "mean_matched_iou": 0.9576039455924824,
+            "grid_overall_iou": 0.88639404535693,
+            "grid_intersection_points": 157670,
+            "grid_union_points": 177878,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1033,
+            "terminal_hit_count": 1031,
+            "terminal_miss_count": 3,
+            "terminal_false_positive_count": 2,
+            "terminal_hit_rate": 0.9970986460348162,
+            "precision": 0.9980638915779284,
+            "recall": 0.9970986460348162,
+            "f1": 0.9975810353168844,
+            "mean_terminal_error_m": 1.7491986754285989,
+            "mean_matched_terminal_error_m": 0.5714973532612121
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.00267379679144385,
+            "events_per_curve_median": 1.0,
+            "events_per_curve_mean": 1.5333333333333334,
+            "post_terminal_event_count": 0
+          }
+        },
+        "clean": {
+          "checkpoint_epoch": 9,
+          "thresholds": {
+            "event": 0.6,
+            "interval": 0.99,
+            "terminal": 0.4
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 2217,
+            "matched_event_count": 2070,
+            "precision": 0.9336941813261164,
+            "recall": 0.8363636363636363,
+            "f1": 0.8823529411764706,
+            "matched_truth_coverage": 0.8363636363636363,
+            "matched_prediction_coverage": 0.9336941813261164,
+            "mean_matched_mae_m": 0.35039053421347643
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 518,
+            "matched_interval_count": 483,
+            "precision": 0.9324324324324325,
+            "recall": 0.927063339731286,
+            "f1": 0.9297401347449471,
+            "matched_truth_coverage": 0.927063339731286,
+            "matched_prediction_coverage": 0.9324324324324325,
+            "mean_matched_iou": 0.9639687773849196,
+            "grid_overall_iou": 0.9308651834521855,
+            "grid_intersection_points": 165519,
+            "grid_union_points": 177812,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1034,
+            "terminal_hit_count": 1033,
+            "terminal_miss_count": 1,
+            "terminal_false_positive_count": 1,
+            "terminal_hit_rate": 0.9990328820116054,
+            "precision": 0.9990328820116054,
+            "recall": 0.9990328820116054,
+            "f1": 0.9990328820116054,
+            "mean_terminal_error_m": 0.3787416343880795,
+            "mean_matched_terminal_error_m": 0.34684374262451456
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.00267379679144385,
+            "events_per_curve_median": 2.0,
+            "events_per_curve_mean": 1.8475,
+            "post_terminal_event_count": 0
+          }
+        }
+      },
+      "field": {
+        "output": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CMDC\\FieldNN_Iter5_20261022\\output\\iter5\\unet\\field_e06",
+        "known_lab": {
+          "group": "one 1500 m wet-joint experiment; not an independent-cable test set",
+          "metric_scope": "known-positive event hit only; no precision/recall, full truth, or negative labels",
+          "distance_axis": "source/report axis when Wave_Velocity is available; nominal_fallback otherwise",
+          "normal_sweep_used": false,
+          "sweeps_evaluated": 11,
+          "by_tolerance": {
+            "10": {
+              "tolerance_m": 10,
+              "known_positive_sweeps_evaluated": 11,
+              "known_event_hits": 7,
+              "known_event_hit_rate": 0.6363636363636364,
+              "additional_unverified_candidate_count": 28
+            },
+            "20": {
+              "tolerance_m": 20,
+              "known_positive_sweeps_evaluated": 11,
+              "known_event_hits": 7,
+              "known_event_hit_rate": 0.6363636363636364,
+              "additional_unverified_candidate_count": 28
+            },
+            "30": {
+              "tolerance_m": 30,
+              "known_positive_sweeps_evaluated": 11,
+              "known_event_hits": 7,
+              "known_event_hit_rate": 0.6363636363636364,
+              "additional_unverified_candidate_count": 28
+            }
+          }
+        },
+        "counts": {
+          "curves": 213,
+          "events_total": 565,
+          "events_per_curve_mean": 2.652582159624413,
+          "events_per_curve_median": 3.0,
+          "intervals_total": 125,
+          "intervals_per_curve_mean": 0.5868544600938967,
+          "near_end_policy": "first 30 m suppressed at decode",
+          "group_event_medians": {
+            "development_cable:sewage_f12": 3.0,
+            "development_case:wuxi_baian_mixed_directory": 1.0,
+            "development_experiment:1500m_wet_joint": 3.0,
+            "development_topology:maao_f52_july_2026": 4.0,
+            "linked_cable:nanling_f55_june_2026": 3.0,
+            "linked_line:liulian_f16_june_2026": 1.0,
+            "unconfirmed_case:2025-2-17 11.25.49北京城区白塔寺": 2.0,
+            "unconfirmed_case:2025-3-7 石杨线5号至6号进水": 3.0,
+            "unconfirmed_case:2025-5-15 15.23.15深圳龙岗某地（浸水）": 3.0,
+            "unconfirmed_case:2025-7-7 11.55.08邦润线(浸水)": 1.0,
+            "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力": 5.0,
+            "unconfirmed_case:2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜": 1.0,
+            "unconfirmed_case:2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜": 5.0,
+            "unconfirmed_case:2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开": 3.0,
+            "unconfirmed_case:2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜": 3.0,
+            "unconfirmed_case:2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜": 5.0,
+            "unconfirmed_case:2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜": 5.0,
+            "unconfirmed_case:2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜": 3.0,
+            "unconfirmed_case:2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜": 0.0,
+            "unconfirmed_case:2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜": 0.0,
+            "unconfirmed_case:2026-6-11 16.29.35深圳龙岗某地": 2.0,
+            "unconfirmed_case:2026-6-11 17.04.41深圳龙岗某地": 1.0,
+            "unconfirmed_case:2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜": 4.0,
+            "unconfirmed_case:2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜": 3.0,
+            "unconfirmed_case:2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜": 1.0,
+            "unconfirmed_case:2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜": 1.0,
+            "unconfirmed_case:2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜": 2.0,
+            "unconfirmed_case:2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜": 2.0,
+            "unconfirmed_case:2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）": 2.0,
+            "unconfirmed_case:2026-6-25 18.08.15深圳龙岗区某地": 3.0,
+            "unconfirmed_case:2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25": 0.0,
+            "unconfirmed_case:2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16": 1.0,
+            "unconfirmed_case:2026-7-12 18.31.45深圳海源恒业#1智能柜": 1.0,
+            "unconfirmed_case:2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜": 3.0,
+            "unconfirmed_case:2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜": 2.0,
+            "unconfirmed_case:2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜": 6.0,
+            "unconfirmed_case:2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜": 0.0,
+            "unconfirmed_case:2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜": 2.0,
+            "unconfirmed_case:2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜": 2.0,
+            "unconfirmed_case:2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜": 3.0,
+            "unconfirmed_case:2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜": 3.0,
+            "unconfirmed_case:2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜": 3.0,
+            "unconfirmed_case:2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜": 4.0,
+            "unconfirmed_case:2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜": 4.0,
+            "unconfirmed_case:2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜": 2.0,
+            "unconfirmed_case:2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜": 6.0,
+            "unconfirmed_case:2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜": 2.0,
+            "unconfirmed_case:2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜": 1.0,
+            "unconfirmed_case:2026-9-2-深圳顺和达厂户内公用三遥柜601开关": 7.0,
+            "unconfirmed_case:2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜": 1.0,
+            "unconfirmed_case:2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜": 3.0,
+            "unconfirmed_case:2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开": 4.0,
+            "unconfirmed_case:2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜": 2.0,
+            "unconfirmed_case:2026-9-28 13.53.02深圳新沙路二十二公用断路器柜": 3.0,
+            "unconfirmed_case:2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校": 3.0
+          }
+        },
+        "evidence": {
+          "curves_with_annotations": 161,
+          "candidates_on_annotated_curves": 527,
+          "candidates_per_annotated_curve": 3.2732919254658386,
+          "per_sweep_position": {
+            "positions": 645,
+            "hit10": 157,
+            "hit20": 208,
+            "hit30": 228,
+            "hit10_rate": 0.2434108527131783,
+            "hit20_rate": 0.32248062015503876,
+            "hit30_rate": 0.35348837209302325,
+            "median_error_m": 131.90941277011353
+          },
+          "case_position": {
+            "positions": 209,
+            "hit10": 68,
+            "hit20": 88,
+            "hit30": 95,
+            "hit10_rate": 0.3253588516746411,
+            "hit20_rate": 0.42105263157894735,
+            "hit30_rate": 0.45454545454545453,
+            "median_error_m": 48.50567696251983
+          },
+          "case_position_by_claim": {
+            "defect_position": {
+              "positions": 69,
+              "hit10": 24,
+              "hit20": 33,
+              "hit30": 36,
+              "hit10_rate": 0.34782608695652173,
+              "hit20_rate": 0.4782608695652174,
+              "hit30_rate": 0.5217391304347826,
+              "median_error_m": 21.265169088023526
+            },
+            "joint_position": {
+              "positions": 140,
+              "hit10": 44,
+              "hit20": 55,
+              "hit30": 59,
+              "hit10_rate": 0.3142857142857143,
+              "hit20_rate": 0.39285714285714285,
+              "hit30_rate": 0.42142857142857143,
+              "median_error_m": 68.13026492491758
+            }
+          },
+          "by_claim": {
+            "defect_position": {
+              "positions": 215,
+              "hit10": 57,
+              "hit20": 78,
+              "hit30": 88,
+              "hit10_rate": 0.2651162790697674,
+              "hit20_rate": 0.3627906976744186,
+              "hit30_rate": 0.40930232558139534,
+              "median_error_m": 102.34403613722378
+            },
+            "joint_position": {
+              "positions": 430,
+              "hit10": 100,
+              "hit20": 130,
+              "hit30": 140,
+              "hit10_rate": 0.23255813953488372,
+              "hit20_rate": 0.3023255813953488,
+              "hit30_rate": 0.32558139534883723,
+              "median_error_m": 156.16725674520814
+            }
+          },
+          "by_confidence": {
+            "high": {
+              "positions": 546,
+              "hit10": 136,
+              "hit20": 183,
+              "hit30": 202,
+              "hit10_rate": 0.2490842490842491,
+              "hit20_rate": 0.33516483516483514,
+              "hit30_rate": 0.36996336996337,
+              "median_error_m": 124.86936881943595
+            },
+            "medium": {
+              "positions": 99,
+              "hit10": 21,
+              "hit20": 25,
+              "hit30": 26,
+              "hit10_rate": 0.21212121212121213,
+              "hit20_rate": 0.25252525252525254,
+              "hit30_rate": 0.26262626262626265,
+              "median_error_m": 347.78354291295324
+            },
+            "low": {
+              "positions": 0,
+              "hit10": 0,
+              "hit20": 0,
+              "hit30": 0,
+              "hit10_rate": null,
+              "hit20_rate": null,
+              "hit30_rate": null,
+              "median_error_m": null
+            }
+          }
+        }
+      },
+      "reference": {
+        "iter4_baseline_mixed": {
+          "checkpoint_epoch": 14,
+          "thresholds": {
+            "event": 0.5,
+            "interval": 0.99,
+            "terminal": 0.1
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 1683,
+            "matched_event_count": 1442,
+            "precision": 0.8568033273915627,
+            "recall": 0.5826262626262626,
+            "f1": 0.6936026936026936,
+            "matched_truth_coverage": 0.5826262626262626,
+            "matched_prediction_coverage": 0.8568033273915627,
+            "mean_matched_mae_m": 0.5316041334592929
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 578,
+            "matched_interval_count": 323,
+            "precision": 0.5588235294117647,
+            "recall": 0.6199616122840691,
+            "f1": 0.5878070973612375,
+            "matched_truth_coverage": 0.6199616122840691,
+            "matched_prediction_coverage": 0.5588235294117647,
+            "mean_matched_iou": 0.9163440779597286,
+            "grid_overall_iou": 0.46943012674179585,
+            "grid_intersection_points": 90892,
+            "grid_union_points": 193622,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 890,
+            "terminal_hit_count": 821,
+            "terminal_miss_count": 213,
+            "terminal_false_positive_count": 69,
+            "terminal_hit_rate": 0.7940038684719536,
+            "precision": 0.9224719101123595,
+            "recall": 0.7940038684719536,
+            "f1": 0.8534303534303534,
+            "mean_terminal_error_m": 49.46501061389654,
+            "mean_matched_terminal_error_m": 0.9153417099751963
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.058823529411764705,
+            "events_per_curve_median": 0.0,
+            "post_terminal_event_count": 3
+          }
+        },
+        "iter4_candidate_mixed": {
+          "checkpoint_epoch": 21,
+          "thresholds": {
+            "event": 0.4,
+            "interval": 0.85,
+            "terminal": 0.5
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 2206,
+            "matched_event_count": 1901,
+            "precision": 0.8617407071622847,
+            "recall": 0.768080808080808,
+            "f1": 0.8122196111941893,
+            "matched_truth_coverage": 0.768080808080808,
+            "matched_prediction_coverage": 0.8617407071622847,
+            "mean_matched_mae_m": 0.52054804260081
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 566,
+            "matched_interval_count": 470,
+            "precision": 0.8303886925795053,
+            "recall": 0.9021113243761996,
+            "f1": 0.8647654093836247,
+            "matched_truth_coverage": 0.9021113243761996,
+            "matched_prediction_coverage": 0.8303886925795053,
+            "mean_matched_iou": 0.9546936483076683,
+            "grid_overall_iou": 0.8760174226758767,
+            "grid_intersection_points": 159288,
+            "grid_union_points": 181832,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1033,
+            "terminal_hit_count": 1033,
+            "terminal_miss_count": 1,
+            "terminal_false_positive_count": 0,
+            "terminal_hit_rate": 0.9990328820116054,
+            "precision": 1.0,
+            "recall": 0.9990328820116054,
+            "f1": 0.9995162070633768,
+            "mean_terminal_error_m": 0.6030395082175947,
+            "mean_matched_terminal_error_m": 0.6030395082175947
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.008021390374331552,
+            "events_per_curve_median": 1.0,
+            "post_terminal_event_count": 0
+          }
+        },
+        "iter4_candidate_clean": {
+          "checkpoint_epoch": 21,
+          "thresholds": {
+            "event": 0.4,
+            "interval": 0.85,
+            "terminal": 0.5
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 2632,
+            "matched_event_count": 2237,
+            "precision": 0.8499240121580547,
+            "recall": 0.9038383838383839,
+            "f1": 0.8760524769923634,
+            "matched_truth_coverage": 0.9038383838383839,
+            "matched_prediction_coverage": 0.8499240121580547,
+            "mean_matched_mae_m": 0.3338106394562211
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 550,
+            "matched_interval_count": 496,
+            "precision": 0.9018181818181819,
+            "recall": 0.9520153550863724,
+            "f1": 0.9262371615312792,
+            "matched_truth_coverage": 0.9520153550863724,
+            "matched_prediction_coverage": 0.9018181818181819,
+            "mean_matched_iou": 0.9658066976897998,
+            "grid_overall_iou": 0.9332338596530299,
+            "grid_intersection_points": 167620,
+            "grid_union_points": 179612,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1034,
+            "terminal_hit_count": 1034,
+            "terminal_miss_count": 0,
+            "terminal_false_positive_count": 0,
+            "terminal_hit_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_terminal_error_m": 0.3829626657743695,
+            "mean_matched_terminal_error_m": 0.3829626657743695
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.008021390374331552,
+            "events_per_curve_median": 2.0,
+            "post_terminal_event_count": 0
+          }
+        }
+      }
+    },
+    "transformer": {
+      "thresholds": {
+        "event": 0.6,
+        "interval": 0.99,
+        "terminal": 0.4
+      },
+      "synthetic": {
+        "mixed": {
+          "checkpoint_epoch": 6,
+          "thresholds": {
+            "event": 0.6,
+            "interval": 0.99,
+            "terminal": 0.4
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 1858,
+            "matched_event_count": 1715,
+            "precision": 0.9230355220667384,
+            "recall": 0.692929292929293,
+            "f1": 0.7915993537964459,
+            "matched_truth_coverage": 0.692929292929293,
+            "matched_prediction_coverage": 0.9230355220667384,
+            "mean_matched_mae_m": 0.5212469885961731
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 517,
+            "matched_interval_count": 457,
+            "precision": 0.8839458413926499,
+            "recall": 0.8771593090211133,
+            "f1": 0.8805394990366089,
+            "matched_truth_coverage": 0.8771593090211133,
+            "matched_prediction_coverage": 0.8839458413926499,
+            "mean_matched_iou": 0.9554511266205998,
+            "grid_overall_iou": 0.868448178402403,
+            "grid_intersection_points": 156708,
+            "grid_union_points": 180446,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1033,
+            "terminal_hit_count": 1030,
+            "terminal_miss_count": 4,
+            "terminal_false_positive_count": 3,
+            "terminal_hit_rate": 0.9961315280464217,
+            "precision": 0.9970958373668926,
+            "recall": 0.9961315280464217,
+            "f1": 0.9966134494436382,
+            "mean_terminal_error_m": 1.9089849400263854,
+            "mean_matched_terminal_error_m": 0.7222881377026494
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.0,
+            "events_per_curve_median": 1.0,
+            "events_per_curve_mean": 1.5483333333333333,
+            "post_terminal_event_count": 1
+          }
+        },
+        "clean": {
+          "checkpoint_epoch": 6,
+          "thresholds": {
+            "event": 0.6,
+            "interval": 0.99,
+            "terminal": 0.4
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 2322,
+            "matched_event_count": 2114,
+            "precision": 0.9104220499569337,
+            "recall": 0.8541414141414141,
+            "f1": 0.8813841984573692,
+            "matched_truth_coverage": 0.8541414141414141,
+            "matched_prediction_coverage": 0.9104220499569337,
+            "mean_matched_mae_m": 0.32601786220338597
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 532,
+            "matched_interval_count": 485,
+            "precision": 0.9116541353383458,
+            "recall": 0.9309021113243762,
+            "f1": 0.9211775878442545,
+            "matched_truth_coverage": 0.9309021113243762,
+            "matched_prediction_coverage": 0.9116541353383458,
+            "mean_matched_iou": 0.96498908246681,
+            "grid_overall_iou": 0.9226606125870089,
+            "grid_intersection_points": 166221,
+            "grid_union_points": 180154,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1034,
+            "terminal_hit_count": 1034,
+            "terminal_miss_count": 0,
+            "terminal_false_positive_count": 0,
+            "terminal_hit_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_terminal_error_m": 0.3614737787168918,
+            "mean_matched_terminal_error_m": 0.3614737787168918
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.0053475935828877,
+            "events_per_curve_median": 2.0,
+            "events_per_curve_mean": 1.935,
+            "post_terminal_event_count": 1
+          }
+        }
+      },
+      "field": {
+        "output": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CMDC\\FieldNN_Iter5_20261022\\output\\iter5\\transformer\\field_e007",
+        "known_lab": {
+          "group": "one 1500 m wet-joint experiment; not an independent-cable test set",
+          "metric_scope": "known-positive event hit only; no precision/recall, full truth, or negative labels",
+          "distance_axis": "source/report axis when Wave_Velocity is available; nominal_fallback otherwise",
+          "normal_sweep_used": false,
+          "sweeps_evaluated": 11,
+          "by_tolerance": {
+            "10": {
+              "tolerance_m": 10,
+              "known_positive_sweeps_evaluated": 11,
+              "known_event_hits": 6,
+              "known_event_hit_rate": 0.5454545454545454,
+              "additional_unverified_candidate_count": 21
+            },
+            "20": {
+              "tolerance_m": 20,
+              "known_positive_sweeps_evaluated": 11,
+              "known_event_hits": 6,
+              "known_event_hit_rate": 0.5454545454545454,
+              "additional_unverified_candidate_count": 21
+            },
+            "30": {
+              "tolerance_m": 30,
+              "known_positive_sweeps_evaluated": 11,
+              "known_event_hits": 6,
+              "known_event_hit_rate": 0.5454545454545454,
+              "additional_unverified_candidate_count": 21
+            }
+          }
+        },
+        "counts": {
+          "curves": 213,
+          "events_total": 471,
+          "events_per_curve_mean": 2.211267605633803,
+          "events_per_curve_median": 2.0,
+          "intervals_total": 209,
+          "intervals_per_curve_mean": 0.9812206572769953,
+          "near_end_policy": "first 30 m suppressed at decode",
+          "group_event_medians": {
+            "development_cable:sewage_f12": 1.0,
+            "development_case:wuxi_baian_mixed_directory": 1.0,
+            "development_experiment:1500m_wet_joint": 2.0,
+            "development_topology:maao_f52_july_2026": 3.0,
+            "linked_cable:nanling_f55_june_2026": 2.0,
+            "linked_line:liulian_f16_june_2026": 1.0,
+            "unconfirmed_case:2025-2-17 11.25.49北京城区白塔寺": 2.0,
+            "unconfirmed_case:2025-3-7 石杨线5号至6号进水": 1.0,
+            "unconfirmed_case:2025-5-15 15.23.15深圳龙岗某地（浸水）": 3.0,
+            "unconfirmed_case:2025-7-7 11.55.08邦润线(浸水)": 1.0,
+            "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力": 2.0,
+            "unconfirmed_case:2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜": 1.0,
+            "unconfirmed_case:2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜": 4.0,
+            "unconfirmed_case:2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开": 3.0,
+            "unconfirmed_case:2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜": 3.0,
+            "unconfirmed_case:2026-5-28 20.18.53深圳110k平湖站10kV辅城坳线F17平湖山厦外国语学校智能柜": 4.0,
+            "unconfirmed_case:2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜": 6.0,
+            "unconfirmed_case:2026-5-31 10.42.00深圳110kV坂田变电站10KV四季线F65坂田南学校#1公用智能柜": 5.0,
+            "unconfirmed_case:2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜": 1.0,
+            "unconfirmed_case:2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜": 1.0,
+            "unconfirmed_case:2026-6-11 16.29.35深圳龙岗某地": 2.0,
+            "unconfirmed_case:2026-6-11 17.04.41深圳龙岗某地": 1.0,
+            "unconfirmed_case:2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜": 3.0,
+            "unconfirmed_case:2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜": 2.0,
+            "unconfirmed_case:2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜": 0.0,
+            "unconfirmed_case:2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜": 0.0,
+            "unconfirmed_case:2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜": 2.0,
+            "unconfirmed_case:2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜": 2.0,
+            "unconfirmed_case:2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）": 2.0,
+            "unconfirmed_case:2026-6-25 18.08.15深圳龙岗区某地": 3.0,
+            "unconfirmed_case:2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25": 0.0,
+            "unconfirmed_case:2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16": 1.0,
+            "unconfirmed_case:2026-7-12 18.31.45深圳海源恒业#1智能柜": 1.0,
+            "unconfirmed_case:2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜": 3.0,
+            "unconfirmed_case:2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜": 1.0,
+            "unconfirmed_case:2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜": 4.0,
+            "unconfirmed_case:2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜": 0.0,
+            "unconfirmed_case:2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜": 0.0,
+            "unconfirmed_case:2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜": 3.0,
+            "unconfirmed_case:2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜": 2.0,
+            "unconfirmed_case:2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜": 2.0,
+            "unconfirmed_case:2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜": 3.0,
+            "unconfirmed_case:2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜": 3.0,
+            "unconfirmed_case:2026-8-22 15.06.16深圳220kV马坳站10kV住宅局线F52嘉欣园断路器柜": 3.0,
+            "unconfirmed_case:2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜": 2.0,
+            "unconfirmed_case:2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜": 4.0,
+            "unconfirmed_case:2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜": 3.0,
+            "unconfirmed_case:2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜": 3.0,
+            "unconfirmed_case:2026-9-2-深圳顺和达厂户内公用三遥柜601开关": 6.0,
+            "unconfirmed_case:2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜": 2.0,
+            "unconfirmed_case:2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜": 2.0,
+            "unconfirmed_case:2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开": 4.0,
+            "unconfirmed_case:2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜": 3.0,
+            "unconfirmed_case:2026-9-28 13.53.02深圳新沙路二十二公用断路器柜": 3.0,
+            "unconfirmed_case:2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校": 2.0
+          }
+        },
+        "evidence": {
+          "curves_with_annotations": 161,
+          "candidates_on_annotated_curves": 442,
+          "candidates_per_annotated_curve": 2.7453416149068324,
+          "per_sweep_position": {
+            "positions": 645,
+            "hit10": 167,
+            "hit20": 217,
+            "hit30": 227,
+            "hit10_rate": 0.2589147286821705,
+            "hit20_rate": 0.3364341085271318,
+            "hit30_rate": 0.351937984496124,
+            "median_error_m": 145.19167378830423
+          },
+          "case_position": {
+            "positions": 209,
+            "hit10": 73,
+            "hit20": 89,
+            "hit30": 93,
+            "hit10_rate": 0.3492822966507177,
+            "hit20_rate": 0.4258373205741627,
+            "hit30_rate": 0.4449760765550239,
+            "median_error_m": 56.07249022608477
+          },
+          "case_position_by_claim": {
+            "defect_position": {
+              "positions": 69,
+              "hit10": 24,
+              "hit20": 31,
+              "hit30": 34,
+              "hit10_rate": 0.34782608695652173,
+              "hit20_rate": 0.4492753623188406,
+              "hit30_rate": 0.4927536231884058,
+              "median_error_m": 36.07249022608477
+            },
+            "joint_position": {
+              "positions": 140,
+              "hit10": 49,
+              "hit20": 58,
+              "hit30": 59,
+              "hit10_rate": 0.35,
+              "hit20_rate": 0.4142857142857143,
+              "hit30_rate": 0.42142857142857143,
+              "median_error_m": 70.8118666829447
+            }
+          },
+          "by_claim": {
+            "defect_position": {
+              "positions": 215,
+              "hit10": 58,
+              "hit20": 81,
+              "hit30": 88,
+              "hit10_rate": 0.26976744186046514,
+              "hit20_rate": 0.3767441860465116,
+              "hit30_rate": 0.40930232558139534,
+              "median_error_m": 104.77353192528385
+            },
+            "joint_position": {
+              "positions": 430,
+              "hit10": 109,
+              "hit20": 136,
+              "hit30": 139,
+              "hit10_rate": 0.2534883720930233,
+              "hit20_rate": 0.31627906976744186,
+              "hit30_rate": 0.32325581395348835,
+              "median_error_m": 171.24478085703822
+            }
+          },
+          "by_confidence": {
+            "high": {
+              "positions": 546,
+              "hit10": 147,
+              "hit20": 194,
+              "hit30": 203,
+              "hit10_rate": 0.2692307692307692,
+              "hit20_rate": 0.3553113553113553,
+              "hit30_rate": 0.3717948717948718,
+              "median_error_m": 131.90941277011353
+            },
+            "medium": {
+              "positions": 99,
+              "hit10": 20,
+              "hit20": 23,
+              "hit30": 24,
+              "hit10_rate": 0.20202020202020202,
+              "hit20_rate": 0.23232323232323232,
+              "hit30_rate": 0.24242424242424243,
+              "median_error_m": 376.5261872787205
+            },
+            "low": {
+              "positions": 0,
+              "hit10": 0,
+              "hit20": 0,
+              "hit30": 0,
+              "hit10_rate": null,
+              "hit20_rate": null,
+              "hit30_rate": null,
+              "median_error_m": null
+            }
+          }
+        }
+      },
+      "reference": {
+        "iter4_baseline_mixed": {
+          "checkpoint_epoch": 23,
+          "thresholds": {
+            "event": 0.8,
+            "interval": 0.99,
+            "terminal": 0.1
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 1588,
+            "matched_event_count": 1313,
+            "precision": 0.8268261964735516,
+            "recall": 0.5305050505050505,
+            "f1": 0.6463204528673394,
+            "matched_truth_coverage": 0.5305050505050505,
+            "matched_prediction_coverage": 0.8268261964735516,
+            "mean_matched_mae_m": 0.4989176420239227
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 1079,
+            "matched_interval_count": 343,
+            "precision": 0.3178869323447637,
+            "recall": 0.6583493282149712,
+            "f1": 0.42875,
+            "matched_truth_coverage": 0.6583493282149712,
+            "matched_prediction_coverage": 0.3178869323447637,
+            "mean_matched_iou": 0.9309072174352948,
+            "grid_overall_iou": 0.4044930806557901,
+            "grid_intersection_points": 101279,
+            "grid_union_points": 250385,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 820,
+            "terminal_hit_count": 789,
+            "terminal_miss_count": 245,
+            "terminal_false_positive_count": 31,
+            "terminal_hit_rate": 0.7630560928433269,
+            "precision": 0.9621951219512195,
+            "recall": 0.7630560928433269,
+            "f1": 0.8511326860841424,
+            "mean_terminal_error_m": 26.99154316461357,
+            "mean_matched_terminal_error_m": 0.7457797431073347
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.1711229946524064,
+            "events_per_curve_median": 1.0,
+            "post_terminal_event_count": 61
+          }
+        },
+        "iter4_candidate_mixed": {
+          "checkpoint_epoch": 15,
+          "thresholds": {
+            "event": 0.4,
+            "interval": 0.95,
+            "terminal": 0.4
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 2197,
+            "matched_event_count": 1885,
+            "precision": 0.8579881656804734,
+            "recall": 0.7616161616161616,
+            "f1": 0.8069349315068494,
+            "matched_truth_coverage": 0.7616161616161616,
+            "matched_prediction_coverage": 0.8579881656804734,
+            "mean_matched_mae_m": 0.5319127243789975
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 544,
+            "matched_interval_count": 466,
+            "precision": 0.8566176470588235,
+            "recall": 0.8944337811900192,
+            "f1": 0.8751173708920188,
+            "matched_truth_coverage": 0.8944337811900192,
+            "matched_prediction_coverage": 0.8566176470588235,
+            "mean_matched_iou": 0.9536563088862063,
+            "grid_overall_iou": 0.8670604639927975,
+            "grid_intersection_points": 157942,
+            "grid_union_points": 182158,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1033,
+            "terminal_hit_count": 1031,
+            "terminal_miss_count": 3,
+            "terminal_false_positive_count": 2,
+            "terminal_hit_rate": 0.9970986460348162,
+            "precision": 0.9980638915779284,
+            "recall": 0.9970986460348162,
+            "f1": 0.9975810353168844,
+            "mean_terminal_error_m": 1.4476789213198051,
+            "mean_matched_terminal_error_m": 0.5553337917548348
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.0053475935828877,
+            "events_per_curve_median": 1.0,
+            "post_terminal_event_count": 1
+          }
+        },
+        "iter4_candidate_clean": {
+          "checkpoint_epoch": 15,
+          "thresholds": {
+            "event": 0.4,
+            "interval": 0.95,
+            "terminal": 0.4
+          },
+          "event": {
+            "tolerance_m": 5.0,
+            "curve_count": 1200,
+            "truth_event_count": 2475,
+            "prediction_event_count": 2664,
+            "matched_event_count": 2252,
+            "precision": 0.8453453453453453,
+            "recall": 0.9098989898989899,
+            "f1": 0.8764351041058571,
+            "matched_truth_coverage": 0.9098989898989899,
+            "matched_prediction_coverage": 0.8453453453453453,
+            "mean_matched_mae_m": 0.32083971830864616
+          },
+          "interval": {
+            "iou_threshold": 0.5,
+            "curve_count": 1200,
+            "truth_interval_count": 521,
+            "prediction_interval_count": 543,
+            "matched_interval_count": 490,
+            "precision": 0.9023941068139963,
+            "recall": 0.9404990403071017,
+            "f1": 0.9210526315789473,
+            "matched_truth_coverage": 0.9404990403071017,
+            "matched_prediction_coverage": 0.9023941068139963,
+            "mean_matched_iou": 0.9684322170712024,
+            "grid_overall_iou": 0.9228890632424608,
+            "grid_intersection_points": 167030,
+            "grid_union_points": 180986,
+            "grid_point_count_total": 9830400
+          },
+          "terminal": {
+            "tolerance_m": 10.0,
+            "curve_count": 1200,
+            "truth_terminal_curve_count": 1034,
+            "prediction_terminal_curve_count": 1034,
+            "terminal_hit_count": 1034,
+            "terminal_miss_count": 0,
+            "terminal_false_positive_count": 0,
+            "terminal_hit_rate": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "mean_terminal_error_m": 0.31964719498000976,
+            "mean_matched_terminal_error_m": 0.31964719498000976
+          },
+          "false_positive_summary": {
+            "zero_event_curve_count": 374,
+            "false_events_per_zero_event_curve": 0.0053475935828877,
+            "events_per_curve_median": 2.0,
+            "post_terminal_event_count": 0
+          }
+        }
+      }
+    }
+  }
+}

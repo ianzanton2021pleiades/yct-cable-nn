@@ -1,0 +1,12 @@
+{
+  "schema": "fieldnn-1",
+  "seed": 20261022,
+  "dataset": {"samples": 10000, "shard_size": 64, "workers": 4},
+  "frequency": {"start_hz": 9000.0, "stop_hz": 200000000.0, "points": 32768, "spacing": "log"},
+  "response": {"distance_max_m": 3250.0, "points": 8192, "velocity_m_s": 172000000.0, "event_sigma_m": 3.0},
+  "randomization": {},
+  "model": {"input_channels": 4, "width": 24, "depth": 2, "state_size": 8},
+  "training": {"epochs": 80, "batch_size": 4, "learning_rate": 0.0003, "weight_decay": 0.01, "patience": 12, "num_workers": 0, "amp": true},
+  "evaluation": {"event_tolerances_m": [2.0, 5.0, 10.0], "event_min_separation_m": 3.0, "interval_min_width_m": 1.0, "terminal_tolerance_m": 10.0},
+  "status": "首轮探索配置；随机化范围是待检验先验，不是现场RLGC反演或噪声标定结果"
+}

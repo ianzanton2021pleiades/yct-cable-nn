@@ -1,0 +1,366 @@
+﻿"""Iter8: synthetic replay, weak field positives, and calibration-reference negatives."""
+from __future__ import annotations
+
+import argparse
+import copy
+import csv
+import json
+import os
+from pathlib import Path
+import random
+import sys
+import time
+
+import numpy as np
+import torch
+import torch.nn.functional as F
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+
+HERE = Path(__file__).resolve().parent
+ITER3 = HERE.parent / 'FieldNN_Iter3_20261022'
+ITER5 = HERE.parent / "FieldNN_Iter5_20261022"
+if str(HERE) in sys.path:
+    sys.path.remove(str(HERE))
+sys.path.insert(0, str(HERE))
+for path in (ITER5, ITER3):
+    if str(path) not in sys.path:
+        sys.path.append(str(path))
+from data import CalibrationDataset, ShardDataset
+from losses import compute_losses, total_loss
+from models import build_model
+
+
+def write_json(path, value):
+    Path(path).write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding='utf-8')
+
+
+def worker_init(_):
+    torch.set_num_threads(1)
+    np.random.seed(torch.initial_seed() % 2**32)
+
+
+class FieldBags:
+    def __init__(self, root, split, device):
+        root = Path(root)
+        self.features = np.load(root / 'field_features.npy', mmap_mode='r')
+        self.records = [json.loads(line) for line in (root / 'field_records.jsonl').read_text(encoding='utf-8').splitlines() if line.strip()]
+        self.records = {int(row['index']): row for row in self.records}
+        self.bags = [b for b in json.loads((root / 'field_bags.json').read_text(encoding='utf-8'))['bags'] if b['split'] == split and not b.get('known_lab', False)]
+        self.device = device
+
+    def batch(self, bag):
+        indices = bag['indices']
+        x = torch.from_numpy(np.array(self.features[indices], copy=True)).to(self.device)
+        return x
+
+    def windows(self, bag, length, max_m):
+        d = np.linspace(0, max_m, length)
+        windows = []
+        for position, source_window in zip(bag['positions_source_m'], bag['position_windows_source_m']):
+            spans = []
+            for row, index in enumerate(bag['indices']):
+                ratio = float(self.records[index]['source_scale_ratio'])
+                low = int(np.searchsorted(d, float(source_window[0]) / ratio))
+                high = min(length, int(np.searchsorted(d, float(source_window[1]) / ratio, side='right')))
+                if high > low:
+                    spans.append((row, low, high))
+            if spans:
+                windows.append(spans)
+        return windows
+
+
+def field_objective(logits, windows):
+    """One known positive per bag-position; all other positions stay unlabelled.
+
+    A position can occur in any applicable phase/sweep and within the documented
+    coordinate tolerance. Max pooling does not declare every phase positive.
+    """
+    z = logits.float()
+    losses = []
+    for spans in windows:
+        local = torch.cat([z[row, 0, low:high] for row, low, high in spans])
+        losses.append(F.softplus(-local.max()))
+    positive = torch.stack(losses).mean() if losses else z.sum() * 0
+    return positive
+
+
+def calibration_objective(logits, targets):
+    """Use no-cable CalibrationData as event/interval negatives beyond 30 m."""
+    z = logits.float()
+    targets = targets.float()
+
+    event_valid = targets[:, 0] >= 0.0
+    event_scores = z[:, 0].masked_fill(~event_valid, float('-inf'))
+    event_top = torch.topk(event_scores, k=128, dim=-1).values
+    event_loss = F.softplus(event_top).mean()
+
+    interval_valid = targets[:, 1] >= 0.0
+    interval_by_curve = (
+        (F.softplus(z[:, 1]) * interval_valid).sum(dim=-1)
+        / interval_valid.sum(dim=-1)
+    )
+    interval_loss = interval_by_curve.mean()
+
+    high_count = ((z[:, 0].sigmoid() > 0.6) & event_valid).sum()
+    valid_count = event_valid.sum()
+    return event_loss + 0.25 * interval_loss, high_count, valid_count
+
+
+@torch.no_grad()
+def validate(model, loader, field, calibration_loader, device, amp, cfg, max_batches=0):
+    model.eval()
+    total, count = 0., 0
+    for step, (x, y, _) in enumerate(tqdm(loader, desc='synthetic val', leave=False)):
+        with torch.autocast(device_type=device.type, enabled=amp):
+            out = model(x.to(device, non_blocking=True))
+        loss = total_loss(compute_losses(out, y.to(device, non_blocking=True)))
+        total += float(loss) * len(x)
+        count += len(x)
+        if max_batches and step + 1 >= max_batches:
+            break
+    weak = []
+    bags = field.bags[:2] if max_batches else field.bags
+    for bag in bags:
+        x = field.batch(bag)
+        with torch.autocast(device_type=device.type, enabled=amp):
+            out = model(x)
+        windows = field.windows(bag, out.shape[-1], cfg['response']['distance_max_m'])
+        weak.append(float(field_objective(out, windows)))
+
+    calibration_total, calibration_count = 0.0, 0
+    high_count, valid_count = 0, 0
+    for step, (x, targets, _) in enumerate(tqdm(calibration_loader, desc='calibration val', leave=False)):
+        with torch.autocast(device_type=device.type, enabled=amp):
+            logits = model(x.to(device, non_blocking=True))
+        loss, high, valid = calibration_objective(logits, targets.to(device, non_blocking=True))
+        calibration_total += float(loss) * len(x)
+        calibration_count += len(x)
+        high_count += int(high)
+        valid_count += int(valid)
+        if max_batches and step + 1 >= max_batches:
+            break
+
+    return (
+        total / count,
+        float(np.mean(weak)),
+        calibration_total / calibration_count,
+        high_count / valid_count,
+    )
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--data', type=Path, required=True, help='Iter8 field and calibration cache')
+    ap.add_argument('--synthetic', type=Path, default=Path(r'E:\CableNNDataSet\CodeX\FieldNN_Iter4_20261022'))
+    ap.add_argument('--model', choices=['unet', 'transformer'], required=True)
+    ap.add_argument('--output', type=Path, required=True)
+    ap.add_argument('--epochs', type=int, default=18)
+    ap.add_argument('--batch-size', type=int, default=64)
+    ap.add_argument('--workers', type=int, default=6)
+    ap.add_argument('--device', default='cuda')
+    ap.add_argument('--resume', action='store_true')
+    ap.add_argument('--max-train-batches', type=int, default=0)
+    ap.add_argument('--max-val-batches', type=int, default=0)
+    args = ap.parse_args()
+    torch.set_num_threads(1)
+    torch.set_num_interop_threads(1)
+    seed = 2026102206
+    random.seed(seed); np.random.seed(seed); torch.manual_seed(seed)
+    device = torch.device(args.device)
+    amp = device.type == 'cuda'
+    source = ITER5 / 'output' / 'iter5' / args.model / 'best.pt'
+    initial = torch.load(source, map_location='cpu', weights_only=False)
+    cfg = copy.deepcopy(initial['config'])
+    cfg['seed'] = seed
+    cfg['model']['input_channels'] = 12
+    cfg['training'].update(epochs=args.epochs, batch_size=args.batch_size, num_workers=args.workers,
+                          learning_rate=3e-5, stem_learning_rate=3e-4, patience=5)
+    cfg['adaptation8'] = {
+        'weak_weight': 0.5,
+        'calibration_weight': 0.5,
+        'field_every_steps': 2,
+        'calibration_batch_size': 8,
+        'field_supervision': 'positive-only cross-sweep MIL',
+        'calibration_semantics': 'CalibrationData no-cable/reference responses: event and interval negatives only at d>=30m; near-end event/interval and all terminal positions ignored; not healthy cable samples',
+        'calibration_event_loss': 'mean softplus of top-128 valid event logits per curve',
+        'calibration_interval_loss': '0.25 * mean softplus over valid interval bins',
+        'calibration_terminal_loss': 'no supervision',
+        'feature_channels': 'Iter3 eight channels plus paired step detrend/global-RMS and detrend/local-RMS at 90m and 300m',
+        'stem_learning_rate': 3e-4,
+        'selection': 'synthetic val/base + 0.5 * field-positive val/base + 0.5 * raw calibration val loss',
+        'source_checkpoint': str(source),
+        'data': str(args.data.resolve()),
+    }
+    run = args.output / args.model
+    run.mkdir(parents=True, exist_ok=True)
+    if (run / 'last.pt').exists() and not args.resume:
+        raise FileExistsError(f'Use --resume or a new output: {run}')
+    write_json(run / 'config.json', cfg)
+    model = build_model(args.model, **cfg['model']).to(device)
+    model.backbone.load_state_dict(initial['model'])
+    train_data = ShardDataset(args.synthetic, 'train', train=True)
+    val_data = ShardDataset(args.synthetic, 'val')
+    train_loader = DataLoader(train_data, batch_size=args.batch_size, shuffle=True,
+                              num_workers=args.workers, pin_memory=amp,
+                              persistent_workers=args.workers > 0, worker_init_fn=worker_init)
+    val_loader = DataLoader(val_data, batch_size=args.batch_size, num_workers=0, pin_memory=amp)
+    field_train = FieldBags(args.data, 'train', device)
+    field_val = FieldBags(args.data, 'val', device)
+    if not field_train.bags or not field_val.bags:
+        raise ValueError('Need nonempty, group-isolated field train and validation bags')
+    calibration_train = CalibrationDataset(args.data, 'train')
+    calibration_val = CalibrationDataset(args.data, 'val')
+    calibration_loader = DataLoader(
+        calibration_train, batch_size=8, shuffle=True, num_workers=0, pin_memory=amp
+    )
+    calibration_val_loader = DataLoader(
+        calibration_val, batch_size=8, shuffle=False, num_workers=0, pin_memory=amp
+    )
+    optimizer = torch.optim.AdamW(
+        [
+            {'params': model.backbone.parameters(), 'lr': 3e-5},
+            {'params': model.input_stem.parameters(), 'lr': 3e-4},
+        ],
+        weight_decay=.01,
+    )
+    scaler = torch.amp.GradScaler('cuda', init_scale=1024., enabled=amp)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=2, factor=.5, min_lr=2e-6)
+    start, best, stale = 0, float('inf'), 0
+    base_synth, base_field, base_calibration, base_calibration_high = validate(
+        model, val_loader, field_val, calibration_val_loader,
+        device, amp, cfg, args.max_val_batches,
+    )
+    normalization = (max(base_synth, 1e-6), max(base_field, 1e-6))
+
+    def state(epoch):
+        return {'model_name': args.model, 'config': cfg, 'model': model.state_dict(),
+                'optimizer': optimizer.state_dict(), 'scaler': scaler.state_dict(), 'scheduler': scheduler.state_dict(),
+                'epoch': epoch, 'best_score': best, 'stale': stale, 'normalization': normalization,
+                'rng': {'python': random.getstate(), 'numpy': np.random.get_state(), 'torch': torch.get_rng_state(),
+                        'cuda': torch.cuda.get_rng_state() if amp else None}}
+
+    if args.resume:
+        saved = torch.load(run / 'last.pt', map_location='cpu', weights_only=False)
+        if saved['config']['adaptation8']['data'] != str(args.data.resolve()):
+            raise ValueError('Resume data differs from the previous run')
+        model.load_state_dict(saved['model']); optimizer.load_state_dict(saved['optimizer'])
+        scaler.load_state_dict(saved['scaler']); scheduler.load_state_dict(saved['scheduler'])
+        start, best, stale = saved['epoch'] + 1, saved['best_score'], saved['stale']
+        normalization = saved['normalization']
+        random.setstate(saved['rng']['python']); np.random.set_state(saved['rng']['numpy'])
+        torch.set_rng_state(saved['rng']['torch'])
+        if amp:
+            torch.cuda.set_rng_state(saved['rng']['cuda'])
+    else:
+        best = 1.5 + 0.5 * base_calibration
+        torch.save(state(-1), run / 'best.pt')
+        write_json(run / 'initial_validation.json', {
+            'synthetic': base_synth,
+            'field_positive': base_field,
+            'calibration': base_calibration,
+            'calibration_event_high_bin_fraction': base_calibration_high,
+            'selection_score': best,
+            'policy': 'Initial Iter5 weights remain eligible; no forced promotion',
+        })
+    write_json(run / 'run_info.json', {'model': args.model, 'parameters': sum(p.numel() for p in model.parameters()),
+               'field_train_bags': len(field_train.bags), 'field_val_bags': len(field_val.bags),
+               'calibration_train_samples': len(calibration_train),
+               'calibration_val_samples': len(calibration_val),
+               'synthetic_train': len(train_data), 'training': cfg['training'], 'adaptation': cfg['adaptation8'],
+               'gpu': torch.cuda.get_device_name() if amp else None, 'torch': torch.__version__})
+    for epoch in range(start, args.epochs):
+        begun = time.perf_counter(); model.train()
+        sums = dict(synthetic=0., positive=0., calibration=0.)
+        count = field_count = calibration_count = skipped = 0
+        calibration_iterator = iter(calibration_loader)
+        if amp:
+            torch.cuda.reset_peak_memory_stats()
+        bag_order = np.random.permutation(len(field_train.bags)).tolist()
+        progress = tqdm(train_loader, desc=f'{args.model} {epoch+1}/{args.epochs}', unit='batch')
+        for step, (x, y, _) in enumerate(progress):
+            optimizer.zero_grad(set_to_none=True)
+            x, y = x.to(device, non_blocking=True), y.to(device, non_blocking=True)
+            with torch.autocast(device_type=device.type, enabled=amp):
+                logits = model(x)
+            synthetic_loss = total_loss(compute_losses(logits, y))
+            scaler.scale(synthetic_loss).backward()
+            sums['synthetic'] += float(synthetic_loss.detach()) * len(x); count += len(x)
+            del logits, synthetic_loss, x, y
+            if step % 2 == 0:
+                if not bag_order:
+                    bag_order = np.random.permutation(len(field_train.bags)).tolist()
+                bag = field_train.bags[bag_order.pop()]
+                field_x = field_train.batch(bag)
+                with torch.autocast(device_type=device.type, enabled=amp):
+                    field_out = model(field_x)
+                windows = field_train.windows(bag, field_out.shape[-1], cfg['response']['distance_max_m'])
+                positive = field_objective(field_out, windows)
+                scaler.scale(0.5 * positive).backward()
+                sums['positive'] += float(positive.detach())
+                del field_out, field_x, positive
+
+                try:
+                    calibration_x, calibration_targets, _ = next(calibration_iterator)
+                except StopIteration:
+                    calibration_iterator = iter(calibration_loader)
+                    calibration_x, calibration_targets, _ = next(calibration_iterator)
+                calibration_x = calibration_x.to(device, non_blocking=True)
+                calibration_targets = calibration_targets.to(device, non_blocking=True)
+                calibration_batch_size = len(calibration_x)
+                with torch.autocast(device_type=device.type, enabled=amp):
+                    calibration_logits = model(calibration_x)
+                calibration_loss, _, _ = calibration_objective(calibration_logits, calibration_targets)
+                scaler.scale(0.5 * calibration_loss).backward()
+                sums['calibration'] += float(calibration_loss.detach()) * calibration_batch_size
+                calibration_count += calibration_batch_size
+                del calibration_logits, calibration_x, calibration_targets, calibration_loss
+                field_count += 1
+            scaler.unscale_(optimizer)
+            grad = float(torch.nn.utils.clip_grad_norm_(model.parameters(), 1.))
+            old_scale = scaler.get_scale(); scaler.step(optimizer); scaler.update()
+            skipped += int(scaler.get_scale() < old_scale)
+            progress.set_postfix(
+                syn=f'{sums["synthetic"]/max(count,1):.3f}',
+                weak=f'{sums["positive"]/max(field_count,1):.3f}',
+                cal=f'{sums["calibration"]/max(calibration_count,1):.3f}',
+            )
+            if args.max_train_batches and step + 1 >= args.max_train_batches:
+                break
+        val_synth, val_field, val_calibration, val_calibration_high = validate(
+            model, val_loader, field_val, calibration_val_loader,
+            device, amp, cfg, args.max_val_batches,
+        )
+        score = val_synth / normalization[0] + .5 * val_field / normalization[1] + .5 * val_calibration
+        improved = score < best
+        best, stale = (score, 0) if improved else (best, stale + 1)
+        scheduler.step(score)
+        row = {'epoch': epoch+1, 'train_synthetic': sums['synthetic']/count,
+               'train_field_positive': sums['positive']/max(field_count,1),
+               'train_calibration': sums['calibration']/max(calibration_count,1),
+               'val_synthetic': val_synth, 'val_field_positive': val_field,
+               'val_calibration': val_calibration,
+               'val_calibration_event_high_bin_fraction': val_calibration_high,
+               'selection_score': score,
+               'best_score': best, 'grad_norm_last': grad, 'amp_skipped_steps': skipped,
+               'lr': optimizer.param_groups[0]['lr'],
+               'lr_stem': optimizer.param_groups[1]['lr'], 'seconds': time.perf_counter()-begun,
+               'synthetic_samples_per_second': count/(time.perf_counter()-begun),
+               'peak_gpu_gib': torch.cuda.max_memory_allocated()/2**30 if amp else 0.}
+        torch.save(state(epoch), run / 'last.pt')
+        if improved:
+            torch.save(state(epoch), run / 'best.pt')
+        history = run / 'history.csv'
+        exists = history.exists()
+        with history.open('a', newline='', encoding='utf-8') as stream:
+            writer = csv.DictWriter(stream, fieldnames=row)
+            if not exists: writer.writeheader()
+            writer.writerow(row)
+        print(json.dumps(row, ensure_ascii=False), flush=True)
+        if stale >= 5:
+            print('Early stop: 5 epochs without validation improvement', flush=True)
+            break
+
+
+if __name__ == '__main__':
+    main()

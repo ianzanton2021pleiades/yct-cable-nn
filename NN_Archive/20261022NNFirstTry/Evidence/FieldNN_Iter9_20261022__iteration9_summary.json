@@ -1,0 +1,297 @@
+{
+  "schema": "fieldnn-iter9-run-1",
+  "status": "complete",
+  "data": "E:\\CableNNDataSet\\CodeX\\FieldNN_Iter9_20261022",
+  "mode": "full",
+  "cpu": {
+    "physical_cores_used": 7,
+    "physical_cores_reserved": 1,
+    "affinity_mask": "0x3fff"
+  },
+  "pi": 0.1,
+  "scope": "candidate-patch event scorers; no interval/terminal model claim",
+  "stages": [
+    {
+      "stage": "prepare_reused",
+      "seconds": 0.0,
+      "data": "E:\\CableNNDataSet\\CodeX\\FieldNN_Iter9_20261022"
+    },
+    {
+      "stage": "proposal_coverage",
+      "seconds": 2.498712499975227,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\logs\\proposal_coverage.log"
+    },
+    {
+      "stage": "unet_train",
+      "seconds": 294.43835519999266,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\logs\\unet_train.log"
+    },
+    {
+      "stage": "unet_evaluate",
+      "seconds": 11.615170300006866,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\logs\\unet_evaluate.log"
+    },
+    {
+      "stage": "unet_paired",
+      "seconds": 0.9712654000031762,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\logs\\unet_paired.log"
+    },
+    {
+      "stage": "transformer_train",
+      "seconds": 155.0586674999795,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\logs\\transformer_train.log"
+    },
+    {
+      "stage": "transformer_evaluate",
+      "seconds": 5.35641350003425,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\logs\\transformer_evaluate.log"
+    },
+    {
+      "stage": "transformer_paired",
+      "seconds": 0.8778990999562666,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\logs\\transformer_paired.log"
+    }
+  ],
+  "models": {
+    "unet": {
+      "checkpoint": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\unet\\best.pt",
+      "epochs_run": 14,
+      "last_epoch": {
+        "epoch": "14",
+        "synthetic_bce": "0.12678894856277353",
+        "field_mil_bce": "0.00014265504834650963",
+        "weak_bag_nnpu": "0.0029762120529152262",
+        "calibration_bce": "0.0018304405316366288",
+        "total_loss": "0.13029409827277116",
+        "grad_norm_mean": "3.66993292103643",
+        "grad_norm_max": "29.96754264831543",
+        "grad_norm_last": "3.482722759246826",
+        "amp_skipped_steps": "0",
+        "seconds": "20.69476310000755",
+        "synthetic_samples_per_second": "2835.74156980703",
+        "peak_gpu_gib": "0.5445079803466797",
+        "selection_score": "0.0",
+        "threshold": "1.000001",
+        "field_macro_hit20": "0.0",
+        "field_candidates_per_curve": "0.0",
+        "calibration_false_events_per_reference": "0.0",
+        "val_synthetic_bce": "0.27590334989101206",
+        "best_score": "0.7055555555555555"
+      },
+      "run_info": {
+        "status": "complete",
+        "model": "unet",
+        "parameters": 369569,
+        "synthetic_train_patches": 58685,
+        "synthetic_val_patches": 7377,
+        "field_train_curves": 122,
+        "field_train_candidate_patches": 5930,
+        "field_train_positive_bags_with_proposals": 80,
+        "field_train_positive_bags_without_proposals": 6,
+        "field_train_groups_with_positive_bags": 19,
+        "field_train_groups_with_candidates": 31,
+        "calibration_train_candidate_patches": 2147,
+        "calibration_train_groups": 31,
+        "device": "cuda",
+        "completed_epochs": 14,
+        "best_epoch": 8,
+        "best_validation": {
+          "selection_score": 0.7055555555555555,
+          "threshold": 0.99,
+          "field_macro_hit20": 0.7055555555555555,
+          "field_candidates_per_curve": 2.5483870967741935,
+          "calibration_false_events_per_reference": 0.0,
+          "synthetic_bce": 0.25153930610283387,
+          "field_macro_hit10": 0.661111111111111,
+          "field_density_budget": 2.5483870967741935,
+          "field_candidates_total": 79,
+          "field_annotated_curves_in_denominator": 31,
+          "field_density_feasible": true,
+          "calibration_false_events": 0,
+          "calibration_references": 12,
+          "threshold_is_abstention": false,
+          "threshold_semantics": "probability threshold",
+          "selection_rule": "field-val max independent-group one-to-one hit@20m under Iter5 U-Net candidate-density cap; threshold ties prefer fewer candidates then higher threshold; 1.000001 is reject-all"
+        }
+      },
+      "field_report": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\unet\\evaluation\\field_report.json",
+      "calibration_report": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\unet\\evaluation\\calibration_report.json",
+      "proposal_coverage": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\unet\\evaluation\\proposal_coverage.json",
+      "paired_comparison": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\unet\\field_comparison.json"
+    },
+    "transformer": {
+      "checkpoint": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\transformer\\best.pt",
+      "epochs_run": 19,
+      "last_epoch": {
+        "epoch": "19",
+        "synthetic_bce": "0.24938687763303896",
+        "field_mil_bce": "0.006991459904668812",
+        "weak_bag_nnpu": "0.009802388807467017",
+        "calibration_bce": "0.008705438531773246",
+        "total_loss": "0.2648613560257837",
+        "grad_norm_mean": "5.697562338994897",
+        "grad_norm_max": "32.87416076660156",
+        "grad_norm_last": "6.533021926879883",
+        "amp_skipped_steps": "0",
+        "seconds": "7.013440000009723",
+        "synthetic_samples_per_second": "8367.505817390416",
+        "peak_gpu_gib": "0.1275472640991211",
+        "selection_score": "0.6333333333333333",
+        "threshold": "0.975",
+        "field_macro_hit20": "0.6333333333333333",
+        "field_candidates_per_curve": "2.3548387096774195",
+        "calibration_false_events_per_reference": "0.0",
+        "val_synthetic_bce": "0.26618551900914583",
+        "best_score": "0.6944444444444445"
+      },
+      "run_info": {
+        "status": "complete",
+        "model": "transformer",
+        "parameters": 79553,
+        "synthetic_train_patches": 58685,
+        "synthetic_val_patches": 7377,
+        "field_train_curves": 122,
+        "field_train_candidate_patches": 5930,
+        "field_train_positive_bags_with_proposals": 80,
+        "field_train_positive_bags_without_proposals": 6,
+        "field_train_groups_with_positive_bags": 19,
+        "field_train_groups_with_candidates": 31,
+        "calibration_train_candidate_patches": 2147,
+        "calibration_train_groups": 31,
+        "device": "cuda",
+        "completed_epochs": 19,
+        "best_epoch": 13,
+        "best_validation": {
+          "selection_score": 0.6944444444444445,
+          "threshold": 0.975,
+          "field_macro_hit20": 0.6944444444444445,
+          "field_candidates_per_curve": 1.7741935483870968,
+          "calibration_false_events_per_reference": 0.0,
+          "synthetic_bce": 0.2781786117770896,
+          "field_macro_hit10": 0.5555555555555556,
+          "field_density_budget": 2.5483870967741935,
+          "field_candidates_total": 55,
+          "field_annotated_curves_in_denominator": 31,
+          "field_density_feasible": true,
+          "calibration_false_events": 0,
+          "calibration_references": 12,
+          "threshold_is_abstention": false,
+          "threshold_semantics": "probability threshold",
+          "selection_rule": "field-val max independent-group one-to-one hit@20m under Iter5 U-Net candidate-density cap; threshold ties prefer fewer candidates then higher threshold; 1.000001 is reject-all"
+        }
+      },
+      "field_report": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\transformer\\evaluation\\field_report.json",
+      "calibration_report": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\transformer\\evaluation\\calibration_report.json",
+      "proposal_coverage": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\transformer\\evaluation\\proposal_coverage.json",
+      "paired_comparison": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\transformer\\field_comparison.json"
+    }
+  },
+  "selection_policy": "field validation known-positive macro hit under fixed U5 validation candidate budget; no test model/threshold selection",
+  "preparation": {
+    "schema": "fieldnn-iter9-patch-cache-summary-1",
+    "status": "complete",
+    "mode": "full",
+    "output": "E:\\CableNNDataSet\\CodeX\\FieldNN_Iter9_20261022",
+    "workers": 7,
+    "synthetic": {
+      "train": {
+        "curves": 9600,
+        "patches": 58685,
+        "positive": 20285,
+        "negative": 38400
+      },
+      "val": {
+        "curves": 1200,
+        "patches": 7377,
+        "positive": 2577,
+        "negative": 4800
+      },
+      "test": {
+        "curves": 1200,
+        "patches": 7256,
+        "positive": 2456,
+        "negative": 4800
+      }
+    },
+    "field": {
+      "source_curves_full": 213,
+      "source_cache_records_available": 138,
+      "source_curves_cached": 138,
+      "source_curves_recomputed": 75,
+      "source_curves_output": 213,
+      "field_candidates": 10174,
+      "field_patches": 10174,
+      "field_bags": 52,
+      "positive_bag_positions": 163,
+      "positive_positions_missing_proposals": 15
+    },
+    "calibration": {
+      "calibration_sources": 63,
+      "calibration_candidates": 3453,
+      "calibration_patches": 3453,
+      "sources_without_proposals": 0
+    },
+    "field_group_split": {
+      "development_case:wuxi_baian_mixed_directory": "train",
+      "development_experiment:1500m_wet_joint": "test",
+      "development_topology:maao_f52_july_2026": "train",
+      "development_cable:sewage_f12": "train",
+      "unconfirmed_case:2025-3-7 石杨线5号至6号进水": "train",
+      "unconfirmed_case:2026-9-24 13.08.39深圳屯州变电站10kV屯学线F24鹤鸡东公用环开": "train",
+      "unconfirmed_case:2026-6-11 14.24.09深圳110kV丹竹头变电站10kV南晶线F20大芬站外#8三遥柜": "train",
+      "unconfirmed_case:2026-7-14 9.57.49深圳110kV达悦变电站10kV禾沙坑线F02三联水库#2智能柜": "train",
+      "unconfirmed_case:2026-7-12 18.31.45深圳海源恒业#1智能柜": "train",
+      "unconfirmed_case:2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜": "train",
+      "unconfirmed_case:2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜": "train",
+      "unconfirmed_case:2026-7-8 13.21.33深圳110kv达悦站10kV禾沙坑线F02达悦站外#2智能柜": "train",
+      "unconfirmed_case:2026-9-28 13.53.02深圳新沙路二十二公用断路器柜": "train",
+      "unconfirmed_case:2026-7-13 11.37.12深圳星河银湖谷商业中心丙智能柜": "train",
+      "unconfirmed_case:2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜": "train",
+      "unconfirmed_case:2026-8-22 12.01.01深圳110kV金融站10kV金嘉一线F07白龙头#1智能柜": "train",
+      "unconfirmed_case:2026-7-22 9.54.32深圳樟树布变电站10kV樟树四线F10樟树布翠山#2智能柜": "train",
+      "unconfirmed_case:2026-5-25 10.48.04深圳110kV平湖站10kv辅城坳线F17平湖山厦外国语学校智能柜": "train",
+      "unconfirmed_case:2026-6-2 11.31.03深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜": "train",
+      "unconfirmed_case:2026-9-23 12.06.02深圳岗兴变电站10KV岗马二线F08坂雪岗稼先路口#2智能柜": "train",
+      "unconfirmed_case:2026-6-16 15.01.32深圳110kV骏业变电站10kV骏坳线F17冲之大道风门坳工业园#4智能柜": "train",
+      "unconfirmed_case:2026-7-7 10.32.12深圳110kV甘坑变电站10kV客镇线F20凉帽山公园智能柜": "train",
+      "unconfirmed_case:2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）": "train",
+      "unconfirmed_case:2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜": "val",
+      "unconfirmed_case:2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜": "train",
+      "unconfirmed_case:2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校": "val",
+      "unconfirmed_case:2026-7-19 17.00.31深圳110kV樟树布变电站10kV湖中线F23龙山工业区#5三遥柜": "test",
+      "unconfirmed_case:2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜": "train",
+      "unconfirmed_case:2026-9-2-深圳顺和达厂户内公用三遥柜601开关": "val",
+      "unconfirmed_case:2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜": "test",
+      "unconfirmed_case:2026-6-11 13.12.49深圳丹竹头变电站10kV左右线F01宝丹路#1智能柜": "train",
+      "unconfirmed_case:2026-6-17 15.27.20深圳布沙路横排朗#1公用智能柜": "val",
+      "unconfirmed_case:2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜": "test",
+      "unconfirmed_case:2026-6-11 16.29.35深圳龙岗某地": "train",
+      "unconfirmed_case:2026-6-25 18.08.15深圳龙岗区某地": "val",
+      "unconfirmed_case:2026-6-5 17.00.06深圳110kV旭日站10kV旭李二线F25": "test",
+      "unconfirmed_case:2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜": "train",
+      "unconfirmed_case:2026-7-10 14.25.16深圳110kV正X站10kV星河商业四线F16": "val",
+      "unconfirmed_case:2026-8-26 9.53.21深圳110kV樟树布站10kV可园一线F43明天酒店旁#1智能柜": "test",
+      "unconfirmed_case:2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜": "train",
+      "unconfirmed_case:2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜": "val",
+      "linked_cable:nanling_f55_june_2026": "test",
+      "unconfirmed_case:2025-2-17 11.25.49北京城区白塔寺": "train",
+      "unconfirmed_case:2025-7-7 11.55.08邦润线(浸水)": "val",
+      "unconfirmed_case:2026-6-11 17.04.41深圳龙岗某地": "test",
+      "unconfirmed_case:2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开": "train",
+      "unconfirmed_case:2026-8-26 11.39.46深圳樟树布变电站10kV樟芬线F45明天酒店旁#2智能柜": "val",
+      "unconfirmed_case:2026-5-30 12.13.22深圳110kV坂田变电站10kV四季线F65坂田南学校#1公用智能柜": "test",
+      "unconfirmed_case:2025-5-15 15.23.15深圳龙岗某地（浸水）": "train",
+      "unconfirmed_case:2025-8-20 11.44.04山东驻马店华润电力": "val",
+      "linked_line:liulian_f16_june_2026": "test"
+    },
+    "forced_group_reasons": {
+      "development_case:wuxi_baian_mixed_directory": "prior_development_or_calibration_exposure_forced_train",
+      "development_experiment:1500m_wet_joint": "known_lab_forced_test; excluded from Iter6 training",
+      "development_topology:maao_f52_july_2026": "prior_development_or_calibration_exposure_forced_train",
+      "development_cable:sewage_f12": "prior_development_or_calibration_exposure_forced_train"
+    },
+    "field_label_policy": "Known annotation positions are positive-only evidence; missing proposals are retained in positive_bags.json; unknown candidates are not negative labels.",
+    "calibration_label_policy": "Every cached CalibrationData curve is a confirmed short/no-cable fixture reference; candidate patches are calibration negatives only."
+  },
+  "physical_proposal_report": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter9_20261022\\output\\iter9\\proposal_coverage_before_training.json"
+}

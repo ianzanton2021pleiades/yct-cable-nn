@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "case_group": "2025-8-20 11.44.04山东驻马店华润电力",
+      "sweep": "B相",
+      "truth_m": [
+        577.0,
+        1177.0,
+        1758.0,
+        1885.0
+      ],
+      "hits20": 4,
+      "candidates": 6,
+      "terminal_m": 2260.4382859235748,
+      "known_length_m": 2246.0,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case1.png"
+    },
+    {
+      "case_group": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+      "sweep": "A相[末端开路]",
+      "truth_m": [
+        452.0,
+        576.0,
+        637.0
+      ],
+      "hits20": 3,
+      "candidates": 5,
+      "terminal_m": 924.8870711756807,
+      "known_length_m": 922.0,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case2.png"
+    },
+    {
+      "case_group": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+      "sweep": "A相[末端开路]",
+      "truth_m": [
+        234.0
+      ],
+      "hits20": 1,
+      "candidates": 1,
+      "terminal_m": null,
+      "known_length_m": 1687.0,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case3.png"
+    },
+    {
+      "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+      "sweep": "100m接头浸水",
+      "truth_m": [
+        86.0
+      ],
+      "hits20": 1,
+      "candidates": 2,
+      "terminal_m": null,
+      "known_length_m": 1500.0,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case4.png"
+    },
+    {
+      "case_group": "2026-6-15 14.20.30深圳220kV李朗站10kV东医二线F49深圳市第三人民医院E栋大楼#1智能柜",
+      "sweep": "C相",
+      "truth_m": [
+        320.0
+      ],
+      "hits20": 1,
+      "candidates": 3,
+      "terminal_m": null,
+      "known_length_m": 1787.0,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case5.png"
+    },
+    {
+      "case_group": "2026-9-16 10.45.47深圳鼎盛变电站10KV东江处置线F05鼎康#1智能柜",
+      "sweep": "A相[末端开路]",
+      "truth_m": [
+        213.0,
+        338.0,
+        644.0,
+        945.0
+      ],
+      "hits20": 3,
+      "candidates": 5,
+      "terminal_m": 1094.7076059089245,
+      "known_length_m": 1078.0,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN150_case6.png"
+    }
+  ]
+}

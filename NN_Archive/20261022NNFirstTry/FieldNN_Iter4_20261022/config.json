@@ -1,0 +1,70 @@
+﻿{
+  "schema": "fieldnn-iter4-raw-cache-1",
+  "seed": 2026102204,
+  "dataset": {
+    "source_default": "E:/CableNNDataSet/CodeX/FieldNN_Iter3_20261022",
+    "output_default": "E:/CableNNDataSet/CodeX/FieldNN_Iter4_20261022",
+    "sample_limit_per_split": null,
+    "chunk_size": 32,
+    "workers": 7,
+    "raw_arrays": {
+      "impulse": "arrays/{split}_raw_imp.npy",
+      "step": "arrays/{split}_raw_step.npy",
+      "targets": "arrays/{split}_targets.npy",
+      "metadata": "metadata_{split}.jsonl"
+    }
+  },
+  "frequency": {
+    "start_hz": 9000.0,
+    "stop_hz": 200000000.0,
+    "points": 32768,
+    "spacing": "log"
+  },
+  "response": {
+    "distance_max_m": 3250.0,
+    "points": 8192,
+    "velocity_m_s": 172000000.0,
+    "event_sigma_m": 5.0,
+    "terminal_sigma_m": 5.0
+  },
+  "model": {
+    "input_channels": 8,
+    "width": 32,
+    "depth": 3,
+    "state_size": 8
+  },
+  "training": {
+    "epochs": 24,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "num_workers": 6,
+    "patience": 8,
+    "warmup_epochs": 2,
+    "plateau_patience": 3,
+    "amp": true
+  },
+  "evaluation": {
+    "event_tolerances_m": [2.0, 5.0, 10.0],
+    "event_min_separation_m": 3.0,
+    "interval_min_width_m": 8.0,
+    "terminal_tolerance_m": 10.0
+  },
+  "calibration_bank": {
+    "real_manifest": "NN_Archive/20261022NNFirstTry/FieldNN_20261022/output/real_manifest.jsonl",
+    "calibration_index": "DifferentAgent/CodeX/Core16_Field/output/calibrations.csv",
+    "source_root": "E:/20261010截至的全部fdr文件",
+    "development_status_required": "development_only",
+    "maximum_distinct_fdr_sources": 6,
+    "minimum_distinct_fdr_sources": 4,
+    "array_file": "calibration_bank_v2.npz",
+    "source_log": "calibration_sources_v2.jsonl",
+    "full_scale_until_m": 150.0,
+    "taper_to_zero_at_m": 250.0,
+    "active_rms_region_m": 150.0,
+    "normalization": "subtract the 200-250 m step plateau, derive impulse from the tapered step using native/fixed distance step, then divide both by the shared near-end impulse RMS; preserve per-source offsets and RMS in calibration_sources_v2.jsonl",
+    "step_taper": "subtract the median step over 200-250 m, keep 0-150 m, cosine taper both step and its derivative to zero at 250 m",
+    "semantics": "CalibrationData short/no-cable reference nuisance bank; not a healthy cable label and not a terminal positive"
+  },
+  "status": "Iter4 caches Algorithm1 raw responses from frozen Iter3 S11; no physical S11 regeneration"
+}

@@ -1,0 +1,170 @@
+{
+  "epochs": 150,
+  "min_val_loss": 0.4481795608997345,
+  "min_val_loss_epoch": 95,
+  "val_loss_final": 0.5669916860262553,
+  "val_f1_at_min_loss": 0.74597219156919,
+  "val_f1_max": 0.7533875338753387,
+  "val_f1_max_epoch": 148,
+  "overfit_onset_epoch": 99,
+  "val_event_final": 0.5036302244663239,
+  "val_interval_final": 0.04990880797306697,
+  "val_terminal_final": 0.013452651134381691,
+  "field_buckets_pretrain": [
+    {
+      "range": "500-1000",
+      "hits": 51,
+      "truth": 84,
+      "curves": 15,
+      "hit_rate": 0.6071428571428571
+    },
+    {
+      "range": "1000-1500",
+      "hits": 8,
+      "truth": 15,
+      "curves": 6,
+      "hit_rate": 0.5333333333333333
+    },
+    {
+      "range": "1500-2000",
+      "hits": 9,
+      "truth": 46,
+      "curves": 10,
+      "hit_rate": 0.1956521739130435
+    },
+    {
+      "range": "2000-2600",
+      "hits": 11,
+      "truth": 45,
+      "curves": 12,
+      "hit_rate": 0.24444444444444444
+    },
+    {
+      "range": "2600-4000",
+      "hits": 0,
+      "truth": 0,
+      "curves": 0,
+      "hit_rate": null
+    }
+  ],
+  "field_buckets_tuned": [
+    {
+      "range": "500-1000",
+      "hits": 45,
+      "truth": 84,
+      "curves": 15,
+      "hit_rate": 0.5357142857142857
+    },
+    {
+      "range": "1000-1500",
+      "hits": 8,
+      "truth": 15,
+      "curves": 6,
+      "hit_rate": 0.5333333333333333
+    },
+    {
+      "range": "1500-2000",
+      "hits": 12,
+      "truth": 46,
+      "curves": 10,
+      "hit_rate": 0.2608695652173913
+    },
+    {
+      "range": "2000-2600",
+      "hits": 12,
+      "truth": 45,
+      "curves": 12,
+      "hit_rate": 0.26666666666666666
+    },
+    {
+      "range": "2600-4000",
+      "hits": 0,
+      "truth": 0,
+      "curves": 0,
+      "hit_rate": null
+    }
+  ],
+  "sweep": [
+    {
+      "event_threshold": 0.3,
+      "hit_rate_20": 0.5578947368421052,
+      "candidates_per_curve": 11.488372093023257,
+      "curves_all_hit": 19,
+      "curves_any_hit": 37,
+      "annotated": 43,
+      "P_ann": 0.2145748987854251
+    },
+    {
+      "event_threshold": 0.35,
+      "hit_rate_20": 0.531578947368421,
+      "candidates_per_curve": 8.767441860465116,
+      "curves_all_hit": 17,
+      "curves_any_hit": 37,
+      "annotated": 43,
+      "P_ann": 0.26790450928381965
+    },
+    {
+      "event_threshold": 0.4,
+      "hit_rate_20": 0.49473684210526314,
+      "candidates_per_curve": 6.348837209302325,
+      "curves_all_hit": 14,
+      "curves_any_hit": 37,
+      "annotated": 43,
+      "P_ann": 0.3443223443223443
+    },
+    {
+      "event_threshold": 0.45,
+      "hit_rate_20": 0.4421052631578947,
+      "candidates_per_curve": 4.790697674418604,
+      "curves_all_hit": 13,
+      "curves_any_hit": 36,
+      "annotated": 43,
+      "P_ann": 0.4077669902912621
+    },
+    {
+      "event_threshold": 0.5,
+      "hit_rate_20": 0.4052631578947368,
+      "candidates_per_curve": 3.7209302325581395,
+      "curves_all_hit": 11,
+      "curves_any_hit": 33,
+      "annotated": 43,
+      "P_ann": 0.48125
+    },
+    {
+      "event_threshold": 0.55,
+      "hit_rate_20": 0.3631578947368421,
+      "candidates_per_curve": 2.744186046511628,
+      "curves_all_hit": 7,
+      "curves_any_hit": 32,
+      "annotated": 43,
+      "P_ann": 0.5847457627118644
+    },
+    {
+      "event_threshold": 0.6,
+      "hit_rate_20": 0.29473684210526313,
+      "candidates_per_curve": 2.116279069767442,
+      "curves_all_hit": 6,
+      "curves_any_hit": 28,
+      "annotated": 43,
+      "P_ann": 0.6153846153846154
+    },
+    {
+      "event_threshold": 0.65,
+      "hit_rate_20": 0.24736842105263157,
+      "candidates_per_curve": 1.5116279069767442,
+      "curves_all_hit": 6,
+      "curves_any_hit": 27,
+      "annotated": 43,
+      "P_ann": 0.7230769230769231
+    },
+    {
+      "event_threshold": 0.7,
+      "hit_rate_20": 0.21052631578947367,
+      "candidates_per_curve": 1.2093023255813953,
+      "curves_all_hit": 5,
+      "curves_any_hit": 24,
+      "annotated": 43,
+      "P_ann": 0.7692307692307693
+    }
+  ]
+}

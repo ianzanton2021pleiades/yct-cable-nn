@@ -1,0 +1,4 @@
+output/
+smoke_*/
+__pycache__/
+*.pyc

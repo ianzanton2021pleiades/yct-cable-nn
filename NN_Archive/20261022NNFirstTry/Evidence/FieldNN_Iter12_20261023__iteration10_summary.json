@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "cpu": {
+    "physical_cores_used": 7,
+    "physical_cores_reserved": 1,
+    "affinity_mask": "0x3fff"
+  },
+  "data": "E:\\CableNNDataSet\\CodeX\\FieldNN_Iter8_20261022",
+  "synthetic": "E:\\CableNNDataSet\\CodeX\\FieldNN_Iter4_20261022",
+  "output": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep",
+  "stages": [
+    {
+      "stage": "train_recorded",
+      "seconds": 3213.2630159999826,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\train_recorded.log"
+    },
+    {
+      "stage": "selected_field_and_nn_timing",
+      "seconds": 27.31701520003844,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\selected_field_and_nn_timing.log"
+    },
+    {
+      "stage": "true_training_curves",
+      "seconds": 1.8559859999804758,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\true_training_curves.log"
+    },
+    {
+      "stage": "short_reference",
+      "seconds": 4.493015400017612,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\short_reference.log"
+    },
+    {
+      "stage": "synthetic_val_calibrate",
+      "seconds": 16.538068699999712,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\synthetic_val_calibrate.log"
+    },
+    {
+      "stage": "synthetic_test_mixed",
+      "seconds": 8.521600600040983,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\synthetic_test_mixed.log"
+    },
+    {
+      "stage": "synthetic_test_clean",
+      "seconds": 7.105022200034,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\synthetic_test_clean.log"
+    },
+    {
+      "stage": "selected_model_artifacts",
+      "seconds": 4.9834815999493,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\selected_model_artifacts.log"
+    },
+    {
+      "stage": "comprehensive_table_figure",
+      "seconds": 1.0931206000386737,
+      "log": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\logs\\comprehensive_table_figure.log"
+    }
+  ],
+  "selection": {
+    "selected_source": "iter8_reference",
+    "threshold": 0.98,
+    "step": null,
+    "validation": {
+      "train_field_loss": 0.0020794851522320337,
+      "val_field_loss": 0.7378234580922254,
+      "train_hit20_fixed": 0.8418876137712703,
+      "val_hit20_fixed": 0.6833333333333333,
+      "train_hit20_fixed_micro": 0.7674418604651163,
+      "val_hit20_fixed_micro": 0.5384615384615384,
+      "train_hit20_fixed_060": 0.9093325418810183,
+      "val_hit20_fixed_060": 0.8388888888888889,
+      "val_macro_hit20_selected": 0.6833333333333333,
+      "val_micro_hit20_selected": 0.5384615384615384,
+      "val_threshold": 0.98,
+      "val_candidates_total_selected": 48,
+      "val_candidates_per_curve_selected": 1.5483870967741935,
+      "val_density_budget_per_curve": 2.5483870967741935,
+      "val_density_fallback": false,
+      "train_fixed_candidates_per_curve_094": 3.353846153846154,
+      "val_fixed_candidates_per_curve_094": 2.161290322580645,
+      "synthetic_val_loss": 0.38754221081733703,
+      "calibration_val_loss": 0.0031685063537831106,
+      "calibration_val_high_bin_fraction": 0.0,
+      "candidate_source": "iter8_reference",
+      "source_checkpoint": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter8_20261022\\output\\iter8\\transformer\\best.pt"
+    },
+    "dense_best_step": 4100,
+    "reference_validation": {
+      "train_field_loss": 0.0020794851522320337,
+      "val_field_loss": 0.7378234580922254,
+      "train_hit20_fixed": 0.8418876137712703,
+      "val_hit20_fixed": 0.6833333333333333,
+      "train_hit20_fixed_micro": 0.7674418604651163,
+      "val_hit20_fixed_micro": 0.5384615384615384,
+      "train_hit20_fixed_060": 0.9093325418810183,
+      "val_hit20_fixed_060": 0.8388888888888889,
+      "val_macro_hit20_selected": 0.6833333333333333,
+      "val_micro_hit20_selected": 0.5384615384615384,
+      "val_threshold": 0.98,
+      "val_candidates_total_selected": 48,
+      "val_candidates_per_curve_selected": 1.5483870967741935,
+      "val_density_budget_per_curve": 2.5483870967741935,
+      "val_density_fallback": false,
+      "train_fixed_candidates_per_curve_094": 3.353846153846154,
+      "val_fixed_candidates_per_curve_094": 2.161290322580645,
+      "synthetic_val_loss": 0.38754221081733703,
+      "calibration_val_loss": 0.0031685063537831106,
+      "calibration_val_high_bin_fraction": 0.0,
+      "candidate_source": "iter8_reference",
+      "source_checkpoint": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter8_20261022\\output\\iter8\\transformer\\best.pt"
+    }
+  },
+  "curves": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\transformer\\figures",
+  "deliverables": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\deliverables",
+  "benchmark": "D:\\GitRepository\\Cable-NN\\DifferentAgent\\CodeX\\FieldNN_Iter12_20261023\\output\\iter12_50ep\\transformer\\nn_benchmark.json"
+}

@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "case": 1,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN2_case1.png",
+      "case_group": "2026-6某地进行的1500m不同位置电缆接头浸水试验",
+      "sweep_name": "100m接头浸水",
+      "truth_m": [
+        86.0
+      ],
+      "hits20": 1,
+      "candidates": 1,
+      "terminal_m": null,
+      "known_length_m": 1500.0
+    },
+    {
+      "case": 2,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN2_case2.png",
+      "case_group": "2026-6-12 16.20.43深圳龙岗区消防#3保测公用智能柜",
+      "sweep_name": "A相[末端开路]",
+      "truth_m": [
+        452.0,
+        576.0,
+        637.0
+      ],
+      "hits20": 3,
+      "candidates": 3,
+      "terminal_m": 924.4902942253693,
+      "known_length_m": 922.0
+    },
+    {
+      "case": 3,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN2_case3.png",
+      "case_group": "2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜",
+      "sweep_name": "B相",
+      "truth_m": [
+        55.0,
+        91.0,
+        175.0,
+        638.0,
+        682.0
+      ],
+      "hits20": 4,
+      "candidates": 7,
+      "terminal_m": 777.6828226101819,
+      "known_length_m": 770.0
+    },
+    {
+      "case": 4,
+      "figure": "D:\\GitRepository\\Cable-NN\\Image\\20261023_PINN2_case4.png",
+      "case_group": "2026-9-28 12.51.40深圳岗头变电站10KV岗马一线沃华木业三遥柜",
+      "sweep_name": "A相[末端开路]",
+      "truth_m": [
+        234.0
+      ],
+      "hits20": 1,
+      "candidates": 1,
+      "terminal_m": null,
+      "known_length_m": 1687.0
+    }
+  ]
+}

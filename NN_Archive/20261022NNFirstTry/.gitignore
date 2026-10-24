@@ -1,0 +1,13 @@
+# 仅限本次归档的可再生/本地产物；源码、配置、README、Evidence保留。
+**/output/
+**/assets/
+**/s11_output/
+**/__pycache__/
+*.pyc
+**/matplotlib_cache/
+**/smoke_*/
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
