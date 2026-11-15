@@ -1,0 +1,14 @@
+{
+  "status": "template_unassigned",
+  "train": [],
+  "val": [],
+  "pending_case_groups": [
+    "physical-case-A02",
+    "physical-case-A03",
+    "physical-case-A04"
+  ],
+  "context_only_case_groups": [
+    "physical-case-B06"
+  ],
+  "note": "当前仅A02、A03、A04含已确认监督；B06只作成组上下文，未知区间不作为正例或负例。正式划分尚未确定。先用prepare_field生成的manifest.json核对case_group_id；同一物理案例的复测与相位必须留在同一分区，再由用户填写train和val。"
+}

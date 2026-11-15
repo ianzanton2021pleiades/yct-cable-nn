@@ -1,0 +1,737 @@
+{
+  "batch": "a",
+  "cases": [
+    {
+      "case_id": "A01",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2025-2-17 11.25.49北京城区白塔寺",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2025-2-17 11.25.49北京城区白塔寺\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2025-2-17 11.25.49北京城区白塔寺\\2025-2-17 11.25.49城区白塔寺.fdr",
+        "E:\\20261010截至的全部fdr文件\\2025-2-17 11.25.49北京城区白塔寺\\2025-2-17 12.30.59白塔寺复测.fdr"
+      ],
+      "summary": "原文将两份FDR分别标为耐压前和耐压后：耐压前240m被认为阻抗上升，耐压后该处击穿；同时记载其他接头在耐压后更明显、全长响应也变化。FDR全长记为1100m。",
+      "evidence": [
+        {
+          "id": "A01-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-2-17 11.25.49北京城区白塔寺\\其他信息.txt",
+          "quote": "这是在北京的测试结果，耐压前后。耐压前觉得240m有问题（阻抗上升），耐压后240m击穿。但是其他接头在耐压后更明显了，耐压后全长也变化了。\n针对：2025-2-17 11.25.49城区白塔寺.fdr，这是耐压前的\n针对：2025-2-17 12.30.59白塔寺复测.fdr，这是耐压后的",
+          "source_kind": "未确定",
+          "file_reference": "2025-2-17 11.25.49城区白塔寺.fdr（耐压前）；2025-2-17 12.30.59白塔寺复测.fdr（耐压后）",
+          "phase_reference": null,
+          "state_reference": "耐压前、耐压后",
+          "position_text": "240m",
+          "supports": "原文把240m处耐压前的异常判断与耐压后的击穿记录联系起来，并说明其他接头及全长响应也发生变化。",
+          "uncertainty": "原文未逐一列出其他接头的位置和耐压前后的变化量。"
+        },
+        {
+          "id": "A01-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-2-17 11.25.49北京城区白塔寺\\其他信息.txt",
+          "quote": "FDR全长1100m",
+          "source_kind": "长度记录",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文记载FDR全长为1100m。",
+          "uncertainty": "该记录未说明物理实长的独立测量依据。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "其他接头和全长响应变化未给出逐项位置或测量量。"
+      ]
+    },
+    {
+      "case_id": "A02",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr"
+      ],
+      "summary": "最新说明文本记载工程师判断从200m开始C相位进水；第4轮用户复核确认A/B相100–300m只作异常点、异常区间任务负背景，C相复测200m为需ABC上下文的起始边界。起点不扩展到385m。",
+      "evidence": [
+        {
+          "id": "A02-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\其他信息.txt",
+          "quote": "针对：2025-3-6 15.47.07石杨线5号至6号.fdr\n这是测量的一个电缆进水的一个案例，和标准图谱还比较对应。\n工程师判断从200m开始C相位进水\nFDR全场385m",
+          "source_kind": "工程师判读",
+          "file_reference": "2025-3-6 15.47.07石杨线5号至6号.fdr",
+          "phase_reference": "C相",
+          "state_reference": null,
+          "position_text": "从200m开始",
+          "supports": "2026-11-10 15:21更新的说明文本中，工程师判断从200m开始C相位进水；该位置只支撑单侧起始边界。",
+          "uncertainty": "终点未知；物理进水边界与FDR响应边界尚未独立确认。"
+        },
+        {
+          "id": "A02-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\其他信息.txt",
+          "quote": "FDR全场385m",
+          "source_kind": "长度记录",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文记载FDR全场长度为385m。",
+          "uncertainty": "原文未说明物理实长的独立测量依据。"
+        },
+        {
+          "id": "A02-E03",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\工程师标注.png",
+          "quote": "图例文字：A相、B相、C相、C相复测；控件文字：平滑系数 75；光标读数：X: 200.57、Y: -0.12。",
+          "source_kind": "工程师判读",
+          "file_reference": "2025-3-6 15.47.07石杨线5号",
+          "phase_reference": "A相；B相；C相；C相复测",
+          "state_reference": "对比图选择C相复测，原C相项未勾选",
+          "position_text": "X: 200.57（图中光标）",
+          "supports": "图示叠加A相、B相和C相复测；原C相项未勾选。200.57m是截图光标读数，不把200m起始边界改成精确异常点。",
+          "uncertainty": "用户本轮说明当前阅读场景的平滑值为2；截图显示75，界面/控件对应尚未核对。"
+        },
+        {
+          "id": "A02-E04",
+          "source_path": "Codex用户复核｜2026-11-10第4轮",
+          "quote": "A02石杨A/B100–300m是异常任务背景，仅anomaly_point/range负例不涉及joint；C复测200m start_boundary需ABC上下文。",
+          "source_kind": "用户复核",
+          "file_reference": "2025-3-6 15.47.07石杨线5号至6号.fdr",
+          "phase_reference": "A相、B相；C相复测",
+          "state_reference": "C相复测",
+          "position_text": "A/B：100–300m；C：200m起始边界",
+          "supports": "用户确认A/B在100–300m仅作为异常点和异常区间负背景；C相复测的200m起点需要三相上下文。",
+          "uncertainty": "A/B负范围不表示joint负例；C相异常终点未知。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "A/B的100–300m范围只适用于anomaly_point与anomaly_range，不涉及joint。",
+        "C相复测200m仅为单侧起始边界，终点未知，不构造完整异常区间。",
+        "C相初测rowid=3与C相复测rowid=4是不同测次；起点监督需A/B/C比较上下文。",
+        "当前界面平滑值2与标注图所示75分场景记录，未作算法或单位等同。"
+      ]
+    },
+    {
+      "case_id": "A03",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr"
+      ],
+      "summary": "用户第4轮复核确认364–476m异常区间适用于A/B/C三相；阶跃响应为主、脉冲响应为辅并按接口平滑。现场关于接头击穿、水痕及未拆解事实仍与响应标签分开。",
+      "evidence": [
+        {
+          "id": "A03-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt",
+          "quote": "现场人员说420后面这个头击穿了，400米前面那个应该也有问题，最好找出来一起换了。",
+          "source_kind": "现场反馈",
+          "file_reference": "2025-5-15 15.23.15.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "420后面；400米前面",
+          "supports": "现场人员报告420m后方接头击穿，并认为400m前方接头也可能有问题。",
+          "uncertainty": "原文未说明现场故障点与FDR位置的测量误差或最终拆换结果。"
+        },
+        {
+          "id": "A03-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt",
+          "quote": "工程师说364m-476m段的阶跃响应（波阻抗）显著降低了，脉冲的结果也很明显，先负后正。阶跃响应的结果也很明显，一段阻抗明显下降(受潮导致下降)。工程师建议现场人员最好安排一下解体，看看里面有没有水。",
+          "source_kind": "工程师判读",
+          "file_reference": "2025-5-15 15.23.15.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "364m-476m段",
+          "supports": "工程师将364m–476m段的响应下降解释为受潮导致阻抗下降，并建议解体查看。",
+          "uncertainty": "这是工程师对响应的解释和检查建议；原文没有解体确认记录。"
+        },
+        {
+          "id": "A03-E03",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt",
+          "quote": "最终初步判断上面那个中间头放电导致故障，前后还找到两个头（是冷缩的），没发现泡水的情况，但是有点水痕，现场人员认为故障点需要剪开往两边再做看进水情况，距离近的话可以一段换掉",
+          "source_kind": "现场反馈",
+          "file_reference": "2025-5-15 15.23.15.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "上面那个中间头；前后两个头",
+          "supports": "原文报告中间头放电为初步判断，两个相邻冷缩头未见泡水但有水痕，现场人员提出剪开检查。",
+          "uncertainty": "未提供剪开后的结果、各接头精确位置或水痕对应位置。"
+        },
+        {
+          "id": "A03-E04",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt",
+          "quote": "诊断结果：364m-476m局部浸水",
+          "source_kind": "未确定",
+          "file_reference": "2025-5-15 15.23.15.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "364m-476m",
+          "supports": "文本中的诊断结果将局部浸水范围写为364m–476m。",
+          "uncertainty": "该诊断结果在本文件中没有附拆解或现场进水范围确认依据。"
+        },
+        {
+          "id": "A03-E05",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\其他信息.txt",
+          "quote": "FDR全长标注：1930m",
+          "source_kind": "长度记录",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文明确写的是FDR全长标注1930m。",
+          "uncertainty": "原文未提供物理实长的独立测量依据。"
+        },
+        {
+          "id": "A03-E06",
+          "source_path": "Codex用户复核｜2026-11-10第4轮",
+          "quote": "A03龙岗364–476m三相均异常。",
+          "source_kind": "用户复核",
+          "file_reference": "2025-5-15 15.23.15.fdr",
+          "phase_reference": "A相、B相、C相",
+          "state_reference": null,
+          "position_text": "364–476m",
+          "supports": "用户确认364–476m区间适用于FDR的A、B、C三相响应判读。",
+          "uncertainty": "现场解体结果仍未提供；不从受潮或放电描述推定void。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "三相事件分别绑定各自Sweeps.rowid，不跨相复制监督。",
+        "曲线平滑和有效覆盖由准备脚本依当前接口从实际源响应表处理。",
+        "原文建议解体并记录水痕，但没有解体确认结果；放电不推成void。",
+        "420后方、400m前方与364m–476m响应范围的对应关系未确认。"
+      ]
+    },
+    {
+      "case_id": "A04",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\readme.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr"
+      ],
+      "summary": "用户第4轮复核确认B相270m局部异常、A/B/C三相420m局部异常。C相rowid=3有完整S11但无厂商响应表；需在派生副本重算后才可形成C相响应输入。rowid=4“新的测试_4”相位未知。",
+      "evidence": [
+        {
+          "id": "A04-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\readme.txt",
+          "quote": "工程师认为：270m位置B相阻抗下降，420m位置三相阻抗下降，未发现明显的接头反射特征，本体局部波动偏大，符合浸水的典型特征，420m发现了接头",
+          "source_kind": "工程师判读",
+          "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+          "phase_reference": "B相（270m）；三相（420m）",
+          "state_reference": null,
+          "position_text": "270m；420m",
+          "supports": "工程师分别描述270m的B相和420m三相阻抗下降，并认为局部波动符合其所称的浸水特征。",
+          "uncertainty": "原文未提供270m与420m处的现场拆检结果。"
+        },
+        {
+          "id": "A04-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\readme.txt",
+          "quote": "现场人员说417米，478米位置是接头，但是他们fdr打出来好像看不太出来，工程师说接头有的，只是浸水之后反射特征减弱了，417m和478m位置有两个反射，正常接头是正极性比较大的反射脉冲，进水后电容增加，阻抗降低，接头反射幅值也会降低",
+          "source_kind": "现场反馈",
+          "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "417米；478米；417m和478m",
+          "supports": "现场人员给出417m、478m为接头的位置；原文同时记载现场认为FDR不易看出，工程师称两处仍有反射。",
+          "uncertainty": "原文未说明现场接头定位的测量依据，也未给出两处接头各自的水情。"
+        },
+        {
+          "id": "A04-E03",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\readme.txt",
+          "quote": "工程师进一步确认总体趋势的变化就是在420米这里，发生了比较大的变化。并且询问现场，最后接头是什么问题，有无一些缺陷特征图片。\n现场反映结果是接头进水，确实水很多，震荡波还测不出来",
+          "source_kind": "现场反馈",
+          "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "420米；最后接头",
+          "supports": "工程师将总体趋势变化指向420m；现场反馈称接头进水且水很多，并称振荡波未测出。",
+          "uncertainty": "现场反馈没有明确指出进水的是417m还是478m接头，也未提供拆检影像或其他确认材料。"
+        },
+        {
+          "id": "A04-E04",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\readme.txt",
+          "quote": "FDR全长：640m",
+          "source_kind": "长度记录",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文记载FDR全长640m。",
+          "uncertainty": "原文未说明物理实长的独立测量依据。"
+        },
+        {
+          "id": "A04-E05",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr",
+          "quote": "SQLite记录：Sweeps.rowid=3；SweepName=C相；IsMeasured=True；Frequency_Start=9000.0；Frequency_Stop=1000000000.0；Points=50000；MeasureData_3列为Freq、Real、Image，行数50000。",
+          "source_kind": "其他仪器",
+          "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+          "phase_reference": "C相（Sweeps.rowid=3）",
+          "state_reference": null,
+          "position_text": null,
+          "supports": "MeasureData_3中Freq、Real、Image各有50000个有限非空值；Real和Image各50000个非零值，S11数据不是全零。",
+          "uncertainty": "ImpulseResponse_3和StepResponse_3两表缺失；本次未生成派生曲线。"
+        },
+        {
+          "id": "A04-E06",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr",
+          "quote": "SQLite记录：Sweeps.rowid=4；SweepName=新的测试_4；IsMeasured=True；Frequency_Start=9000.0；Frequency_Stop=1000000000.0；Points=50000；MeasureData_4行数50000，ImpulseResponse_4行数19999，StepResponse_4行数20000。",
+          "source_kind": "其他仪器",
+          "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+          "phase_reference": "相位未知（Sweeps.rowid=4；SweepName=新的测试_4）",
+          "state_reference": null,
+          "position_text": null,
+          "supports": "rowid=4有完整非零S11和非空厂商响应表，但原始SweepName未标相位，不能指认为C相复测。",
+          "uncertainty": "该测次的相位和与C相初测的关系尚未确认。"
+        },
+        {
+          "id": "A04-E07",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr",
+          "quote": "SQLite表清单：ImpulseResponse_3、StepResponse_3不存在；ImpulseResponse_4有19999行；StepResponse_4有20000行。",
+          "source_kind": "其他仪器",
+          "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+          "phase_reference": "C相（rowid=3）；rowid=4相位未知",
+          "state_reference": null,
+          "position_text": null,
+          "supports": "C相初测厂商响应表缺失；rowid=4的响应表存在且非空，但该测次相位未知。",
+          "uncertainty": "rowid=4响应表不能在相位未明时作为C相响应证据。"
+        },
+        {
+          "id": "A04-E08",
+          "source_path": "Codex用户复核｜2026-11-10第4轮",
+          "quote": "A04邦润B相270局部异常、三相420局部异常；C原表缺失仍待副本重算。",
+          "source_kind": "用户复核",
+          "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+          "phase_reference": "B相（270m）；A相、B相、C相（420m）",
+          "state_reference": "C相rowid=3待派生副本重算",
+          "position_text": "270m；420m",
+          "supports": "用户确认B相270m及三相420m局部异常；C相标签来源为用户复核，不因原厂商响应表缺失而撤销。",
+          "uncertainty": "C相派生响应尚未生成；其训练监督待副本响应表可读后决定。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "420m现场进水反馈未明确对应417m、478m中的哪一处，不并入420m响应标签。",
+        "C相用户确认标签保留；实际C相监督仅在派生副本rowid=3响应表存在后启用。",
+        "rowid=4 SweepName为“新的测试_4”，相位未知，不作为C相复测或替代输入。",
+        "现场接头位置和FDR反射位置的测量对应未说明。"
+      ]
+    },
+    {
+      "case_id": "A05",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2025-8-20 11.44.04山东驻马店华润电力",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2025-8-20 11.44.04山东驻马店华润电力\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2025-8-20 11.44.04山东驻马店华润电力\\2025-8-20 11.44.04驻马店华润.fdr",
+        "E:\\20261010截至的全部fdr文件\\2025-8-20 11.44.04山东驻马店华润电力\\2025-8-20 15.18.36驻马店1767米.fdr"
+      ],
+      "summary": "文本称该电缆完整、FDR总长度2246m；另一份FDR被说明为同一电缆从1758m分接箱开始向末端测量的部分。",
+      "evidence": [
+        {
+          "id": "A05-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-8-20 11.44.04山东驻马店华润电力\\其他信息.txt",
+          "quote": "针对：2025-8-20 11.44.04驻马店华润.fdr\n这个电缆是完整的，工程师出具了报告“华润电力盘古风电场电缆宽频阻抗谱测试报告.pdf”，FDR总长度2246m",
+          "source_kind": "长度记录",
+          "file_reference": "2025-8-20 11.44.04驻马店华润.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文将该文件描述为完整电缆测试，并记FDR总长度2246m。",
+          "uncertainty": "本批仅据文本记录；未从报告或测量文件独立核对物理实长。"
+        },
+        {
+          "id": "A05-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2025-8-20 11.44.04山东驻马店华润电力\\其他信息.txt",
+          "quote": "针对：2025-8-20 15.18.36驻马店1767米.fdr\n这是“2025-8-20 11.44.04驻马店华润.fdr”这条电缆，从1758m分接箱开始往末端测量的部分",
+          "source_kind": "长度记录",
+          "file_reference": "2025-8-20 15.18.36驻马店1767米.fdr；2025-8-20 11.44.04驻马店华润.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "从1758m分接箱开始往末端",
+          "supports": "原文明确说第二份文件是同一电缆从1758m分接箱向末端测量的部分。",
+          "uncertainty": "原文未说明该段FDR显示长度与物理长度的对应误差。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "2246m为原文记录的FDR总长度；物理实长依据未见于本说明文本。"
+      ]
+    },
+    {
+      "case_id": "A06",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜\\2026-5-20 10.29.21.fdr"
+      ],
+      "summary": "电缆标签参数记1967米，FDR全长记1964m。工程师认为171m接头正常，后面有外屏蔽损伤特征，但没有给出该特征的具体位置；低压脉冲另列多个中间头。",
+      "evidence": [
+        {
+          "id": "A06-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜\\其他信息.txt",
+          "quote": "电缆标签参数：ZRC-YJV22-3x300mm2   1967米\n\n工程师认为171m接头是正常的，后面有比较明显的外屏蔽损伤缺陷，基本没有其他接头的特征了\n\nFDR全长：1964m",
+          "source_kind": "长度记录",
+          "file_reference": "2026-5-20 10.29.21.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "171m接头；后面",
+          "supports": "文本并列记录标签参数1967米与FDR全长1964m，并记录工程师对171m接头及后段特征的判断。",
+          "uncertainty": "原文未说明两种长度的测量定义；后段外屏蔽损伤特征没有精确位置或现场拆检事实。"
+        },
+        {
+          "id": "A06-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-20 10.29.21深圳220kV宏图变电站10kV宏悦线F17宏悦智能柜\\其他信息.txt",
+          "quote": "现场人员低压脉冲测出来的中间头：170-191-242-514-752-913-1015-1126-1279-1415-1568-1823-1973",
+          "source_kind": "其他仪器",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "170-191-242-514-752-913-1015-1126-1279-1415-1568-1823-1973",
+          "supports": "现场人员报告低压脉冲测得的中间头位置序列。",
+          "uncertainty": "原文未说明各位置的测量误差及与FDR坐标的逐点对应。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "标签参数与FDR全长分别记为1967米和1964m。",
+        "外屏蔽损伤特征位置未标注，低压脉冲位置序列不能据此替代FDR接头标记。"
+      ]
+    },
+    {
+      "case_id": "A07",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜\\2026-5-20 11.31.57.fdr"
+      ],
+      "summary": "文本记载C相击穿前后各做一次FDR；振荡波在B相多个位置报告局放点，C相未能加到指定电压且试验后对地。工程师认为C相击穿位置应在阶跃响应上升处，但没有标具体位置。标签参数与FDR全长不同。",
+      "evidence": [
+        {
+          "id": "A07-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜\\其他信息.txt",
+          "quote": "针对：2026-5-20 11.31.57.fdr（C相分别在击穿前后都做了1次）",
+          "source_kind": "未确定",
+          "file_reference": "2026-5-20 11.31.57.fdr",
+          "phase_reference": "C相",
+          "state_reference": "击穿前、击穿后",
+          "position_text": null,
+          "supports": "原文记载该C相FDR测量分别在击穿前和击穿后各做一次。",
+          "uncertainty": "文本没有提供两次测量的独立文件名或具体测量时间。"
+        },
+        {
+          "id": "A07-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜\\其他信息.txt",
+          "quote": "振荡波试验B相134米，361米，522米，797米有分散的几个局放点，局放量不大。C相加不到指定电压。\n介损A,B两相状态异常，C相无法加压\n试验后绝缘，C相对地了",
+          "source_kind": "其他仪器",
+          "file_reference": null,
+          "phase_reference": "振荡波局放：B相；未达到指定电压及试验后对地：C相；介损：A、B相异常，C相无法加压",
+          "state_reference": "试验前后；试验后绝缘",
+          "position_text": "B相134米、361米、522米、797米",
+          "supports": "其他试验记录将B相局放点列在四个位置，并记录C相未达到指定电压、试验后对地。",
+          "uncertainty": "原文没有说明C相对地对应的具体位置；B相局放点不能作为C相击穿位置。"
+        },
+        {
+          "id": "A07-E03",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜\\其他信息.txt",
+          "quote": "工程师认为C相加压后击穿了，击穿位置应该在阶跃响应上升的地方（震荡波局部放电结果显示轻微局部放），但是也没有标注具体的位置",
+          "source_kind": "工程师判读",
+          "file_reference": "2026-5-20 11.31.57.fdr",
+          "phase_reference": "C相",
+          "state_reference": "加压后",
+          "position_text": "阶跃响应上升的地方（未标具体位置）",
+          "supports": "工程师判断C相加压后击穿，并将可能位置描述为阶跃响应上升处，但原文没有位置标注。",
+          "uncertainty": "缺少具体位置；工程师的判断没有与B相局放位置建立对应关系。"
+        },
+        {
+          "id": "A07-E04",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-20 11.31.57深圳宏图变电站10kV振业三线F21振业三甲三遥柜\\其他信息.txt",
+          "quote": "电缆标签参数：ZRC-YJV22-3x300mm2    2779.69米\nFDR全长：2306m",
+          "source_kind": "长度记录",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文分别记载标签参数2779.69米与FDR全长2306m。",
+          "uncertainty": "原文未说明两种长度的测量定义或对应关系。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "B相局放位置与C相击穿判断属于不同相，不能直接合并；C相击穿位置未标注。",
+        "标签参数2779.69米与FDR全长2306m不一致，物理实长依据未给出。"
+      ]
+    },
+    {
+      "case_id": "A08",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜\\2026-5-21 11.54.20.fdr"
+      ],
+      "summary": "现场低压脉冲报告55、93、174、633、684、765m（末端）；工程师标注55、91、175、638、682m为接头并判断应该没有缺陷。标签记旧710米+新53米，FDR全长标注770m。",
+      "evidence": [
+        {
+          "id": "A08-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜\\其他信息.txt",
+          "quote": "现场人员低压脉冲测到的中间头：55-93-174-633-684-765（末端）",
+          "source_kind": "其他仪器",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "55-93-174-633-684-765（末端）",
+          "supports": "现场人员给出低压脉冲的中间头位置序列，并将765标为末端。",
+          "uncertainty": "原文未说明这些位置与FDR坐标的逐点对应。"
+        },
+        {
+          "id": "A08-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜\\其他信息.txt",
+          "quote": "工程师标注了55m、91m、175m、638m、682m存在接头，应该没有缺陷",
+          "source_kind": "工程师判读",
+          "file_reference": "2026-5-21 11.54.20.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "55m、91m、175m、638m、682m",
+          "supports": "工程师在五处标注接头，并判断应该没有缺陷。",
+          "uncertainty": "原文未提供这些接头的现场拆检结果；“应该没有缺陷”是工程师判断。"
+        },
+        {
+          "id": "A08-E03",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-21 11.54.20深圳市第三人民医院宿舍公用智能柜\\其他信息.txt",
+          "quote": "电缆标签参数：YJV22-3x300mm2   旧710米+新53米\nFDR全长标注：770m",
+          "source_kind": "长度记录",
+          "file_reference": "2026-5-21 11.54.20.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文并列记录标签中的旧段、新段长度和FDR全长标注。",
+          "uncertainty": "原文未说明标签长度与FDR全长的测量定义或差异来源。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "低压脉冲位置和工程师标注位置存在差异；文本没有逐点解释其对应关系。",
+        "765m被低压脉冲记录标为末端，不能据此把FDR全长770m解释为物理实长。"
+      ]
+    },
+    {
+      "case_id": "A09",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\2026-5-21 15.34.27.fdr"
+      ],
+      "summary": "电缆标签参数为1057.09米，FDR全长标注1213m；工程师认为150m处轻微异常，其他仪器记录三相介损正常、振荡波无异常。",
+      "evidence": [
+        {
+          "id": "A09-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\其他信息.txt",
+          "quote": "电缆标签参数：ZRC-YJV22-3x300mm2    1057.09米\n现场低压脉冲测到的中间头：1220-161-357-442-688-824-1122",
+          "source_kind": "其他仪器",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "1220-161-357-442-688-824-1122",
+          "supports": "文本记录标签参数1057.09米及低压脉冲给出的中间头位置序列；位置顺序按原文保留。",
+          "uncertainty": "原文未解释序列中1220、1122与标签长度的关系，也未给出与FDR坐标的逐点对应。"
+        },
+        {
+          "id": "A09-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\其他信息.txt",
+          "quote": "工程师认为，150m轻微异常\n\n三相介损都正常，振荡波无异常",
+          "source_kind": "工程师判读",
+          "file_reference": "2026-5-21 15.34.27.fdr",
+          "phase_reference": "三相（介损记录）",
+          "state_reference": null,
+          "position_text": "150m",
+          "supports": "工程师将150m描述为轻微异常；原文另记三相介损正常、振荡波无异常。",
+          "uncertainty": "原文未给出150m异常的具体曲线特征或现场确认。"
+        },
+        {
+          "id": "A09-E03",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-21 15.34.27深圳东升变电站10kV外国语线F18东建公用环开\\其他信息.txt",
+          "quote": "FDR全长标注：1213m\n测试前做了绝缘电阻测试，所有测试结束之后又测了一次绝缘电阻",
+          "source_kind": "长度记录",
+          "file_reference": "2026-5-21 15.34.27.fdr",
+          "phase_reference": null,
+          "state_reference": "测试前、所有测试结束之后",
+          "position_text": null,
+          "supports": "文本记录FDR全长标注1213m及绝缘电阻测试的前后时点。",
+          "uncertainty": "原文未提供绝缘电阻数值或FDR长度标注的物理实长依据。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "标签参数1057.09米、低压脉冲位置序列和FDR全长标注1213m之间的关系未说明。",
+        "150m异常是工程师判读，文本没有现场定位或拆检结果。"
+      ]
+    },
+    {
+      "case_id": "A10",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2026-5-27 22.36.14深圳龙岗某地",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-27 22.36.14深圳龙岗某地\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2026-5-27 22.36.14深圳龙岗某地\\2026-5-27 22.36.14.fdr"
+      ],
+      "summary": "原文明确称该电缆与2025年4月22日测试为同一条；工程师认为692m接头有局部放电，并将其与此前约690m的外屏蔽损伤解释为同一类问题。FDR全长记为2795m。",
+      "evidence": [
+        {
+          "id": "A10-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-27 22.36.14深圳龙岗某地\\其他信息.txt",
+          "quote": "针对：2026-5-27 22.36.14.fdr（这条电缆就是2025.4.22的同一条电缆）",
+          "source_kind": "未确定",
+          "file_reference": "2026-5-27 22.36.14.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "本案文本明确说明与2025年4月22日测试为同一条电缆。",
+          "uncertainty": "本批未定位2025年4月22日对应的原始目录或测量文件。"
+        },
+        {
+          "id": "A10-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-27 22.36.14深圳龙岗某地\\其他信息.txt",
+          "quote": "工程师认为692m接头有局部放电",
+          "source_kind": "工程师判读",
+          "file_reference": "2026-5-27 22.36.14.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "692m接头",
+          "supports": "工程师认为692m接头有局部放电。",
+          "uncertainty": "原文未列出局放量、放电位置的独立确认或拆检结果。"
+        },
+        {
+          "id": "A10-E03",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-27 22.36.14深圳龙岗某地\\其他信息.txt",
+          "quote": "现场人员问这个电缆4月22号的测试说690米位置是外屏蔽损伤。  昨日测试反馈说有局部放电。 这两次试验结论第二次是严重了吗？ 工程师说外屏蔽损伤会导致局部放电，是同一类问题",
+          "source_kind": "工程师判读",
+          "file_reference": "2026-5-27 22.36.14.fdr；原文提及4月22日测试但未给出文件名",
+          "phase_reference": null,
+          "state_reference": "4月22日测试；昨日测试",
+          "position_text": "690米位置",
+          "supports": "现场人员转述此前690m外屏蔽损伤和本次局放反馈，并询问严重程度；工程师称两者为同一类问题。",
+          "uncertainty": "原文未给出两次测试的具体间隔、同一位置复测曲线或严重程度结论。"
+        },
+        {
+          "id": "A10-E04",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-5-27 22.36.14深圳龙岗某地\\其他信息.txt",
+          "quote": "FDR全长：2795m",
+          "source_kind": "长度记录",
+          "file_reference": null,
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文记载FDR全长2795m。",
+          "uncertainty": "原文未说明物理实长的独立测量依据。"
+        }
+      ],
+      "related_cases": [
+        {
+          "reference": "2025-04-22测试（原文写作“2025.4.22”）",
+          "reason": "本案原文明确称“这条电缆就是2025.4.22的同一条电缆”；同缆关系来自原文。对应的原始目录和测量文件本批未定位。",
+          "confirmed": true
+        }
+      ],
+      "unresolved": [
+        "原文确认与2025年4月22日为同一条电缆，但本批未找到该次测试的目录或测量文件。",
+        "692m局放与此前690m外屏蔽损伤的对应关系仅有工程师解释，未提供拆检或曲线对照。",
+        "FDR全长2795m不是物理实长的确认记录。"
+      ]
+    },
+    {
+      "case_id": "A11",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\2026-6某地进行的1500m不同位置电缆接头浸水试验",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\2026-6某地进行的1500m不同位置电缆接头浸水试验\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\2026-6某地进行的1500m不同位置电缆接头浸水试验\\1500m电缆单个接头浸水试验.fdr"
+      ],
+      "summary": "说明文本称用长电缆开展不同位置接头浸水试验，接头位置标注在文件名中，范围为100m–1400m。本阶段未读取FDR内部测量名称，位置映射待核。",
+      "evidence": [
+        {
+          "id": "A11-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-6某地进行的1500m不同位置电缆接头浸水试验\\其他信息.txt",
+          "quote": "这是我们最近用一根长电缆（正常情况下绝缘介损比XLPE电缆大很多）做了不同位置浸水的试验，衰减规律还挺好。",
+          "source_kind": "未确定",
+          "file_reference": "1500m电缆单个接头浸水试验.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "不同位置浸水",
+          "supports": "文本称该长电缆用于不同位置接头浸水试验，并对衰减规律作了定性描述。",
+          "uncertainty": "原文未写试验电缆的具体结构、测量相位或每个位置的对应测量名。"
+        },
+        {
+          "id": "A11-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\2026-6某地进行的1500m不同位置电缆接头浸水试验\\其他信息.txt",
+          "quote": "浸水接头的位置已经标注在文件名里面，分别是100m~1400m",
+          "source_kind": "长度记录",
+          "file_reference": "1500m电缆单个接头浸水试验.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "100m~1400m",
+          "supports": "说明文本称浸水接头位置标注于文件名中，列举范围100m至1400m。",
+          "uncertainty": "需要读取FDR内部sweep/测量名称后核对各位置对应关系；此处不将目录中的单个FDR文件名等同于内部测量数量。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "FDR内部sweep或测量名称尚需核对100m至1400m各位置的对应关系。"
+      ]
+    },
+    {
+      "case_id": "A12",
+      "source_folder": "E:\\20261010截至的全部fdr文件\\实验室进行的核级信号电缆老化前的试验",
+      "source_texts": [
+        "E:\\20261010截至的全部fdr文件\\实验室进行的核级信号电缆老化前的试验\\其他信息.txt"
+      ],
+      "measurement_files": [
+        "E:\\20261010截至的全部fdr文件\\实验室进行的核级信号电缆老化前的试验\\局部老化0day.fdr"
+      ],
+      "summary": "说明文本称测试条件不清楚，样品由两段约30m核级电缆和中间短段组成，中间段分别为6m、3m、0.5m；0k、25k、50k、100k、200k的含义未知。",
+      "evidence": [
+        {
+          "id": "A12-E01",
+          "source_path": "E:\\20261010截至的全部fdr文件\\实验室进行的核级信号电缆老化前的试验\\其他信息.txt",
+          "quote": "我也不清楚具体测试条件\n测试电缆应该是30m核级电缆+中间一小段+30m的核级电缆，所以不同测试长度不同\n中间一小段的长度分别是6m、3m、0.5m，对应于fdr文件中的6/、3/和0.5/",
+          "source_kind": "长度记录",
+          "file_reference": "局部老化0day.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": "中间段6m、3m、0.5m；文件中的6/、3/和0.5/",
+          "supports": "原文描述核级电缆样品由两段约30m电缆与不同长度的中间段组成，并给出相应路径标记。",
+          "uncertainty": "测试条件不清楚；路径标记与具体FDR内部测量名称的对应关系尚未核对。"
+        },
+        {
+          "id": "A12-E02",
+          "source_path": "E:\\20261010截至的全部fdr文件\\实验室进行的核级信号电缆老化前的试验\\其他信息.txt",
+          "quote": "0k、25k、50k、100k、200k我不知道是啥意思",
+          "source_kind": "未确定",
+          "file_reference": "局部老化0day.fdr",
+          "phase_reference": null,
+          "state_reference": null,
+          "position_text": null,
+          "supports": "原文明确表示0k、25k、50k、100k、200k这些标记的含义未知。",
+          "uncertainty": "需要依据FDR内部测量名称或实验记录确认这些标记含义。"
+        }
+      ],
+      "related_cases": [],
+      "unresolved": [
+        "具体测试条件及0k、25k、50k、100k、200k含义未知。",
+        "文件中的6/、3/、0.5/与不同中间段长度的内部测量对应关系尚未核对。"
+      ]
+    }
+  ]
+}

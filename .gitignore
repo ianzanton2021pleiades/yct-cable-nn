@@ -4,6 +4,7 @@ __pycache__/
 
 DataSet/**
 AgentsStorage/**
+失败总结/
 
 *.pt
 *.pth

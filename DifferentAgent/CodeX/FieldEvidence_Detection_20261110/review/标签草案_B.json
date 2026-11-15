@@ -1,0 +1,2310 @@
+{
+  "status": "draft_pending_measurement_review",
+  "cases": [
+    {
+      "case_id": "B01",
+      "annotations": [
+        {
+          "case_id": "B01",
+          "evidence_ids": [
+            "B01-E01",
+            "B01-E02"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 116,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-11 15.09.21深圳大芬站外#8三遥柜602开关\\2026-6-11 15.09.21.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师认为116m位置有潜在缺陷；现场人员评价为轻微"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确根据FDR给出116m候选点；保留现场轻微评价，待测次曲线审阅。",
+          "unresolved": [
+            "现场是否找到或处理该点未记载。"
+          ]
+        },
+        {
+          "case_id": "B01",
+          "evidence_ids": [
+            "B01-E03"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "window",
+            "value_m": 1100,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波记录有局放"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "这是振荡波位置记录，单独保留，不作为FDR可见异常标签。",
+          "unresolved": [
+            "原文未说明与116m FDR候选点的关系。"
+          ]
+        },
+        {
+          "case_id": "B01",
+          "evidence_ids": [
+            "B01-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 2070,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-11 15.09.21深圳大芬站外#8三遥柜602开关\\2026-6-11 15.09.21.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR全长标注：2070m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作为本测次长度参考，待曲线审阅后判断末端。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B02",
+      "annotations": [
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 111,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\2026-6-23 10.41.51.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师认为111m有明显缺陷"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师给出明确FDR案例位置，待对应测次曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E01"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 664,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\2026-6-23 10.41.51.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称664m接头轻微外屏蔽损伤缺陷"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确称该位置为接头；保留接头位置与状态供曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 664,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\2026-6-23 10.41.51.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称664m接头轻微外屏蔽损伤缺陷"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师将该接头描述为异常，待曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E01"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 1360,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\2026-6-23 10.41.51.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称1360m接头绝缘下降"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确称该位置为接头；保留接头位置与状态供曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 1360,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\2026-6-23 10.41.51.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称1360m接头绝缘下降"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师将该接头描述为异常，待曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E05"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "window",
+            "value_m": 340,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波约340m附近有放电"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "振荡波位置独立保留，不与FDR位置自动配对。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E05"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "window",
+            "value_m": 1090,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波约1090m附近有放电"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "振荡波位置独立保留，不与FDR位置自动配对。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E04"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 23,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到接头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场接头记录仅作物理位置参考，不用作FDR响应标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E04"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 108,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到接头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场接头记录仅作物理位置参考，不用作FDR响应标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E04"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 261,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到接头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场接头记录仅作物理位置参考，不用作FDR响应标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E04"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 415,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到接头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场接头记录仅作物理位置参考，不用作FDR响应标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E04"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 644,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到接头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场接头记录仅作物理位置参考，不用作FDR响应标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E04"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 1121,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到接头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场接头记录仅作物理位置参考，不用作FDR响应标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E04"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 1393,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到接头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场接头记录仅作物理位置参考，不用作FDR响应标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 1801,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场接头序列将1801m标为末端"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "原文将1801m标为末端，仅作长度参考，不标作内部接头。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B02",
+          "evidence_ids": [
+            "B02-E06"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 1777,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 10.41.51深圳大芬变电站10kV浦良线F02丹竹头岭背#3智能柜\\2026-6-23 10.41.51.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR全长标注1777m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作为本测次长度参考，待曲线审阅后判断末端。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B03",
+      "annotations": [
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 226,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 12.47.14深圳龙岗区兴业兴某地\\2026-6-23 12.47.14.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师判断该接头受潮"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "needs_clarification",
+          "reason": "工程师给出受潮判断，但原文没有明确FDR可见响应或拆解确认。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 341,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 12.47.14深圳龙岗区兴业兴某地\\2026-6-23 12.47.14.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师判断该接头受潮"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "needs_clarification",
+          "reason": "工程师给出受潮判断，但原文没有明确FDR可见响应或拆解确认。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 437,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 12.47.14深圳龙岗区兴业兴某地\\2026-6-23 12.47.14.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师判断该接头受潮"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "needs_clarification",
+          "reason": "工程师给出受潮判断，但原文没有明确FDR可见响应或拆解确认。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E09"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 380,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\2026-6-23 20.33.31.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称约380m应有接头并记录高压后FDR特征变化"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确指向FDR特征，按当次显示轴保留约380m候选。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E11"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "window",
+            "value_m": 380,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\2026-7-23 17.24.18.fdr",
+            "phase_reference": null,
+            "state_reference": "约380m附近更换百余米电缆"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "记录维修段位置和动作，不把更换事实当作FDR可见正例。",
+          "unresolved": [
+            "更换段起止位置及拆检结果未记载。"
+          ]
+        },
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E12"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 330,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\2026-7-23 17.24.18.fdr",
+            "phase_reference": null,
+            "state_reference": "原文称330m位置有些受潮特征"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "needs_clarification",
+          "reason": "原文未说明该特征是否来自FDR曲线或物理检查。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 464,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 12.47.14深圳龙岗区兴业兴某地\\2026-6-23 12.47.14.fdr",
+            "phase_reference": null,
+            "state_reference": "6月23日12:47 FDR全长标注464m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作为各测次自身长度参考，不合并为统一坐标。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E10"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 487,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-23 20.33.31深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\2026-6-23 20.33.31.fdr",
+            "phase_reference": null,
+            "state_reference": "6月23日20:33 FDR全长487m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作为各测次自身长度参考，不合并为统一坐标。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B03",
+          "evidence_ids": [
+            "B03-E13"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 448,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-23 17.24.18深圳樟树布变电站10kV南岭一线F55南岭小学旁智能柜\\2026-7-23 17.24.18.fdr",
+            "phase_reference": null,
+            "state_reference": "7月23日FDR全长448m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作为各测次自身长度参考，不合并为统一坐标。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B04",
+      "annotations": [
+        {
+          "case_id": "B04",
+          "evidence_ids": [
+            "B04-E05"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 437,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\2026-6-24 11.51.24.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR波形上标注为接头位置"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确给出FDR接头位置，待曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B04",
+          "evidence_ids": [
+            "B04-E05"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 743,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\2026-6-24 11.51.24.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR波形上标注为接头位置"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确给出FDR接头位置，待曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B04",
+          "evidence_ids": [
+            "B04-E05"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 576,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\2026-6-24 11.51.24.fdr",
+            "phase_reference": null,
+            "state_reference": "576m有小波动，原文称不一定是接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "原文明确保留“不一定是接头”，不得按确定接头处理。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B04",
+          "evidence_ids": [
+            "B04-E03"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 735,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\2026-6-24 11.51.24.fdr",
+            "phase_reference": "A相",
+            "state_reference": "A相阻抗最低"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "工程师建议验证该点，原文未给验证结果。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B04",
+          "evidence_ids": [
+            "B04-E03"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 1265,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\2026-6-24 11.51.24.fdr",
+            "phase_reference": null,
+            "state_reference": "接头特征很微弱"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "工程师建议验证该点，原文未给验证结果。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B04",
+          "evidence_ids": [
+            "B04-E04"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "window",
+            "value_m": 500,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "故障车约500m定位"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "故障车位置独立保留，不与FDR点自动对齐。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B04",
+          "evidence_ids": [
+            "B04-E01",
+            "B04-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\2026-6-24 11.51.24.fdr",
+            "phase_reference": null,
+            "state_reference": "中间头井解开后测量；现场报告临时接地和夹持困难"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "保留测试前的物理处理和接线状态，作为测次背景。",
+          "unresolved": [
+            "原文称不确定临时接地是否影响信号。"
+          ]
+        },
+        {
+          "case_id": "B04",
+          "evidence_ids": [
+            "B04-E06"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 1593,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-6-24 11.51.24深圳龙岗某地（之前坪地介损击穿了）\\2026-6-24 11.51.24.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR全长标注1593m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作本测次长度参考。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B05",
+      "annotations": [
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 221,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\2026-7-3 13.07.08.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师在阻抗谱看到的中间头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确给出阻抗谱接头位置，待曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 388,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\2026-7-3 13.07.08.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师在阻抗谱看到的中间头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确给出阻抗谱接头位置，待曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 667,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\2026-7-3 13.07.08.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师在阻抗谱看到的中间头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确给出阻抗谱接头位置，待曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 1020,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\2026-7-3 13.07.08.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师在阻抗谱看到的中间头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确给出阻抗谱接头位置，待曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 221,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\2026-7-3 13.07.08.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称221m异常特征最显著"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "保留工程师明确指出的异常候选位置。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E03"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 221,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到的中间头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场位置清单与FDR响应分开保存。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E03"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 659,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到的中间头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场位置清单与FDR响应分开保存。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E03"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 1118,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "现场测到的中间头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场位置清单与FDR响应分开保存。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": "C相",
+            "state_reference": "C相介损平均值异常"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "介损结果单独保存，不转为FDR异常标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B05",
+          "evidence_ids": [
+            "B05-E05"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 1120,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-3 13.07.08深圳110kV木古变电站10KV向李线F18海源恒业#1智能柜\\2026-7-3 13.07.08.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR全长1120m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作本测次长度参考。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B06",
+      "annotations": [
+        {
+          "case_id": "B06",
+          "evidence_ids": [
+            "B06-E01"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 64,
+            "end_m": 130,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\2026-7-9 14.56.52.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师约标注该区间；标注内容图片过期"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "user_review": {
+            "date": "2026-11-10",
+            "visibility_status": "visibility_unconfirmed",
+            "review_status": "needs_review",
+            "label_status": "unknown",
+            "note": "当前看不出来该区间；不接受为训练正标签。"
+          },
+          "reason": "原始工程师区间照录；用户复核当前看不出来，暂不作为训练正标签。",
+          "unresolved": [
+            "该区间是否对应FDR可见结构或异常仍为unknown。"
+          ]
+        },
+        {
+          "case_id": "B06",
+          "evidence_ids": [
+            "B06-E01"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 580,
+            "end_m": 630,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\2026-7-9 14.56.52.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师约标注该区间；标注内容图片过期"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "user_review": {
+            "date": "2026-11-10",
+            "visibility_status": "visibility_unconfirmed",
+            "review_status": "needs_review",
+            "label_status": "unknown",
+            "note": "当前看不出来该区间；不接受为训练正标签。"
+          },
+          "reason": "原始工程师区间照录；用户复核当前看不出来，暂不作为训练正标签。",
+          "unresolved": [
+            "该区间是否对应FDR可见结构或异常仍为unknown。"
+          ]
+        },
+        {
+          "case_id": "B06",
+          "evidence_ids": [
+            "B06-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "工程师提出屏蔽接地不良或屏蔽层断裂的条件性判断"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "needs_clarification",
+          "reason": "这是工程师的条件性假设，不作为确认的物理事实或FDR标签。",
+          "unresolved": [
+            "对端测量不可得，屏蔽状态未确认。"
+          ]
+        },
+        {
+          "case_id": "B06",
+          "evidence_ids": [
+            "B06-E05"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 1059,
+            "end_m": 1316,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波轻微局放，80pc"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "振荡波区间独立保存，不作为FDR可见异常。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B06",
+          "evidence_ids": [
+            "B06-E06"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 1480,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\2026-7-9 14.56.52.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR末端位置1480m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作本测次长度参考，不自动标为原缆末端故障。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B07",
+      "annotations": [
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E03"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 53,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\2026-7-20 10.46.01.fdr",
+            "phase_reference": null,
+            "state_reference": "人工标注为接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "按7月20日第一段自身显示轴保留FDR标注。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E03"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 183,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\2026-7-20 10.46.01.fdr",
+            "phase_reference": null,
+            "state_reference": "人工标注为接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "按7月20日第一段自身显示轴保留FDR标注。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E03"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 332,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\2026-7-20 10.46.01.fdr",
+            "phase_reference": null,
+            "state_reference": "人工标注为接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "按7月20日第一段自身显示轴保留FDR标注。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E03"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 514,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\2026-7-20 10.46.01.fdr",
+            "phase_reference": null,
+            "state_reference": "人工标注为接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "按7月20日第一段自身显示轴保留FDR标注。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E03"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 412,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\2026-7-20 10.46.01.fdr",
+            "phase_reference": null,
+            "state_reference": "412m处原文称可能有两个接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "位置可保留；接头数量未知。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E05"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 58,
+            "end_m": 201,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\2026-7-20 10.46.01.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR阻抗下降区间"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师明确记录FDR阻抗下降区间；保持第一段坐标，不推为精确点。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E05"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 337,
+            "end_m": 459,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\2026-7-20 10.46.01.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR阻抗下降区间"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师明确记录FDR阻抗下降区间；保持第一段坐标，不推为精确点。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E06"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 206,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第二段（变电站门口到中间头）\\2026-7-20 11.16.44.fdr",
+            "phase_reference": null,
+            "state_reference": "原文称第二段206m为中间头"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "仅保留第二段自身显示轴的现场位置，不映射到全线坐标。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E02"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 1715,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜\\2026-7-15 16.19.30.fdr",
+            "phase_reference": "A相",
+            "state_reference": "振荡波集中局放，局放量超标"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "保持7月15日测次自身坐标，不转换到7月20日分段轴。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E01"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 60,
+            "end_m": 1000,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜\\2026-7-15 16.19.30.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称该段问题较多，原文未明确FDR曲线边界"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "保留原区间供审阅；不把宽泛排查范围直接当成异常真值。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "window",
+            "value_m": 1700,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜\\2026-7-15 16.19.30.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称1700多米阻抗谱也显示有问题"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "“1700多米”仅为模糊位置，待曲线审阅，不擅自补成精确点。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E09"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 2024,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-15 16.19.30深圳220kV马坳站10KV住宅局线F52嘉欣园断路器柜\\2026-7-15 16.19.30.fdr",
+            "phase_reference": null,
+            "state_reference": "7月15日原文记录FDR全长2024m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "只作各测次自身长度参考；不合并分段坐标。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 637,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第一段（从柜子测）\\2026-7-20 10.46.01.fdr",
+            "phase_reference": null,
+            "state_reference": "7月20日第一段全长标注637m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "只作各测次自身长度参考；不合并分段坐标。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E08"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 960,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-7-20 10.46.01深圳某地两段电缆\\第二段（变电站门口到中间头）\\2026-7-20 11.16.44.fdr",
+            "phase_reference": null,
+            "state_reference": "7月20日第二段全长人工标注960m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "只作各测次自身长度参考；不合并分段坐标。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B07",
+          "evidence_ids": [
+            "B07-E10"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "补充信息另记第一次测试总长1997m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "保留文字中的长度记录，与FDR全长2024m分列，不作校正。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B08",
+      "annotations": [
+        {
+          "case_id": "B08",
+          "evidence_ids": [
+            "B08-E03"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 154,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜\\2026-8-22 12.15.49.fdr",
+            "phase_reference": null,
+            "state_reference": "原文记录154m短路"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场短路事实单独记录，不作为FDR可见异常标签。",
+          "unresolved": [
+            "短路发生时序和测次接线端未说明。"
+          ]
+        },
+        {
+          "case_id": "B08",
+          "evidence_ids": [
+            "B08-E02"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "window",
+            "value_m": 170,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "测距仪波形向下；绝缘显示黄色相对地"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "测距仪与绝缘测试记录独立保留，不与154m短路自动配对。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B08",
+          "evidence_ids": [
+            "B08-E01"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-8-22 12.15.49深圳110k金融站10kV金富线F08白龙头#2智能柜\\2026-8-22 12.15.49.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR标注末端830m；接头序列末项833m并称末端"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "本次终端仅作测程长度参考；短路后的测次终端不直接作为原缆末端。",
+          "unresolved": [
+            "830m和833m差异未解释。"
+          ]
+        },
+        {
+          "case_id": "B08",
+          "evidence_ids": [
+            "B08-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "电缆标签长度1724m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "铭牌长度只作背景记录，不作为本次FDR坐标或末端标签。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B09",
+      "annotations": [
+        {
+          "case_id": "B09",
+          "evidence_ids": [
+            "B09-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 159,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜\\2026-8-28 15.26.01.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师称159m接头问题最大"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "位置明确，但原文未说明判断所依据的FDR响应细节；待曲线审阅。",
+          "unresolved": [
+            "物理检查或维修结果未记载。"
+          ]
+        },
+        {
+          "case_id": "B09",
+          "evidence_ids": [
+            "B09-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "电缆标签长度2482m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "标签长度只作背景记录。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B09",
+          "evidence_ids": [
+            "B09-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 2488,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-8-28 15.26.01深圳110kV樟树布变电站10kV金坑线F18南岭黄金坑#4智能柜\\2026-8-28 15.26.01.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR末端标注2488m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作本测次长度参考，待曲线审阅后判断末端。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B10",
+      "annotations": [
+        {
+          "case_id": "B10",
+          "evidence_ids": [
+            "B10-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 135,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-2-深圳顺和达厂户内公用三遥柜601开关\\顺和达厂户内公用三遥柜601开关.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师认为135m接头浸水"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "needs_clarification",
+          "reason": "这是工程师对物理状态的判断，原文未记拆检，不转为FDR可见异常标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B10",
+          "evidence_ids": [
+            "B10-E02"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "window",
+            "value_m": 250,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": "B相；C相；三相局放",
+            "state_reference": "现场报告约250m三相局放；BC相绝缘低"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "现场绝缘与局放记录分开保存，不与135m判断强行对齐。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B10",
+          "evidence_ids": [
+            "B10-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 319,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-2-深圳顺和达厂户内公用三遥柜601开关\\顺和达厂户内公用三遥柜601开关.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR总长319m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作本测次长度参考。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B11",
+      "annotations": [
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E01"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 33,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\2026-9-21 16.35.27.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR标注接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确列为FDR接头候选，待测次曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E01"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 106,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\2026-9-21 16.35.27.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR标注接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确列为FDR接头候选，待测次曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E01"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 295,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\2026-9-21 16.35.27.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR标注接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确列为FDR接头候选，待测次曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E01"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 394,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\2026-9-21 16.35.27.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR标注接头"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文明确列为FDR接头候选，待测次曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E01"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 600,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\2026-9-21 16.35.27.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR标注接头，接近FDR末端604m"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "保留原文接头标注，但末端附近结构类别待曲线审阅，不自动改标terminal。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 113,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波测得接头；原文另称振荡波无异常"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "振荡波位置序列独立保存，不作为FDR标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 194,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波测得接头；原文另称振荡波无异常"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "振荡波位置序列独立保存，不作为FDR标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 309,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波测得接头；原文另称振荡波无异常"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "振荡波位置序列独立保存，不作为FDR标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 453,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波测得接头；原文另称振荡波无异常"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "振荡波位置序列独立保存，不作为FDR标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 606,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "振荡波测得接头；原文另称振荡波无异常"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "振荡波位置序列独立保存，不作为FDR标签。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": "电缆标签长度594m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "标签长度只作背景记录。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B11",
+          "evidence_ids": [
+            "B11-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 604,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-21 16.35.27深圳岗头变电站10AV富安一线F10雪岗北#3三遥柜\\2026-9-21 16.35.27.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR全长604m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作本测次长度参考；末端单独审阅。",
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "case_id": "B12",
+      "annotations": [
+        {
+          "case_id": "B12",
+          "evidence_ids": [
+            "B12-E02"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "start_boundary",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校\\2026-9-28 9.35.41.fdr",
+            "phase_reference": "A相",
+            "state_reference": "首端差异；工程师称不排除终端问题"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "原文只给首端边界描述，没有距离值，也未确认终端问题。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B12",
+          "evidence_ids": [
+            "B12-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "start_boundary",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校\\2026-9-28 10.17.15.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师记录测试终端阻抗下降"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "终端阻抗变化不自动标作末端故障；待该测次曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B12",
+          "evidence_ids": [
+            "B12-E03"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 400,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校\\2026-9-28 10.17.15.fdr",
+            "phase_reference": null,
+            "state_reference": "工程师记录400m接头受潮"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师在试验后报告400m问题点，待对应测次曲线审阅。",
+          "unresolved": []
+        },
+        {
+          "case_id": "B12",
+          "evidence_ids": [
+            "B12-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "point",
+            "value_m": 2438,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "E:\\20261010截至的全部fdr文件\\2026-9-28 9.35.41深圳龙城街道深圳市龙岗区外国语学校(集团)大运学校\\2026-9-28 10.17.15.fdr",
+            "phase_reference": null,
+            "state_reference": "FDR全长2438m"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅作本测次长度参考，待曲线审阅后判断末端。",
+          "unresolved": []
+        }
+      ]
+    }
+  ]
+}
+

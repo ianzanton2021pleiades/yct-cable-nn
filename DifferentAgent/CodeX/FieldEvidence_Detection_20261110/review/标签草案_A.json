@@ -1,0 +1,1232 @@
+{
+  "status": "draft_pending_measurement_review",
+  "cases": [
+    {
+      "case_id": "A01",
+      "annotations": [
+        {
+          "case_id": "A01",
+          "evidence_ids": [
+            "A01-E01"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 240,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-2-17 11.25.49城区白塔寺.fdr（耐压前的）",
+            "phase_reference": null,
+            "state_reference": "耐压前"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "原文称耐压前240m有问题且阻抗上升；作为该测量状态的响应异常候选点，不把耐压后的击穿作为曲线标签。",
+          "unresolved": [
+            "需审阅耐压前曲线确认240m异常可辨性。"
+          ]
+        },
+        {
+          "case_id": "A01",
+          "evidence_ids": [
+            "A01-E01"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-2-17 12.30.59白塔寺复测.fdr（耐压后的）",
+            "phase_reference": null,
+            "state_reference": "耐压后"
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "原文报告240m耐压后击穿，作为故障事实留存，不由故障事实直接生成FDR响应标签。",
+          "unresolved": [
+            "未提供击穿前后逐点曲线对照。"
+          ]
+        },
+        {
+          "case_id": "A01",
+          "evidence_ids": [
+            "A01-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅保留FDR全长1100m记录，不作为末端位置或训练几何标签。",
+          "unresolved": [
+            "物理实长依据未在说明文本中给出。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A02",
+      "annotations": [
+        {
+          "case_id": "A02",
+          "evidence_ids": [
+            "A02-E01",
+            "A02-E03",
+            "A02-E04"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "start_boundary",
+            "value_m": null,
+            "start_m": 200,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-3-6 15.47.07石杨线5号至6号.fdr",
+            "phase_reference": "C相；C相复测",
+            "state_reference": "工程师标注图选用C相复测，原C相项未勾选"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：最新txt、工程师标注图及2026-11-10第4轮用户复核。C相复测200m是start_boundary，需A/B/C上下文；由anomaly_range边界局部上升约束学习，不扩展到完整正区间或385m。",
+          "unresolved": [
+            "终点未知。",
+            "C初测rowid=3不替代C复测rowid=4。",
+            "三相阶跃比较按接口要求先对齐开头再比较斜率；保留各测次原始响应。",
+            "截图显示平滑系数75，用户当前场景说明为2，按不同场景保留。"
+          ]
+        },
+        {
+          "case_id": "A02",
+          "evidence_ids": [
+            "A02-E04"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 100,
+            "end_m": 300,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-3-6 15.47.07石杨线5号至6号.fdr",
+            "phase_reference": "A相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：2026-11-10第4轮用户复核将该范围指定为异常任务背景负例，仅用于anomaly_point，不涉及joint。",
+          "unresolved": [
+            "该负范围只绑定Sweeps.rowid=1（A相）。"
+          ]
+        },
+        {
+          "case_id": "A02",
+          "evidence_ids": [
+            "A02-E04"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 100,
+            "end_m": 300,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-3-6 15.47.07石杨线5号至6号.fdr",
+            "phase_reference": "A相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：2026-11-10第4轮用户复核将该范围指定为异常任务背景负例，仅用于anomaly_range，不涉及joint。",
+          "unresolved": [
+            "该负范围只绑定Sweeps.rowid=1（A相）。"
+          ]
+        },
+        {
+          "case_id": "A02",
+          "evidence_ids": [
+            "A02-E04"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 100,
+            "end_m": 300,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-3-6 15.47.07石杨线5号至6号.fdr",
+            "phase_reference": "B相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：2026-11-10第4轮用户复核将该范围指定为异常任务背景负例，仅用于anomaly_point，不涉及joint。",
+          "unresolved": [
+            "该负范围只绑定Sweeps.rowid=2（B相）。"
+          ]
+        },
+        {
+          "case_id": "A02",
+          "evidence_ids": [
+            "A02-E04"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 100,
+            "end_m": 300,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-3-6 15.47.07石杨线5号至6号.fdr",
+            "phase_reference": "B相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：2026-11-10第4轮用户复核将该范围指定为异常任务背景负例，仅用于anomaly_range，不涉及joint。",
+          "unresolved": [
+            "该负范围只绑定Sweeps.rowid=2（B相）。"
+          ]
+        },
+        {
+          "case_id": "A02",
+          "evidence_ids": [
+            "A02-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "仅记录FDR全场385m，不把它用作异常区间终点或物理末端。",
+          "unresolved": [
+            "物理实长依据未在说明文本中给出。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A03",
+      "annotations": [
+        {
+          "case_id": "A03",
+          "evidence_ids": [
+            "A03-E02",
+            "A03-E06"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 364,
+            "end_m": 476,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-5-15 15.23.15.fdr",
+            "phase_reference": "A相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：2026-11-10第4轮用户确认A/B/C三相均为364–476m异常区间；阶跃为主、脉冲为辅，按接口物理跨度平滑。此标签仅绑定A相 rowid=1。",
+          "unresolved": [
+            "需以该相厂商响应表的实际覆盖生成valid；不跨相复制。",
+            "解体未确认，不推成void。"
+          ]
+        },
+        {
+          "case_id": "A03",
+          "evidence_ids": [
+            "A03-E02",
+            "A03-E06"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 364,
+            "end_m": 476,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-5-15 15.23.15.fdr",
+            "phase_reference": "B相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：2026-11-10第4轮用户确认A/B/C三相均为364–476m异常区间；阶跃为主、脉冲为辅，按接口物理跨度平滑。此标签仅绑定B相 rowid=2。",
+          "unresolved": [
+            "需以该相厂商响应表的实际覆盖生成valid；不跨相复制。",
+            "解体未确认，不推成void。"
+          ]
+        },
+        {
+          "case_id": "A03",
+          "evidence_ids": [
+            "A03-E02",
+            "A03-E06"
+          ],
+          "task": "anomaly_range",
+          "geometry": {
+            "type": "interval",
+            "value_m": null,
+            "start_m": 364,
+            "end_m": 476,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-5-15 15.23.15.fdr",
+            "phase_reference": "C相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：2026-11-10第4轮用户确认A/B/C三相均为364–476m异常区间；阶跃为主、脉冲为辅，按接口物理跨度平滑。此标签仅绑定C相 rowid=3。",
+          "unresolved": [
+            "需以该相厂商响应表的实际覆盖生成valid；不跨相复制。",
+            "解体未确认，不推成void。"
+          ]
+        },
+        {
+          "case_id": "A03",
+          "evidence_ids": [
+            "A03-E01",
+            "A03-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-5-15 15.23.15.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "分别保留现场报告的接头击穿、相邻接头未见泡水但有水痕等事实；不据此生成精确缺陷点或确认浸水区间。",
+          "unresolved": [
+            "现场提出剪开查看，原文没有剪开后的结果。",
+            "420后方、400m前方和364m–476m响应范围的相互对应关系未确认。"
+          ]
+        },
+        {
+          "case_id": "A03",
+          "evidence_ids": [
+            "A03-E05"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "1930m是FDR全长标注，仅作长度信息留存。",
+          "unresolved": [
+            "原文未给出物理实长依据。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A04",
+      "annotations": [
+        {
+          "case_id": "A04",
+          "evidence_ids": [
+            "A04-E01",
+            "A04-E08"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 270,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+            "phase_reference": "B相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：原说明工程师判断B相270m阻抗下降；2026-11-10第4轮用户复核确认B相270m局部异常。只标B相。",
+          "unresolved": [
+            "需审阅B相曲线确认270m异常可辨性。"
+          ]
+        },
+        {
+          "case_id": "A04",
+          "evidence_ids": [
+            "A04-E01",
+            "A04-E05",
+            "A04-E07",
+            "A04-E08"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 420,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+            "phase_reference": "三相",
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "来源注明：2026-11-10第4轮用户复核确认A/B/C三相420m局部异常。C相rowid=3原始S11完整，厂商响应缺失不撤销该用户证据；C相phase_mask与实际监督等派生副本有响应表后再启用。",
+          "unresolved": [
+            "C相派生输入目前缺响应；prepare脚本需保留S11存在/response_missing并置phase_mask=false，不能使用相位未知的rowid=4。",
+            "现场进水反馈未明确对应哪个接头，不并入420m响应标签。"
+          ]
+        },
+        {
+          "case_id": "A04",
+          "evidence_ids": [
+            "A04-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 417,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "工程师在原文称417m处有反射，支持接头候选；现场人员同时说FDR上不太看得出来，需曲线审阅后决定是否可标。",
+          "unresolved": [
+            "现场接头位置和FDR反射位置的测量对应未说明。"
+          ]
+        },
+        {
+          "case_id": "A04",
+          "evidence_ids": [
+            "A04-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 478,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "工程师在原文称478m处有反射，支持接头候选；现场人员同时说FDR上不太看得出来，需曲线审阅后决定是否可标。",
+          "unresolved": [
+            "现场接头位置和FDR反射位置的测量对应未说明。"
+          ]
+        },
+        {
+          "case_id": "A04",
+          "evidence_ids": [
+            "A04-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "邦润线2025-7-7 11.55.08.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "现场反馈称接头进水且水很多，但没有说清对应417m、478m哪一处；不并入420m响应判读。",
+          "unresolved": [
+            "进水接头的具体位置和420m趋势变化之间的关系未明确。"
+          ]
+        },
+        {
+          "case_id": "A04",
+          "evidence_ids": [
+            "A04-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "FDR全长640m仅作长度信息留存。",
+          "unresolved": [
+            "原文未给出物理实长依据。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A05",
+      "annotations": [
+        {
+          "case_id": "A05",
+          "evidence_ids": [
+            "A05-E01",
+            "A05-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2025-8-20 11.44.04驻马店华润.fdr；2025-8-20 15.18.36驻马店1767米.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "保留FDR总长度2246m及从1758m分接箱向末端测量的部分文件关系；这些长度信息不生成事件或末端标签。",
+          "unresolved": [
+            "部分测量的FDR坐标与总测量坐标需在测次审阅时确认。",
+            "原文未给出物理实长依据。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A06",
+      "annotations": [
+        {
+          "case_id": "A06",
+          "evidence_ids": [
+            "A06-E01"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 171,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-20 10.29.21.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师将171m位置称为正常接头，支持该点的接头候选；需在曲线审阅中确认可辨性。",
+          "unresolved": [
+            "原文未提供接头的现场位置测量依据。"
+          ]
+        },
+        {
+          "case_id": "A06",
+          "evidence_ids": [
+            "A06-E01"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-20 10.29.21.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "reference_only",
+          "reason": "工程师称后段有外屏蔽损伤特征，但没有给出位置；保留判断，不推造点位。",
+          "unresolved": [
+            "外屏蔽损伤特征的位置和曲线可辨性未知。"
+          ]
+        },
+        {
+          "case_id": "A06",
+          "evidence_ids": [
+            "A06-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "低压脉冲给出的中间头序列只作其他仪器位置参考，不直接作为当前FDR接头标签。",
+          "unresolved": [
+            "与FDR坐标的逐点对应和误差未提供。"
+          ]
+        },
+        {
+          "case_id": "A06",
+          "evidence_ids": [
+            "A06-E01"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "标签参数1967米和FDR全长1964m仅作长度记录。",
+          "unresolved": [
+            "两种长度的测量定义和物理实长依据未说明。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A07",
+      "annotations": [
+        {
+          "case_id": "A07",
+          "evidence_ids": [
+            "A07-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-20 11.31.57.fdr",
+            "phase_reference": "C相",
+            "state_reference": "加压后"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "needs_clarification",
+          "reason": "工程师把C相击穿可能位置描述为阶跃响应上升处，但没有标注具体位置，不能生成点标签。",
+          "unresolved": [
+            "位置未知；需测次和曲线审阅后再决定是否形成异常标签。",
+            "不得将B相局放位置复制给C相。"
+          ]
+        },
+        {
+          "case_id": "A07",
+          "evidence_ids": [
+            "A07-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": "振荡波局放B相；C相加不到指定电压、试验后对地；介损A,B异常，C相无法加压",
+            "state_reference": "试验后；试验后绝缘"
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "分别保存B相振荡波局放位置和C相试验状态；这些其他试验结果不直接生成FDR位置标签。",
+          "unresolved": [
+            "C相对地没有具体位置；B相局放点不代表C相击穿位置。"
+          ]
+        },
+        {
+          "case_id": "A07",
+          "evidence_ids": [
+            "A07-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "标签参数2779.69米与FDR全长2306m仅作长度信息留存。",
+          "unresolved": [
+            "两种长度的测量定义和物理实长依据未说明。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A08",
+      "annotations": [
+        {
+          "case_id": "A08",
+          "evidence_ids": [
+            "A08-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 55,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-21 11.54.20.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师原文明确标注55m处存在接头，作为FDR接头候选，仍需测量审阅。",
+          "unresolved": [
+            "工程师标注对应的曲线响应需审阅。"
+          ]
+        },
+        {
+          "case_id": "A08",
+          "evidence_ids": [
+            "A08-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 91,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-21 11.54.20.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师原文明确标注91m处存在接头，作为FDR接头候选，仍需测量审阅。",
+          "unresolved": [
+            "低压脉冲记录93m；两种位置的关系需审阅。"
+          ]
+        },
+        {
+          "case_id": "A08",
+          "evidence_ids": [
+            "A08-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 175,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-21 11.54.20.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师原文明确标注175m处存在接头，作为FDR接头候选，仍需测量审阅。",
+          "unresolved": [
+            "低压脉冲记录174m；两种位置的关系需审阅。"
+          ]
+        },
+        {
+          "case_id": "A08",
+          "evidence_ids": [
+            "A08-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 638,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-21 11.54.20.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师原文明确标注638m处存在接头，作为FDR接头候选，仍需测量审阅。",
+          "unresolved": [
+            "低压脉冲记录633m；两种位置的关系需审阅。"
+          ]
+        },
+        {
+          "case_id": "A08",
+          "evidence_ids": [
+            "A08-E02"
+          ],
+          "task": "joint",
+          "geometry": {
+            "type": "point",
+            "value_m": 682,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-21 11.54.20.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师原文明确标注682m处存在接头，作为FDR接头候选，仍需测量审阅。",
+          "unresolved": [
+            "低压脉冲记录684m；两种位置的关系需审阅。"
+          ]
+        },
+        {
+          "case_id": "A08",
+          "evidence_ids": [
+            "A08-E01"
+          ],
+          "task": "terminal",
+          "geometry": {
+            "type": "point",
+            "value_m": 765,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "765m仅由低压脉冲记录标为末端，先保留为外部位置参考，不能据此确认FDR末端。",
+          "unresolved": [
+            "需审阅FDR阶跃响应后再确定末端位置。"
+          ]
+        },
+        {
+          "case_id": "A08",
+          "evidence_ids": [
+            "A08-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-21 11.54.20.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "旧710米、新53米和FDR全长标注770m仅作长度信息留存。",
+          "unresolved": [
+            "标签长度与FDR全长的口径差异未说明。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A09",
+      "annotations": [
+        {
+          "case_id": "A09",
+          "evidence_ids": [
+            "A09-E02"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 150,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-21 15.34.27.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "candidate",
+          "reason": "工程师明确认为150m轻微异常，保留该响应异常候选点；不将其升级为物理故障事实。",
+          "unresolved": [
+            "需审阅曲线确认150m异常可辨性。"
+          ]
+        },
+        {
+          "case_id": "A09",
+          "evidence_ids": [
+            "A09-E01"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "低压脉冲给出的接头序列仅作其他仪器参考，不转成FDR接头标签。",
+          "unresolved": [
+            "序列与标签长度及FDR坐标的关系未说明。"
+          ]
+        },
+        {
+          "case_id": "A09",
+          "evidence_ids": [
+            "A09-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-21 15.34.27.fdr",
+            "phase_reference": null,
+            "state_reference": "测试前；所有测试结束之后"
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "FDR全长标注1213m仅作长度信息；绝缘电阻测试时点也按原文保留。",
+          "unresolved": [
+            "物理实长依据和绝缘电阻数值未提供。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A10",
+      "annotations": [
+        {
+          "case_id": "A10",
+          "evidence_ids": [
+            "A10-E02"
+          ],
+          "task": "anomaly_point",
+          "geometry": {
+            "type": "point",
+            "value_m": 692,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-27 22.36.14.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "reference_only",
+          "reason": "工程师认为692m接头有局部放电，保留异常点参考；FDR全长2795m，超出当前2.5km训练范围。",
+          "unresolved": [
+            "曲线响应和该点与此前约690m外屏蔽损伤的对应关系需审阅。",
+            "本候选不进入2.5km训练集。"
+          ]
+        },
+        {
+          "case_id": "A10",
+          "evidence_ids": [
+            "A10-E03"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "2026-5-27 22.36.14.fdr",
+            "phase_reference": null,
+            "state_reference": "4月22号的测试；昨日测试"
+          },
+          "claim_layer": "response_interpretation",
+          "review_status": "reference_only",
+          "reason": "保留现场人员转述及工程师对两次测试的解释；不把外屏蔽损伤直接改写成局放严重度或void标签。",
+          "unresolved": [
+            "4月22日原测量文件未定位；两次测试的曲线和时间关系未核对。"
+          ]
+        },
+        {
+          "case_id": "A10",
+          "evidence_ids": [
+            "A10-E04"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": null,
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "FDR全长2795m仅作长度信息留存，不作为已确认物理实长。",
+          "unresolved": [
+            "物理实长依据未在说明文本中给出。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A11",
+      "annotations": [
+        {
+          "case_id": "A11",
+          "evidence_ids": [
+            "A11-E01",
+            "A11-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "1500m电缆单个接头浸水试验.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "physical_fact",
+          "review_status": "reference_only",
+          "reason": "说明文本报告不同接头浸水位置在100m至1400m范围，先作为试验物理条件参考；不把该跨度当作一个异常区间。",
+          "unresolved": [
+            "需核对FDR内部sweep/测量名称与各浸水位置的映射和测次条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "A12",
+      "annotations": [
+        {
+          "case_id": "A12",
+          "evidence_ids": [
+            "A12-E01"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "局部老化0day.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "length_only",
+          "review_status": "reference_only",
+          "reason": "中间短段长度6m、3m、0.5m仅作样品结构长度信息，不生成事件位置标签。",
+          "unresolved": [
+            "测试条件未知；需核对FDR内部测量名称与各样品配置的映射。"
+          ]
+        },
+        {
+          "case_id": "A12",
+          "evidence_ids": [
+            "A12-E02"
+          ],
+          "task": "none",
+          "geometry": {
+            "type": "none",
+            "value_m": null,
+            "start_m": null,
+            "end_m": null,
+            "lower_m": null,
+            "upper_m": null
+          },
+          "scope": {
+            "file_reference": "局部老化0day.fdr",
+            "phase_reference": null,
+            "state_reference": null
+          },
+          "claim_layer": "other_instrument",
+          "review_status": "reference_only",
+          "reason": "0k、25k、50k、100k、200k的含义在原文中未知，不据此标注事件或状态。",
+          "unresolved": [
+            "需实验记录或测次映射说明这些标记的含义。"
+          ]
+        }
+      ]
+    }
+  ]
+}

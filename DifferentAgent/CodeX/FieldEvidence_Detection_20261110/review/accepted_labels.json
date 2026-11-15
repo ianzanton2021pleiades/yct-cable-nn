@@ -1,0 +1,222 @@
+{
+  "measurements": [
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=1",
+      "case_id": "A02",
+      "source_refs": [
+        "A02-E04"
+      ],
+      "events": [],
+      "negative_ranges": {
+        "anomaly_point": [
+          [
+            100,
+            300
+          ]
+        ],
+        "anomaly_range": [
+          [
+            100,
+            300
+          ]
+        ]
+      }
+    },
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=2",
+      "case_id": "A02",
+      "source_refs": [
+        "A02-E04"
+      ],
+      "events": [],
+      "negative_ranges": {
+        "anomaly_point": [
+          [
+            100,
+            300
+          ]
+        ],
+        "anomaly_range": [
+          [
+            100,
+            300
+          ]
+        ]
+      }
+    },
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=4",
+      "case_id": "A02",
+      "events": [
+        {
+          "task": "anomaly_range",
+          "shape": "start_boundary",
+          "position_m": 200,
+          "required_measurement_ids": [
+            "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=1",
+            "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=2",
+            "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=4"
+          ],
+          "source_refs": [
+            "A02-E01",
+            "A02-E03",
+            "A02-E04"
+          ]
+        }
+      ],
+      "negative_ranges": {
+        "anomaly_point": [],
+        "anomaly_range": []
+      }
+    },
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=1",
+      "case_id": "A03",
+      "events": [
+        {
+          "task": "anomaly_range",
+          "shape": "interval",
+          "start_m": 364,
+          "end_m": 476,
+          "required_measurement_ids": [
+            "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=1"
+          ],
+          "source_refs": [
+            "A03-E02",
+            "A03-E06"
+          ]
+        }
+      ],
+      "negative_ranges": {
+        "anomaly_point": [],
+        "anomaly_range": []
+      }
+    },
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=2",
+      "case_id": "A03",
+      "events": [
+        {
+          "task": "anomaly_range",
+          "shape": "interval",
+          "start_m": 364,
+          "end_m": 476,
+          "required_measurement_ids": [
+            "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=2"
+          ],
+          "source_refs": [
+            "A03-E02",
+            "A03-E06"
+          ]
+        }
+      ],
+      "negative_ranges": {
+        "anomaly_point": [],
+        "anomaly_range": []
+      }
+    },
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=3",
+      "case_id": "A03",
+      "events": [
+        {
+          "task": "anomaly_range",
+          "shape": "interval",
+          "start_m": 364,
+          "end_m": 476,
+          "required_measurement_ids": [
+            "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=3"
+          ],
+          "source_refs": [
+            "A03-E02",
+            "A03-E06"
+          ]
+        }
+      ],
+      "negative_ranges": {
+        "anomaly_point": [],
+        "anomaly_range": []
+      }
+    },
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=1",
+      "case_id": "A04",
+      "events": [
+        {
+          "task": "anomaly_point",
+          "shape": "point",
+          "position_m": 420,
+          "required_measurement_ids": [
+            "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=1"
+          ],
+          "source_refs": [
+            "A04-E01",
+            "A04-E08"
+          ]
+        }
+      ],
+      "negative_ranges": {
+        "anomaly_point": [],
+        "anomaly_range": []
+      }
+    },
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=2",
+      "case_id": "A04",
+      "events": [
+        {
+          "task": "anomaly_point",
+          "shape": "point",
+          "position_m": 270,
+          "required_measurement_ids": [
+            "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=2"
+          ],
+          "source_refs": [
+            "A04-E01",
+            "A04-E08"
+          ]
+        },
+        {
+          "task": "anomaly_point",
+          "shape": "point",
+          "position_m": 420,
+          "required_measurement_ids": [
+            "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=2"
+          ],
+          "source_refs": [
+            "A04-E01",
+            "A04-E08"
+          ]
+        }
+      ],
+      "negative_ranges": {
+        "anomaly_point": [],
+        "anomaly_range": []
+      }
+    },
+    {
+      "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=3",
+      "case_id": "A04",
+      "events": [
+        {
+          "task": "anomaly_point",
+          "shape": "point",
+          "position_m": 420,
+          "required_measurement_ids": [
+            "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=3"
+          ],
+          "source_refs": [
+            "A04-E01",
+            "A04-E05",
+            "A04-E07",
+            "A04-E08"
+          ]
+        }
+      ],
+      "negative_ranges": {
+        "anomaly_point": [],
+        "anomaly_range": []
+      }
+    }
+  ]
+}

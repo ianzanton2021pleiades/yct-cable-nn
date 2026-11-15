@@ -1,0 +1,120 @@
+{
+  "status": "draft",
+  "scope_note": "本文件仅建立4个明确比较组，不表示measurement_index中的24个物理案例分组已冻结。case_group_id用于物理案例防跨集；comparison_group_id仅关联同次同条件的相位输入。",
+  "groups": [
+    {
+      "comparison_group_id": "comparison-A02-main",
+      "case_id": "A02",
+      "case_group_id": "physical-case-A02",
+      "source_path": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr",
+      "members": {
+        "A": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=1",
+        "B": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=2",
+        "C": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=4"
+      },
+      "phase_names": {
+        "A": "A相",
+        "B": "B相",
+        "C": "C相复测"
+      },
+      "member_roles": {
+        "A": "negative_supervised",
+        "B": "negative_supervised",
+        "C": "labelled"
+      },
+      "coordinate_alignment_basis": "按各测次厂商原始距离轴保留；rowid=1/2轴上限400m，rowid=4轴上限1000m，不作全线坐标换算。",
+      "label_scope_notes": "第4轮用户复核：A/B相100–300m仅为anomaly_point与anomaly_range负背景，不涉及joint；C相复测rowid=4的200m为start_boundary，所需上下文是本组A/B/C。C初测rowid=3继续排除，不替代复测。",
+      "readiness": "label_scope_confirmed",
+      "excluded_measurements": [
+        {
+          "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-3-7 石杨线5号至6号进水\\2025-3-6 15.47.07石杨线5号至6号.fdr#Sweeps.rowid=3",
+          "phase_name": "C相",
+          "reason": "C相初测独立保留，不进入本比较组，也不自动继承C相复测rowid=4的标签。"
+        }
+      ]
+    },
+    {
+      "comparison_group_id": "comparison-A03-main",
+      "case_id": "A03",
+      "case_group_id": "physical-case-A03",
+      "source_path": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr",
+      "members": {
+        "A": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=1",
+        "B": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=2",
+        "C": "E:\\20261010截至的全部fdr文件\\2025-5-15 15.23.15深圳龙岗某地（浸水）\\2025-5-15 15.23.15.fdr#Sweeps.rowid=3"
+      },
+      "phase_names": {
+        "A": "A相[末端开路]",
+        "B": "B相[末端开路]",
+        "C": "C相[末端开路]"
+      },
+      "member_roles": {
+        "A": "labelled",
+        "B": "labelled",
+        "C": "labelled"
+      },
+      "coordinate_alignment_basis": "同一FDR原始距离轴；measurement_index记录三相轴上限均为2000m，不作额外坐标映射。",
+      "label_scope_notes": "第4轮用户复核确认A/B/C三相均适用364–476m异常区间。各相事件分别只需自己的measurement_id；抽取阶段仍按各响应表实际覆盖生成valid。",
+      "readiness": "source_phase_scoped",
+      "excluded_measurements": []
+    },
+    {
+      "comparison_group_id": "comparison-A04-main",
+      "case_id": "A04",
+      "case_group_id": "physical-case-A04",
+      "source_path": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr",
+      "members": {
+        "A": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=1",
+        "B": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=2",
+        "C": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=3"
+      },
+      "phase_names": {
+        "A": "A相",
+        "B": "B相",
+        "C": "C相"
+      },
+      "member_roles": {
+        "A": "labelled",
+        "B": "labelled",
+        "C": "labelled"
+      },
+      "coordinate_alignment_basis": "同一FDR原始距离轴；measurement_index记录rowid=1/2/3轴上限均为640m。",
+      "label_scope_notes": "第4轮用户复核确认B相270m及A/B/C三相420m局部异常。C相rowid=3标签保留；只有派生副本C3响应表可读时phase_mask才为true。派生副本尚未报告已重算。rowid=4“新的测试_4”相位未知，排除主组三相映射。",
+      "readiness": "awaiting_user_reader_recalculation",
+      "derived_copy": "output/derived_fdr/邦润线_C相待重算.fdr",
+      "derived_response_method": "仅在派生副本中使用厂商消费者阅读版重新计算C相；原始measurement_id和physical-case-A04关系保持，副本不计作独立案例。当前尚未重算。",
+      "excluded_measurements": [
+        {
+          "measurement_id": "E:\\20261010截至的全部fdr文件\\2025-7-7 11.55.08邦润线(浸水)\\邦润线2025-7-7 11.55.08.fdr#Sweeps.rowid=4",
+          "phase_name": "新的测试_4",
+          "reason": "index中的原名未标明相位，排除主比较组；不推断为C相。"
+        }
+      ]
+    },
+    {
+      "comparison_group_id": "comparison-B06-main",
+      "case_id": "B06",
+      "case_group_id": "physical-case-B06",
+      "source_path": "E:\\20261010截至的全部fdr文件\\2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\2026-7-9 14.56.52.fdr",
+      "members": {
+        "A": "E:\\20261010截至的全部fdr文件\\2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\2026-7-9 14.56.52.fdr#Sweeps.rowid=1",
+        "B": "E:\\20261010截至的全部fdr文件\\2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\2026-7-9 14.56.52.fdr#Sweeps.rowid=2",
+        "C": "E:\\20261010截至的全部fdr文件\\2026-7-9 14.56.52深圳马坳变电站10kV学校线F10世茂之都乙智能柜\\2026-7-9 14.56.52.fdr#Sweeps.rowid=3"
+      },
+      "phase_names": {
+        "A": "A相",
+        "B": "B相",
+        "C": "C相"
+      },
+      "member_roles": {
+        "A": "context",
+        "B": "context",
+        "C": "context"
+      },
+      "coordinate_alignment_basis": "同一FDR原始距离轴；measurement_index记录三相轴上限均为1500m，不作额外坐标映射。",
+      "label_scope_notes": "64–130m与580–630m原文区间保留；用户当前看不出来，visibility_unconfirmed / needs_review / unknown。两区间不作为训练正标签或负样本，不据此判定电缆健康。",
+      "readiness": "label_unknown_user_review",
+      "excluded_measurements": []
+    }
+  ]
+}

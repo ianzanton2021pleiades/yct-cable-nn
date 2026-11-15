@@ -1,0 +1,32 @@
+{
+  "run_name": "field_first_round",
+  "seed": 20261110,
+  "model": {
+    "in_channels": 5,
+    "width": 16
+  },
+  "training": {
+    "epochs": 40,
+    "batch_size": 2,
+    "num_workers": 0,
+    "learning_rate": 0.0003,
+    "patience": 8,
+    "single_phase_probability": 0.5,
+    "mixed_precision": true
+  },
+  "preprocessing": {
+    "distance_start_m": 0,
+    "distance_end_m": 3000,
+    "distance_step_m": 0.25,
+    "smoothing_physical_span_m": 0.5
+  },
+  "evaluation": {
+    "probability_thresholds": {
+      "joint": 0.5,
+      "terminal": 0.5,
+      "anomaly_point": 0.5,
+      "anomaly_range": 0.5
+    },
+    "event_match_tolerance_m": 20
+  }
+}

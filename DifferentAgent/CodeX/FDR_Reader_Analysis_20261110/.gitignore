@@ -1,0 +1,8 @@
+output/
+assets/
+s11_output/
+__pycache__/
+*.pyc
+smoke_*/
+tools/
+extracted/
